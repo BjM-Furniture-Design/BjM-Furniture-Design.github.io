@@ -1,0 +1,67 @@
+傢具設計顧問\
+│
+├─ 打開專案.html          ← 雙擊這個操作
+├─ 啟動.bat
+├─ 00_專案說明.txt
+├─ 換電腦怎麼開.txt
+├─ 資料夾架構.txt
+│
+├─ 01_主設計師\
+│     00_本夾說明.txt
+│     01_設計任務書.txt
+│     02_產品定位與整體規劃.txt
+│     03_待確認事項.txt
+│     00_客戶參考圖.png
+│     WAVE-LC-R01_hero_34.jpg
+│     WAVE-LC-001_3view.png
+│     WAVE-LC-001_3view.pdf
+│
+├─ 02_結構工程師\
+│     00_本夾說明.txt
+│     01_結構設計說明.txt
+│     02_分件與接合.txt
+│     03_尺寸公差與載重.txt
+│     WAVE-LC-001_3view.png
+│     WAVE-LC-001_3view.pdf
+│     draw_cad_3view.py
+│
+├─ 03_造型設計師\
+│     00_本夾說明.txt
+│     01_造型比例與refinement.txt
+│     02_人體工學.txt
+│     00_客戶參考圖.png
+│     WAVE-LC-R01_hero_34.jpg
+│     WAVE-LC-R02_front.jpg
+│     WAVE-LC-R03_side.jpg
+│     WAVE-LC-001_3view.png
+│     WAVE-LC-001_3view.pdf
+│     draw_cad_3view.py
+│
+├─ 04_材料顧問\
+│     00_本夾說明.txt
+│     01_木材選擇與材性.txt
+│     02_越南市場木材價格調查.txt
+│     WAVE-LC-001_BOM_RevA.xlsx
+│     WAVE-LC-001_BOM_RevA.csv
+│     WAVE-LC-001_BOM_RevA.png
+│     WAVE-LC-001_BOM_RevA_sheet.pdf
+│     make_bom.py
+│     draw_bom_sheet.py
+│
+├─ 05_CNC與CAM工程師\
+│     00_本夾說明.txt
+│     01_五軸加工可行性.txt
+│     02_刀路夾治具與公差.txt
+│     WAVE-LC-001_3view.png
+│     WAVE-LC-001_3view.pdf
+│     WAVE-LC-R03_side.jpg
+│
+└─ 06_生產優化工程師\
+      00_本夾說明.txt
+      01_工時與材料利用率.txt
+      02_成本與量產可行性.txt
+      WAVE-LC-001_BOM_RevA.xlsx
+      WAVE-LC-001_BOM_RevA.csv
+      WAVE-LC-001_BOM_RevA.png
+      WAVE-LC-001_BOM_RevA_sheet.pdf
+      make_bom.py

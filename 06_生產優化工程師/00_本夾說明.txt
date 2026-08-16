@@ -1,0 +1,12 @@
+【06 生產優化工程師】本夾獨立完整，不需開啟其他職位夾。
+
+職責：材料利用率、工時、整體成本、量產可行性。
+
+本夾檔案
+  01_工時與材料利用率.txt
+  02_成本與量產可行性.txt
+  WAVE-LC-001_BOM_RevA.xlsx
+  WAVE-LC-001_BOM_RevA.csv
+  WAVE-LC-001_BOM_RevA.png
+  WAVE-LC-001_BOM_RevA_sheet.pdf
+  make_bom.py
