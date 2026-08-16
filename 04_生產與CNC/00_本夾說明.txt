@@ -1,0 +1,14 @@
+【04 生產與 CNC】生產優化 ＋ CNC／CAM（已合併）
+
+職責
+  5 軸分序、刀路、夾治具、BACCI 限制
+  工時、利用率、出廠成本、量產門檻
+
+本夾重點檔
+  01_五軸加工可行性.txt
+  02_刀路夾治具與公差.txt
+  01_工時與材料利用率.txt
+  02_成本與量產可行性.txt
+  WAVE-LC-R03_side.jpg
+  WAVE-LC-001_3view.png／.pdf
+  WAVE-LC-001_BOM_RevA.xlsx
