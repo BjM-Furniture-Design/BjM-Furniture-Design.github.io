@@ -558,15 +558,7 @@ window.addEventListener("keydown", e => {
 
 });
 
-function exportDecisions() {
-  const blob = new Blob([JSON.stringify(load(), null, 2)], { type: "application/json" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "WAVE-決策.json";
-  a.click();
-  const m = document.getElementById("cloud-msg");
-  if (m) m.textContent = "已下載 WAVE-決策.json，請放到 BjM Furniture design 再在另一台匯入。";
-}
+
 
 function importDecisions(ev) {
   const f = ev.target.files && ev.target.files[0];
