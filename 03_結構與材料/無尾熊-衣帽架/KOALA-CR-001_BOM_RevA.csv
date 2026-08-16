@@ -1,0 +1,10 @@
+SKU,Part,Name_zh,Name_en,Qty,Spec_mm,Material,Process,Note
+KOALA-CR-001,A,花座上,Flower base top,1,Ø180 x 30 Φ12 R3 5-petal,Rubberwood / beech,CNC 2.5D,Rotate vs mid
+KOALA-CR-001,B,花座中,Flower base mid,1,Ø180 Φ12 5-petal,Rubberwood / beech,CNC 2.5D,Optional steel weight pocket
+KOALA-CR-001,C,花座下,Flower base bottom,1,Ø180 Φ12 4-petal,Rubberwood / beech,CNC 2.5D,Rotate for footprint
+KOALA-CR-001,D,下立柱,Lower pole,1,Φ41 x 615 + tenon,Rubberwood / beech,Lathe,Tenon thru bases
+KOALA-CR-001,E,上立柱,Upper pole,1,Φ41 x 615 R15 + 55° holes,Rubberwood / beech,Lathe + drill jig,3 layers x 3 @ 120°
+KOALA-CR-001,F,掛鉤,Hook peg,9,Φ18 x 100 R8,Straight-grain hardwood,Lathe,Glue ≥28 deep
+KOALA-CR-001,G,無尾熊牌,Koala plaque,1,t12 laser face Ø8/Φ10,Same species,CNC + laser,Permanent fix in production
+KOALA-CR-001,H,配重鋼盤,Steel weight,1,Ø145 x 6,Mild steel,Laser / punch,Hidden between flowers
+KOALA-CR-001,J,牆扣（選配）,Wall tether,1,nylon + screw,—,buy,Kids room required

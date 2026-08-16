@@ -1,3 +1,4 @@
-2026-08-16
-專案已放到 OneDrive，桌面資料夾改為連結。
-換電腦：同一帳號登入 OneDrive → 傢具設計顧問 → 打開專案.html
+2026-08-16 888
+主設遞迴掃到 2 個產品：波浪椅、無尾熊-衣帽架。
+網站已加產品切換。STL（約 99MB）只留 Google 雲端，不上 GitHub。
+公開：https://bjm-furniture-design.github.io/

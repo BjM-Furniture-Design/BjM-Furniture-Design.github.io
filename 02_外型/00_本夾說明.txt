@@ -4,7 +4,7 @@
 排在結構／材料之前。
 
 本夾
-  渲染 R01–R03
-  SCENE_living / lobby / suite 場景使用圖
+  波浪椅：渲染 R01–R03、SCENE_living / lobby / suite
+  無尾熊衣帽架：見子夾 無尾熊-衣帽架
   01_造型比例與refinement.txt
   02_人體工學.txt
