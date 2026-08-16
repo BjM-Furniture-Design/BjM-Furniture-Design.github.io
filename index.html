@@ -49,8 +49,16 @@
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);
   }
-  .brand { display: flex; align-items: center; cursor: pointer; flex: 0 0 auto; }
-  .brand img { height: 46px; width: auto; display: block; }
+  .brand {
+    display: flex; flex-direction: column; align-items: center;
+    cursor: pointer; flex: 0 0 auto; gap: 3px;
+  }
+  .brand img { height: 40px; width: auto; display: block; }
+  .brand small {
+    font-size: 9px; letter-spacing: .28em; color: #6a6b52;
+    font-weight: 500; line-height: 1; white-space: nowrap;
+    text-transform: uppercase;
+  }
   .langs, .skus {
     display: flex; gap: 4px;
     padding: 3px; background: #efe8dc; border-radius: 999px;
@@ -237,7 +245,8 @@
 <div class="app">
   <header>
     <div class="brand" onclick="go('home')" title="BjM Furniture Design">
-      <img src="logo/logo.png?v=2" alt="BjM Furniture Design" />
+      <img src="logo/logo-mark.png?v=3" alt="BjM" />
+      <small>Furniture Design</small>
     </div>
     <div class="skus" id="skus">
       <button type="button" data-sku="wave" class="on">WAVE</button>
