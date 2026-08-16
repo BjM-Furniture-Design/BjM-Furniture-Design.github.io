@@ -1,5 +1,11 @@
 {
   "name": "BjM Furniture Design",
-  "short_name": "BjM Furniture Design",
-  "display": "standalone"
+  "short_name": "BjM",
+  "display": "standalone",
+  "background_color": "#faf1e8",
+  "theme_color": "#2a241c",
+  "icons": [
+    { "src": "logo/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "logo/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
 }
