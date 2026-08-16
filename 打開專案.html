@@ -192,7 +192,6 @@
       <button data-go="r4">材料</button>
       <button data-go="r5">CNC</button>
       <button data-go="r6">生產</button>
-      <button data-go="cloud">雲端</button>
     </nav>
   </header>
 
@@ -204,7 +203,7 @@
         <div class="hero-copy">
           <div class="kicker">CONSULTING ATELIER · REV.A</div>
           <h1>浪形實木休閒椅<br><em>點選職位即可操作</em></h1>
-          <p class="lede">檔案存在 Google 雲端「BjM Furniture design」。換電腦用同一個 Google 帳號就能開、也能改。快捷鍵 1–6 切職位，C 開雲端說明，Esc 回總覽。</p>
+          <p class="lede">六個職位各自獨立。圖面、尺寸、結構都在對應頁裡。快捷鍵 1–6 切職位，Esc 回總覽。</p>
           <div class="stats">
             <div class="stat"><b>900×960</b><s>寬 × 深 mm</s></div>
             <div class="stat"><b>820</b><s>總高 mm</s></div>
@@ -447,78 +446,19 @@
       </div>
     </section>
 
-    <!-- CLOUD -->
     <section id="cloud" class="page">
-      <div class="kicker">CLOUD · GOOGLE DRIVE</div>
-      <h2>存在 Google「BjM Furniture design」</h2>
-      <p class="sub">正式位置是 Google 雲端硬碟裡的 BjM Furniture design。換電腦用同一個 Google 帳號即可打開與更新。</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>這台電腦</h3>
-          <ul>
-            <li>桌面捷徑「WAVE 傢具設計顧問」</li>
-            <li>或開 <b>Google 雲端硬碟\BjM Furniture design\打開專案.html</b></li>
-            <li>改圖、改 BOM、改說明，存檔就會上傳</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>別的電腦</h3>
-          <ul>
-            <li>安裝 Google 雲端硬碟電腦版</li>
-            <li>登入同一個 Google 帳號</li>
-            <li>打開 <b>我的雲端硬碟 → BjM Furniture design</b></li>
-            <li>雙擊 <b>打開專案.html</b></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>沒裝電腦版時</h3>
-          <ul>
-            <li>瀏覽器開 <b>drive.google.com</b></li>
-            <li>進資料夾 BjM Furniture design</li>
-            <li>可預覽圖、下載 Excel／PDF</li>
-            <li>整套操作台建議下載資料夾後再開 html</li>
-          </ul>
-        </div>
-      </div>
-      <div class="grid-2" style="margin-top:18px">
-        <div class="card">
-          <h3>帳號與路徑</h3>
-          <table>
-            <tr><td>雲端</td><td>Google Drive</td></tr>
-            <tr><td>資料夾</td><td>BjM Furniture design</td></tr>
-            <tr><td>這台路徑</td><td>我的雲端硬碟\BjM Furniture design</td></tr>
-            <tr><td>網頁</td><td>https://drive.google.com</td></tr>
-          </table>
-          <div class="files">
-            <a href="換電腦怎麼開.txt">完整說明（txt）</a>
-            <a href="https://drive.google.com" target="_blank" rel="noopener">開啟 Google 雲端硬碟</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3>怎麼更新才會同步</h3>
-          <ul>
-            <li>直接改 Google 雲端「BjM Furniture design」裡的檔，存檔</li>
-            <li>右下角雲朵不要停在「暫停」</li>
-            <li>檔案圖示出現綠勾＝已上傳</li>
-            <li>另一台要等下載完再開，避免改到舊檔</li>
-          </ul>
-          <p class="note">主設頁的「待確認」存在瀏覽器裡，不會自動跟檔案走。換電腦請按下面匯出，到新電腦再匯入。</p>
-          <div class="files">
-            <a href="javascript:void(0)" onclick="exportDecisions()">匯出決策 JSON</a>
-            <label class="files" style="padding:0;border:0;background:none">
-              <a href="javascript:void(0)" onclick="document.getElementById('imp').click()">匯入決策 JSON</a>
-            </label>
-            <input id="imp" type="file" accept="application/json" hidden onchange="importDecisions(event)">
-          </div>
-          <p class="ok" id="cloud-msg"></p>
-        </div>
+      <div class="kicker">PRIVATE</div>
+      <h2>這頁已不公開</h2>
+      <p class="sub">雲端路徑與帳號說明只留在你自己的雲端硬碟，不放在這個網站上。</p>
+      <div class="card">
+        <p>請用你自己的 Google 帳號登入雲端硬碟查看。本頁不再顯示任何雲端位置或開啟方式。</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <span>WAVE-LC-001 · REV.A · Google Drive · BjM Furniture design</span>
-    <span>1–6 職位 · C 雲端 · ESC 總覽 · 點圖放大</span>
+    <span>WAVE-LC-001 · REV.A</span>
+    <span>1–6 職位 · ESC 總覽 · 點圖放大</span>
   </footer>
 </div>
 
@@ -615,7 +555,7 @@ window.addEventListener("keydown", e => {
   if (e.target.matches("input, textarea, select")) return;
   if (e.key >= "1" && e.key <= "6") go("r" + e.key);
   if (e.key === "0") go("home");
-  if (e.key === "c" || e.key === "C") go("cloud");
+
 });
 
 function exportDecisions() {
