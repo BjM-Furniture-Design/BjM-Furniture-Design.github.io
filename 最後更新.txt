@@ -1,4 +1,4 @@
-2026-08-16 888
-主設遞迴掃到 2 個產品：波浪椅、無尾熊-衣帽架。
-網站已加產品切換。STL（約 99MB）只留 Google 雲端，不上 GitHub。
+2026-08-18 更新
+主設 3 個產品：波浪椅、無尾熊-衣帽架、旋轉繪圖櫃（F180-RC-001）。
+NX .prt 與 99MB STL 只留 Google 雲端。
 公開：https://bjm-furniture-design.github.io/

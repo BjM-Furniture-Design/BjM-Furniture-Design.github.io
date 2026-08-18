@@ -87,8 +87,9 @@
   .sku { display: none; }
   body.sku-wave .sku.wave { display: block; }
   body.sku-koala .sku.koala { display: block; }
+  body.sku-f180 .sku.f180 { display: block; }
 
-  .catalog { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
+  .catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 22px; }
   .pick {
     display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: center;
     background: var(--card); border: 1px solid var(--line); border-radius: 18px;
@@ -113,6 +114,7 @@
   }
   .hero-photo.wave { background-image: url("02_外型/WAVE-LC-R01_hero_34.jpg"); }
   .hero-photo.koala { background-image: url("01_主設計師/無尾熊-衣帽架/hero.png"); }
+  .hero-photo.f180 { background-image: url("01_主設計師/旋轉繪圖櫃/hero.jpg"); }
   .hero-photo i {
     position: absolute; left: 22px; bottom: 20px;
     color: #fff; font-style: normal; font-size: 12px;
@@ -251,6 +253,7 @@
     <div class="skus" id="skus">
       <button type="button" data-sku="wave" class="on">WAVE</button>
       <button type="button" data-sku="koala">KOALA</button>
+      <button type="button" data-sku="f180">F180</button>
     </div>
     <div class="langs" id="langs">
       <button type="button" data-lang="zh" class="on">中文</button>
@@ -285,6 +288,14 @@
             <p data-i18n="cat.koalad">Flower base · 9 pegs · koala plaque</p>
           </div>
         </button>
+        <button class="pick" data-pick="f180" type="button" onclick="setSku('f180')">
+          <img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="F180">
+          <div>
+            <div class="num">03 · F180-RC-001</div>
+            <h3 data-i18n="cat.f180">旋轉繪圖櫃</h3>
+            <p data-i18n="cat.f180d">Turntable tower · boards · bins</p>
+          </div>
+        </button>
       </div>
 
       <div class="sku wave">
@@ -314,6 +325,22 @@
               <div class="stat"><b>Ø180</b><s data-i18n="k.home.base">base mm</s></div>
               <div class="stat"><b>~1280</b><s data-i18n="k.home.ht">H mm</s></div>
               <div class="stat"><b>9</b><s data-i18n="k.home.hooks">pegs 55°</s></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sku f180">
+        <div class="hero">
+          <div class="hero-photo f180" onclick="zoom(this)"><i>F180-RC-001</i></div>
+          <div class="hero-copy">
+            <div class="kicker">BJM FURNITURE DESIGN</div>
+            <h1 data-i18n="f.home.title">旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em></h1>
+            <p class="lede" data-i18n="f.home.lede">以主設子夾為準。同一骨架可換成收納箱、繪圖板、書擋。</p>
+            <div class="stats">
+              <div class="stat"><b>560×560</b><s data-i18n="home.wh">W × D mm</s></div>
+              <div class="stat"><b>1150</b><s data-i18n="home.ht">H mm</s></div>
+              <div class="stat"><b>R180</b><s data-i18n="f.home.r">corner</s></div>
             </div>
           </div>
         </div>
@@ -404,6 +431,44 @@
               <tr><td data-i18n="k.des.d2">立柱 ×2 / 總高約</td><td class="n">Φ41×615 / ~1280</td></tr>
               <tr><td data-i18n="k.des.d3">掛鉤 / 仰角 / 數量</td><td class="n">Φ18×100 / 55° / 9</td></tr>
               <tr><td data-i18n="k.des.d4">層距（上柱底起）</td><td class="n">105 · 195 · 205</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="sku f180">
+        <div class="grid-2">
+          <div>
+            <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="f180"></div>
+            <div class="caption">F180-RC-001</div>
+          </div>
+          <div class="card">
+            <h3 data-i18n="f.des.how">主設讀到的檔</h3>
+            <ul>
+              <li data-i18n="f.des.h1">空塔／裝箱渲染、客廳場景、尺寸 PDF、NX .prt</li>
+              <li data-i18n="f.des.h2">560×560×1150，四角 R180，層高 220／405／405</li>
+              <li data-i18n="f.des.h3">模組：塑膠箱、繪圖板、書擋、木掛盒</li>
+            </ul>
+            <div class="files">
+              <a href="01_主設計師/旋轉繪圖櫃/F180-尺寸圖.pdf">PDF</a>
+              <a href="01_主設計師/888更新規則.txt">888</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:18px">
+          <div class="card">
+            <h3 data-i18n="des.ask">待確認</h3>
+            <div class="choices" id="decisions-f180"></div>
+            <p class="ok" id="saved-f180"></p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="des.dim">鎖定尺寸</h3>
+            <table>
+              <tr><th data-i18n="des.item">Item</th><th class="n">mm</th></tr>
+              <tr><td data-i18n="f.des.d1">寬 / 深 / 高</td><td class="n">560 / 560 / 1150</td></tr>
+              <tr><td data-i18n="f.des.d2">層高 上／中／下</td><td class="n">220 / 405 / 405</td></tr>
+              <tr><td data-i18n="f.des.d3">內淨寬 / 側袋</td><td class="n">284 / 260</td></tr>
+              <tr><td data-i18n="f.des.d4">繪圖板寬 / 抽出</td><td class="n">260 / 297</td></tr>
             </table>
           </div>
         </div>
@@ -554,6 +619,64 @@
           </div>
         </div>
       </div>
+
+      <div class="sku f180">
+        <div class="kicker" data-i18n="form.kicker">02 · Form</div>
+        <h2 data-i18n="f.form.title">圓角塔、可轉、可換</h2>
+        <p class="sub" data-i18n="f.form.sub">同一骨架換模組：箱、繪圖板、書擋、掛盒。</p>
+        <div class="grid-2">
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="empty"></div><div class="caption" data-i18n="f.form.r1">Empty tower</div></div>
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/旋轉繪圖櫃/view-bins.jpg" alt="bins"></div><div class="caption" data-i18n="f.form.r2">With bins</div></div>
+        </div>
+        <h3 style="margin:22px 0 10px" data-i18n="form.scenes">Scenes</h3>
+        <div class="grid-3">
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/旋轉繪圖櫃/SCENE_family.jpg" alt="family"></div><div class="caption" data-i18n="f.form.s1">Module family</div></div>
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/旋轉繪圖櫃/SCENE_living.jpg" alt="living"></div><div class="caption" data-i18n="form.s1">Living room</div></div>
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/旋轉繪圖櫃/SCENE_use.jpg" alt="use"></div><div class="caption" data-i18n="f.form.s3">In use</div></div>
+        </div>
+        <h3 style="margin:22px 0 10px" data-i18n="form.ergo">Ergonomics</h3>
+        <div class="grid-2">
+          <div class="ergo">
+            <svg viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" aria-label="F180 heights">
+              <rect width="560" height="380" fill="#fffcf7"/>
+              <line x1="40" y1="330" x2="530" y2="330" stroke="#1c1915" stroke-width="1.5"/>
+              <rect x="120" y="318" width="120" height="12" rx="4" fill="#E4C9A0" stroke="#3A2A18"/>
+              <rect x="148" y="86" width="64" height="232" fill="#F4F1EA" stroke="#3A2A18"/>
+              <rect x="120" y="86" width="120" height="12" rx="4" fill="#E4C9A0" stroke="#3A2A18"/>
+              <rect x="120" y="154" width="120" height="10" rx="3" fill="#E4C9A0" stroke="#3A2A18"/>
+              <rect x="120" y="236" width="120" height="10" rx="3" fill="#E4C9A0" stroke="#3A2A18"/>
+              <line x1="80" y1="330" x2="80" y2="86" stroke="#8B5A2B" stroke-width=".8"/>
+              <text x="58" y="210" fill="#8B5A2B" font-size="12" transform="rotate(-90 58 210)">1150</text>
+              <text x="260" y="150" fill="#2E6B4F" font-size="12">220</text>
+              <text x="260" y="210" fill="#2E6B4F" font-size="12">405</text>
+              <text x="260" y="290" fill="#2E6B4F" font-size="12">405</text>
+              <circle cx="400" cy="70" r="10" fill="#2a241c"/>
+              <line x1="400" y1="80" x2="400" y2="200" stroke="#2a241c" stroke-width="5"/>
+              <line x1="400" y1="200" x2="388" y2="330" stroke="#2a241c" stroke-width="5"/>
+              <line x1="400" y1="200" x2="416" y2="330" stroke="#2a241c" stroke-width="5"/>
+              <text x="422" y="180" fill="#6B6560" font-size="11">1750 adult</text>
+              <circle cx="470" cy="190" r="8" fill="#2a241c"/>
+              <line x1="470" y1="198" x2="470" y2="260" stroke="#2a241c" stroke-width="4"/>
+              <line x1="470" y1="260" x2="462" y2="330" stroke="#2a241c" stroke-width="4"/>
+              <line x1="470" y1="260" x2="480" y2="330" stroke="#2a241c" stroke-width="4"/>
+              <text x="482" y="250" fill="#6B6560" font-size="11">1200 child</text>
+            </svg>
+          </div>
+          <div class="card">
+            <h3 data-i18n="form.body">Human factors</h3>
+            <ul>
+              <li data-i18n="f.form.b1">1150 is standing-storage height, not a desk</li>
+              <li data-i18n="f.form.b2">Top bay 220: kids tip-toe for the upper bin</li>
+              <li data-i18n="f.form.b3">Lock the turntable before pulling drawing boards</li>
+              <li data-i18n="f.form.b4">Kids room: wall tether + pinch-safe shelf gaps</li>
+            </ul>
+            <div class="files">
+              <a href="02_外型/旋轉繪圖櫃/01_造型說明.txt" data-i18n="k.form.f1">Form notes</a>
+              <a href="02_外型/旋轉繪圖櫃/02_人體工學.txt" data-i18n="k.form.f2">Ergo notes</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="r3" class="page">
@@ -666,6 +789,40 @@
           </div>
         </div>
       </div>
+
+      <div class="sku f180">
+        <div class="kicker" data-i18n="st.kicker">03 · Structure / Material</div>
+        <h2 data-i18n="f.st.title">層板塔、軸承、模組槽</h2>
+        <p class="sub" data-i18n="f.st.sub">3 軸板式。軸承必須能鎖。塑膠箱外購對口 284。</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3 data-i18n="st.principles">Structure</h3>
+            <ul>
+              <li data-i18n="f.st.p1">Four 20 mm plates 560×560 R180</li>
+              <li data-i18n="f.st.p2">White uprights, inner span 284</li>
+              <li data-i18n="f.st.p3">Lockable lazy-susan under the base</li>
+              <li data-i18n="f.st.p4">Drawing boards pull 297 and must not drop</li>
+              <li data-i18n="f.st.p5">8 kg per shelf, 25 kg whole</li>
+            </ul>
+            <div class="files">
+              <a href="03_結構與材料/旋轉繪圖櫃/01_結構設計說明.txt" data-i18n="st.f1">Notes</a>
+              <a href="03_結構與材料/旋轉繪圖櫃/F180-RC-001_BOM_RevA.csv">BOM</a>
+              <a href="03_結構與材料/旋轉繪圖櫃/F180-尺寸圖.pdf">PDF</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>BOM · F180-RC-001</h3>
+            <table>
+              <tr><th>#</th><th data-i18n="des.item">Part</th><th>Spec</th><th class="n">Qty</th></tr>
+              <tr><td>A</td><td data-i18n="f.bom.a">Shelves</td><td>560×560×20 R180</td><td class="n">4</td></tr>
+              <tr><td>B</td><td data-i18n="f.bom.b">Uprights</td><td>span 284</td><td class="n">2</td></tr>
+              <tr><td>C</td><td data-i18n="f.bom.c">Turntable</td><td>lockable</td><td class="n">1</td></tr>
+              <tr><td>D</td><td data-i18n="f.bom.d">Boards</td><td>W260 pull 297</td><td class="n">2</td></tr>
+              <tr><td>H</td><td data-i18n="f.bom.h">Bins</td><td>fit 284</td><td class="n">4</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="r4" class="page">
@@ -758,6 +915,45 @@
           </div>
         </div>
       </div>
+
+      <div class="sku f180">
+        <div class="kicker" data-i18n="pr.kicker">04 · Production / CNC</div>
+        <h2 data-i18n="pr.title">Prep → White body → Finish → Pack</h2>
+        <p class="sub" data-i18n="f.pr.sub">Panel CNC. No 5-axis.</p>
+        <div class="flow">
+          <div class="card"><div class="num">01</div><h3 data-i18n="pr.m1">Prep</h3><p data-i18n="f.pr.m1d"></p></div>
+          <div class="card"><div class="num">02</div><h3 data-i18n="pr.m2">White body</h3><p data-i18n="f.pr.m2d"></p></div>
+          <div class="card"><div class="num">03</div><h3 data-i18n="pr.m3">Finish</h3><p data-i18n="f.pr.m3d"></p></div>
+          <div class="card"><div class="num">04</div><h3 data-i18n="pr.m4">Pack</h3><p data-i18n="f.pr.m4d"></p></div>
+        </div>
+        <div class="grid-3" style="margin-top:18px">
+          <div class="card"><h3 data-i18n="pr.h1">Prototype hours</h3><div class="stat"><b>8–14 h</b><s data-i18n="f.pr.h1s">incl. bearing jig</s></div></div>
+          <div class="card"><h3 data-i18n="pr.h2">Small-lot hours</h3><div class="stat"><b>2.0–3.5 h</b><s data-i18n="k.pr.h2s">after piece 10</s></div></div>
+          <div class="card"><h3 data-i18n="pr.h3">Yield</h3><div class="stat"><b>panel</b><s data-i18n="f.pr.h3s">3-axis nest</s></div></div>
+        </div>
+        <div class="grid-2" style="margin-top:18px">
+          <div class="card">
+            <h3 data-i18n="pr.price">Factory (VN)</h3>
+            <table>
+              <tr><th></th><th class="n" data-i18n="pr.proto">Proto</th><th class="n" data-i18n="pr.lot">Lot / pc</th></tr>
+              <tr><td data-i18n="pr.exw">EXW</td><td class="n">NT$ 4.0–7.2k</td><td class="n">NT$ 1.8–3.2k</td></tr>
+            </table>
+            <p class="note" data-i18n="f.pr.note">Base tower + bins. Extra modules quoted separately. Kids finish EN 71-3.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="pr.ops">Shop notes</h3>
+            <ul>
+              <li data-i18n="f.pr.o1">Cut R180 and the axle hole in one nest</li>
+              <li data-i18n="f.pr.o2">Lock the bearing, spin 3 turns, check rub</li>
+              <li data-i18n="f.pr.o3">Flat pack: plates / uprights / modules</li>
+            </ul>
+            <div class="files">
+              <a href="04_生產與CNC/旋轉繪圖櫃/03_備料白身噴漆包材.txt" data-i18n="pr.title">Flow</a>
+              <a href="03_結構與材料/旋轉繪圖櫃/F180-尺寸圖.pdf">PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="cloud" class="page">
@@ -786,6 +982,41 @@ const I18N = {
     "nav.home":"總覽","nav.design":"主設","nav.form":"外型","nav.struct":"結構／材料","nav.prod":"生產／CNC",
     "cat.wave":"波浪椅","cat.waved":"實木休閒椅 · 層積 A/B/C",
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
+    "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
+    "f.home.title":"旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em>",
+    "f.home.lede":"以主設子夾「旋轉繪圖櫃」為準。同一骨架可換成收納箱、繪圖板、書擋。",
+    "f.home.r":"圓角",
+    "f.des.how":"主設讀到的檔","f.des.h1":"空塔／裝箱渲染、客廳場景、尺寸 PDF（NX 只留雲端）",
+    "f.des.h2":"560×560×1150，四角 R180，層高 220／405／405",
+    "f.des.h3":"模組：塑膠箱、繪圖板、書擋、木掛盒",
+    "f.des.d1":"寬 / 深 / 高","f.des.d2":"層高 上／中／下","f.des.d3":"內淨寬 / 側袋","f.des.d4":"繪圖板寬 / 抽出",
+    "f.form.title":"圓角塔、可轉、可換","f.form.sub":"同一骨架換模組：箱、繪圖板、書擋、掛盒。",
+    "f.form.r1":"空塔","f.form.r2":"裝箱","f.form.s1":"模組家族","f.form.s3":"使用中",
+    "f.form.b1":"1150 是站著收納高度，不是書桌",
+    "f.form.b2":"上層 220：小孩拿最上面箱子要踮腳",
+    "f.form.b3":"抽繪圖板前先鎖旋轉",
+    "f.form.b4":"童房：牆扣＋層縫防夾",
+    "f.st.title":"層板塔、軸承、模組槽","f.st.sub":"3 軸板式。軸承必須能鎖。塑膠箱外購對口 284。",
+    "f.st.p1":"四片 20 mm 層板 560×560 R180",
+    "f.st.p2":"白立板，內距 284",
+    "f.st.p3":"底座可鎖旋轉軸承",
+    "f.st.p4":"繪圖板抽出 297 不可掉",
+    "f.st.p5":"每層 8 kg，整架 25 kg",
+    "f.bom.a":"層板","f.bom.b":"立板","f.bom.c":"旋轉座","f.bom.d":"繪圖板","f.bom.h":"塑膠箱",
+    "f.pr.sub":"板式 3 軸。不需要五軸。",
+    "f.pr.m1d":"層板 20 mm 松木／橡膠木，含水 8–12%。立板 16–18 mm。軸承與箱子先定規格再開槽。係數 1.12。",
+    "f.pr.m2d":"層板 R180 與軸孔一次過。立板槽對 20。繪圖板試抽 297。軸承預鎖轉 3 圈檢刮。",
+    "f.pr.m3d":"立板水性白，層板硬質油。兒童漆 EN 71-3。軸孔內不積漆。",
+    "f.pr.m4d":"拆裝：層板、立板、模組、軸承、牆扣、說明。外箱約 600×600×180。標每層 8 kg。",
+    "f.pr.h1s":"含軸承治具","f.pr.h3s":"3 軸套裁",
+    "f.pr.note":"基本塔＋箱。其他模組另報。童用漆 EN 71-3。",
+    "f.pr.o1":"R180 與軸孔同一套裁","f.pr.o2":"鎖軸承、轉 3 圈、看刮","f.pr.o3":"拆裝：板／立板／模組",
+    "f.mod":"模組","f.mod1":"塑膠箱","f.mod2":"繪圖板","f.mod3":"書擋＋掛盒","f.mod4":"全模組",
+    "f.rev.e1":"總高 1150 適合作畫／擺物，不是成人書桌。",
+    "f.rev.e2":"小孩拿最上層箱子要踮腳，箱底加止滑。",
+    "f.rev.e3":"旋轉＋抽板同時做會偏載，軸承必須能鎖。",
+    "f.rev.e4":"層縫夾手：間隙收到 ≤5 或 ≥12。童房加牆扣。",
+    "f.rev.e5":"塑膠箱是外購件，口寬必須對 284。",
     "home.title":"浪形實木休閒椅<br><em>點選職位即可操作</em>",
     "home.lede":"主設是你的資料夾。每個子夾是一個產品。快捷鍵 1–4，Esc 回總覽。",
     "home.c1":"你的資料夾。想法、照片、尺寸直接丟進來。子夾 = 產品。",
@@ -873,6 +1104,41 @@ const I18N = {
     "nav.home":"Overview","nav.design":"Design","nav.form":"Form","nav.struct":"Structure / Material","nav.prod":"Production / CNC",
     "cat.wave":"Wave lounge","cat.waved":"Solid-wood lounge · laminated A/B/C",
     "cat.koala":"Koala coat rack","cat.koalad":"Flower base · 9 pegs · koala plaque",
+    "cat.f180":"Rotate drawing tower","cat.f180d":"Turntable · boards · bins",
+    "f.home.title":"Rotate drawing tower<br><em>Round-square · turn · swap modules</em>",
+    "f.home.lede":"Source is the F180 folder in Design. One frame, swap bins, boards or bookends.",
+    "f.home.r":"corner R",
+    "f.des.how":"Files read from Design","f.des.h1":"Empty / loaded renders, living scenes, size PDF (NX stays on Drive)",
+    "f.des.h2":"560×560×1150, corners R180, bays 220 / 405 / 405",
+    "f.des.h3":"Modules: bins, drawing boards, bookends, hanging box",
+    "f.des.d1":"W / D / H","f.des.d2":"Bay H top / mid / low","f.des.d3":"Inner W / side pocket","f.des.d4":"Board W / pull",
+    "f.form.title":"Round-square tower","f.form.sub":"Same frame, swap bins, boards, bookends, hanging box.",
+    "f.form.r1":"Empty","f.form.r2":"With bins","f.form.s1":"Module family","f.form.s3":"In use",
+    "f.form.b1":"1150 is standing storage, not a desk",
+    "f.form.b2":"Top bay 220: kids tip-toe for the upper bin",
+    "f.form.b3":"Lock the turntable before pulling boards",
+    "f.form.b4":"Kids room: wall tether + pinch-safe gaps",
+    "f.st.title":"Plates, bearing, module slots","f.st.sub":"3-axis panels. Bearing must lock. Bought bins fit 284.",
+    "f.st.p1":"Four 20 mm plates 560×560 R180",
+    "f.st.p2":"White uprights, inner span 284",
+    "f.st.p3":"Lockable lazy-susan under the base",
+    "f.st.p4":"Boards pull 297 and must not drop",
+    "f.st.p5":"8 kg per shelf, 25 kg whole",
+    "f.bom.a":"Shelves","f.bom.b":"Uprights","f.bom.c":"Turntable","f.bom.d":"Boards","f.bom.h":"Bins",
+    "f.pr.sub":"Panel CNC. No 5-axis.",
+    "f.pr.m1d":"20 mm pine/rubberwood shelves, MC 8–12%. Uprights 16–18 mm. Lock bearing and bin size before cutting. Factor 1.12.",
+    "f.pr.m2d":"Cut R180 and axle hole together. Upright slots for 20 mm. Test board pull 297. Lock bearing, spin 3 turns.",
+    "f.pr.m3d":"Waterborne white on uprights, hardwax on shelves. EN 71-3. No paint in the axle hole.",
+    "f.pr.m4d":"Flat pack: plates, uprights, modules, bearing, tether, sheet. Carton ~600×600×180. Mark 8 kg/shelf.",
+    "f.pr.h1s":"incl. bearing jig","f.pr.h3s":"3-axis nest",
+    "f.pr.note":"Base tower + bins. Extra modules quoted separately. Kids finish EN 71-3.",
+    "f.pr.o1":"R180 and axle hole in one nest","f.pr.o2":"Lock, spin 3 turns, check rub","f.pr.o3":"Flat pack: plates / uprights / modules",
+    "f.mod":"Modules","f.mod1":"Bins","f.mod2":"Drawing boards","f.mod3":"Bookends + box","f.mod4":"Full set",
+    "f.rev.e1":"Height 1150 is standing storage / kids drawing, not an adult desk.",
+    "f.rev.e2":"Kids tip-toe for the top bin; add a stop so the bin cannot slide out.",
+    "f.rev.e3":"Turning while a board is out is offset load. The bearing must lock.",
+    "f.rev.e4":"Shelf gaps pinch fingers: close to ≤5 or open to ≥12. Kids room: wall tether.",
+    "f.rev.e5":"Bins are bought-in. Opening width must stay 284.",
     "home.title":"Wave solid-wood lounge<br><em>Open a section to work</em>",
     "home.lede":"Design is your drop folder. Each subfolder is a product. Keys 1–4, Esc home.",
     "home.c1":"Your folder. Drop ideas, photos, dimensions. Subfolder = product.",
@@ -960,6 +1226,41 @@ const I18N = {
     "nav.home":"Tổng quan","nav.design":"Thiết kế","nav.form":"Ngoại hình","nav.struct":"Kết cấu / Vật liệu","nav.prod":"Sản xuất / CNC",
     "cat.wave":"Ghế sóng","cat.waved":"Lounge gỗ đặc · ép lớp A/B/C",
     "cat.koala":"Giá treo Koala","cat.koalad":"Đế hoa · 9 móc · bảng koala",
+    "cat.f180":"Tủ xoay vẽ","cat.f180d":"Xoay · bảng vẽ · hộp",
+    "f.home.title":"Tủ xoay vẽ<br><em>Tháp góc tròn · xoay · đổi module</em>",
+    "f.home.lede":"Theo thư mục F180 trong Design. Một khung, đổi hộp, bảng vẽ hoặc chặn sách.",
+    "f.home.r":"góc R",
+    "f.des.how":"Tệp đọc từ Thiết kế","f.des.h1":"Render trống / có hộp, cảnh phòng khách, PDF (NX để trên Drive)",
+    "f.des.h2":"560×560×1150, góc R180, tầng 220 / 405 / 405",
+    "f.des.h3":"Module: hộp, bảng vẽ, chặn sách, hộp treo",
+    "f.des.d1":"Rộng / sâu / cao","f.des.d2":"Cao tầng trên / giữa / dưới","f.des.d3":"Rộng trong / túi bên","f.des.d4":"Bảng rộng / kéo",
+    "f.form.title":"Tháp góc tròn","f.form.sub":"Cùng khung, đổi hộp, bảng, chặn sách, hộp treo.",
+    "f.form.r1":"Trống","f.form.r2":"Có hộp","f.form.s1":"Họ module","f.form.s3":"Đang dùng",
+    "f.form.b1":"1150 là chiều cao đứng cất, không phải bàn",
+    "f.form.b2":"Tầng trên 220: trẻ phải kiễng lấy hộp",
+    "f.form.b3":"Khóa xoay trước khi kéo bảng",
+    "f.form.b4":"Phòng trẻ: dây tường + khe chống kẹp",
+    "f.st.title":"Tấm, bạc đạn, khe module","f.st.sub":"CNC tấm 3 trục. Bạc đạn phải khóa. Hộp mua vừa 284.",
+    "f.st.p1":"Bốn tấm 20 mm 560×560 R180",
+    "f.st.p2":"Cột trắng, khoảng 284",
+    "f.st.p3":"Mâm xoay khóa được dưới đế",
+    "f.st.p4":"Bảng kéo 297 không rơi",
+    "f.st.p5":"8 kg / tầng, 25 kg cả tủ",
+    "f.bom.a":"Tấm","f.bom.b":"Cột","f.bom.c":"Mâm xoay","f.bom.d":"Bảng vẽ","f.bom.h":"Hộp",
+    "f.pr.sub":"CNC tấm. Không cần 5 trục.",
+    "f.pr.m1d":"Tấm 20 mm thông / cao su, ẩm 8–12%. Cột 16–18 mm. Chốt bạc đạn và cỡ hộp trước khi cắt. Hệ số 1.12.",
+    "f.pr.m2d":"Cắt R180 và lỗ trục cùng lúc. Khe cột cho 20 mm. Thử kéo bảng 297. Khóa bạc đạn, xoay 3 vòng.",
+    "f.pr.m3d":"Sơn trắng nước cột, dầu cứng tấm. EN 71-3. Không sơn trong lỗ trục.",
+    "f.pr.m4d":"Tháo: tấm, cột, module, bạc đạn, dây, tờ. Thùng ~600×600×180. Ghi 8 kg/tầng.",
+    "f.pr.h1s":"gồm jig bạc đạn","f.pr.h3s":"lồng 3 trục",
+    "f.pr.note":"Tháp cơ bản + hộp. Module khác báo riêng. Sơn trẻ em EN 71-3.",
+    "f.pr.o1":"R180 và lỗ trục một lồng","f.pr.o2":"Khóa, xoay 3 vòng, xem cạ","f.pr.o3":"Tháo: tấm / cột / module",
+    "f.mod":"Module","f.mod1":"Hộp","f.mod2":"Bảng vẽ","f.mod3":"Chặn sách + hộp treo","f.mod4":"Đủ bộ",
+    "f.rev.e1":"Cao 1150 là cất đứng / trẻ vẽ, không phải bàn người lớn.",
+    "f.rev.e2":"Trẻ kiễng lấy hộp trên; thêm chốt để hộp không tuột.",
+    "f.rev.e3":"Xoay khi bảng đang kéo là lệch tải. Bạc đạn phải khóa.",
+    "f.rev.e4":"Khe tầng kẹp tay: ≤5 hoặc ≥12. Phòng trẻ: dây tường.",
+    "f.rev.e5":"Hộp mua ngoài. Miệng phải giữ 284.",
     "home.title":"Ghế lounge gỗ đặc hình sóng<br><em>Chọn mục để làm việc</em>",
     "home.lede":"Thiết kế là thư mục của bạn. Mỗi thư mục con là một sản phẩm. Phím 1–4, Esc về trang chủ.",
     "home.c1":"Thư mục của bạn. Thả ý tưởng, ảnh, kích thước. Thư mục con = sản phẩm.",
@@ -1050,6 +1351,15 @@ function t(k) {
 }
 
 function decisionsSpec() {
+  if (currentSku === "f180") {
+    return [
+      { id: "f_qty", q: t("d.qty"), type: "text", ph: t("d.qtyph") },
+      { id: "f_wood", q: t("d.wood"), type: "radio", opts: [t("k.rw"), t("d.oak"), t("d.beech")] },
+      { id: "f_mod", q: t("f.mod"), type: "radio", opts: [t("f.mod1"), t("f.mod2"), t("f.mod3"), t("f.mod4")] },
+      { id: "f_anti", q: t("k.anti"), type: "radio", opts: [t("k.wall"), t("k.steel")] },
+      { id: "f_site", q: t("d.site"), type: "radio", opts: [t("d.tw"), t("d.vn")] }
+    ];
+  }
   if (currentSku === "koala") {
     return [
       { id: "k_qty", q: t("d.qty"), type: "text", ph: t("d.qtyph") },
@@ -1095,10 +1405,11 @@ function applyLang(lang) {
   runReview();
 }
 
+const SKUS = ["wave", "koala", "f180"];
 function setSku(sku) {
-  currentSku = sku === "koala" ? "koala" : "wave";
+  currentSku = SKUS.indexOf(sku) >= 0 ? sku : "wave";
   localStorage.setItem(SKU_KEY, currentSku);
-  document.body.classList.remove("sku-wave", "sku-koala");
+  document.body.classList.remove("sku-wave", "sku-koala", "sku-f180");
   document.body.classList.add("sku-" + currentSku);
   document.querySelectorAll("#skus button").forEach(b => b.classList.toggle("on", b.dataset.sku === currentSku));
   document.querySelectorAll(".pick").forEach(b => b.classList.toggle("on", b.dataset.pick === currentSku));
@@ -1135,7 +1446,13 @@ function runReview() {
   const box = document.getElementById("rev-list");
   if (!box) return;
   const items = [];
-  if (currentSku === "koala") {
+  if (currentSku === "f180") {
+    items.push({ lv: "ok", msg: t("f.rev.e1") });
+    items.push({ lv: "warn", msg: t("f.rev.e2") });
+    items.push({ lv: "err", msg: t("f.rev.e3") });
+    items.push({ lv: "warn", msg: t("f.rev.e4") });
+    items.push({ lv: "ok", msg: t("f.rev.e5") });
+  } else if (currentSku === "koala") {
     items.push({ lv: "warn", msg: t("k.rev.e1") });
     items.push({ lv: "err", msg: t("k.rev.e2") });
     items.push({ lv: "ok", msg: t("k.rev.e3") });
@@ -1161,18 +1478,22 @@ function runReview() {
   box.innerHTML = items.map(it => `<li><span class="tag ${it.lv}">${it.lv.toUpperCase()}</span>${it.msg}</li>`).join("");
 }
 
-function storeKey() { return currentSku === "koala" ? "koala-atelier-v1" : "wave-atelier-v1"; }
+function storeKey() {
+  if (currentSku === "koala") return "koala-atelier-v1";
+  if (currentSku === "f180") return "f180-atelier-v1";
+  return "wave-atelier-v1";
+}
 function load() {
   try { return JSON.parse(localStorage.getItem(storeKey()) || "{}"); } catch { return {}; }
 }
 function save(d) {
   localStorage.setItem(storeKey(), JSON.stringify(d));
-  const el = document.getElementById(currentSku === "koala" ? "saved-koala" : "saved-wave");
+  const el = document.getElementById("saved-" + currentSku);
   if (el) el.textContent = t("saved");
 }
 
 function renderDecisions() {
-  const box = document.getElementById(currentSku === "koala" ? "decisions-koala" : "decisions-wave");
+  const box = document.getElementById("decisions-" + currentSku);
   if (!box) return;
   const data = load();
   box.innerHTML = decisionsSpec().map(item => {
