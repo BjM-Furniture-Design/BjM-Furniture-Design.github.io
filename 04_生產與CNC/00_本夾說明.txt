@@ -12,3 +12,4 @@
   WAVE-LC-R03_side.jpg
   WAVE-LC-001_3view.png／.pdf
   WAVE-LC-001_BOM_RevA.xlsx
+  訓練／  ← 課綱、書目、圖庫（基礎來源）

@@ -1,0 +1,39 @@
+【04 生產／CNC｜基礎從哪裡來】
+
+生產不是「機器開得動」。底只有三層。
+
+第一層　製造原理
+  任何零件先問：切、車、銑、砂、彎、組、塗、裝，哪一種最便宜且穩。
+  根基：
+    Kalpakjian / Schmid　Manufacturing Engineering and Technology
+    Groover　　Fundamentals of Modern Manufacturing
+    Boothroyd　　DFMA（為組裝而設計）
+    Ulrich / Eppinger　　產品開發
+  波浪椅禁止整塊掏空，是這一層：利用率 12% 的製程不是設計。
+  衣帽架用車床＋3軸、繪圖櫃用板式，也是這一層。
+
+第二層　刀路與幾何
+  CNC 只是把幾何變成刀具能走的路。五軸不是比較威，是少翻面。
+  根基：
+    Smid　　CNC Programming Handbook
+    Piegl / Tiller　　The NURBS Book
+    Choi / Jerard　　Sculptured Surface Machining
+    ASME Y14.5　　公差
+    BACCI / CMS / Homag 應用（廠內，不是書）
+  精修留砂 0.25–0.35、刀軸 ±40°、55° 鑽模，全部要對回這一層。
+
+第三層　木工廠怎麼活
+  乾燥、白身、塗裝、包材、節拍、粉塵、VOC、客訴。
+  根基：
+    FPL　　Dry Kiln Operator's Manual（可合法下載）
+    Flexner　　Understanding Wood Finishing
+    Joyce / Frid / Rogowski　　接合與木工
+    Womack / Ohno / Shingo　　精實與換線
+    ISTA 3A / ASTM D4169　　運輸試驗
+    NFPA 664 / ISO 12100　　粉塵與機械安全
+  備料→白身→噴漆→包材，是這一層的工廠語言。
+
+生產職位每天問自己
+  1. 這件，最少翻幾次面？治具誰出錢？
+  2. 砂光會不會吃掉利潤？（椅子常常會）
+  3. 拆裝出貨後，客人能不能裝對？裝錯誰負責？

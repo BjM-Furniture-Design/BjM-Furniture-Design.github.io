@@ -1,0 +1,35 @@
+id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
+1,02,外型,Postell Jim,Furniture Design,Wiley,buy,手與木,家具設計全本,把類型、人體、結構、製程寫在同一本書裡，外型職位的入門教科書
+2,02,外型,Cranz Galen,The Chair: Rethinking Culture Body and Design,Norton,buy,人,椅子與身體,告訴你椅子失敗常常是文化假設錯了，不是線條不夠美
+3,02,外型,Tilley Alvin R. / Henry Dreyfuss Associates,The Measure of Man and Woman,Wiley,buy,人,人體尺度圖,工業設計人體尺度的根源圖冊，座高扶手伸手從這裡來
+4,02,外型,Panero Julius / Zelnik Martin,Human Dimension and Interior Space,Whitney,buy,人,室內與家具淨空,空間裡的人：通道、桌下、櫃前，場景圖用這本核
+5,02,外型,Pheasant Stephen / Haslegrave Christine,Bodyspace,CRC,buy,人,工作與座椅人因,人體測量學寫得最清楚的一本，百分位怎麼用
+6,02,外型,Norman Don,The Design of Everyday Things,Basic Books,buy,看,可用性,好看但用錯，是外型失職。對應複查助理
+7,02,外型,Lidwell William et al.,Universal Principles of Design,Rockport,buy,看,125條設計原則,接近、對齊、預設、回饋，審圖用
+8,02,外型,Ching Francis D.K.,Architecture: Form Space and Order,Wiley,buy,看,形體與空間秩序,控制線、軸線、虛實，浪形椅三條線的來源
+9,02,外型,Ching Francis D.K.,Interior Design Illustrated,Wiley,buy,看,室內尺度作圖,場景透視與家具佔地
+10,02,外型,Itten Johannes,The Art of Color,Wiley,buy,看,色彩對比,木色與布色怎麼配，不要只靠感覺
+11,02,外型,Albers Josef,Interaction of Color,Yale,buy,看,顏色互動,同一橡木在冷暖光下為什麼不像
+12,02,外型,Wong Wucius,Principles of Form and Design,Van Nostrand,buy,看,平面構成,重複、節奏、平衡，花座與掛鉤陣列
+13,02,外型,Habegger Jerryll / Osman Joseph H.,Sourcebook of Modern Furniture,Norton,buy,看,現代家具譜系,知道 Wegner / Aalto / Eames 差在哪，才不會亂抄
+14,02,外型,Fiell Charlotte & Peter,1000 Chairs,Taschen,buy,看,椅型圖鑑,類型學眼睛體操
+15,02,外型,Olivares Jonathan,A Taxonomy of Office Chairs,Phaidon,buy,看,辦公椅分類,機構與外殼怎麼分類
+16,02,外型,Fiell Charlotte & Peter,Industrial Design A-Z,Taschen,buy,看,工業設計年表,風格定位用
+17,02,外型,Sparke Penny,Furniture,Oxford,buy,看,家具簡史,給客戶講故事時有據
+18,02,外型,Pile John,A History of Interior Design,Wiley,buy,看,室內史,場景要像哪個時代
+19,02,外型,Heskett John,Industrial Design,Thames & Hudson,buy,看,工設是什麼,外型職位的職業史
+20,02,外型,Pye David,The Nature and Art of Workmanship,Cambridge / Bloomsbury,buy,手與木,工藝品質,自由工藝 vs 規定工藝，解釋為什麼手砂不能省
+21,02,外型,Pye David,The Nature and Aesthetics of Design,Bloomsbury,buy,手與木,設計美學,功能美不是裝飾
+22,02,外型,Rams Dieter / Klemp Klaus,Less but Better,Gestalten,buy,看,十項原則,誠實、長壽、不搶戲
+23,02,外型,Munari Bruno,Design as Art,Penguin,buy,看,觀察,把日常看成設計問題
+24,02,外型,Lawson Bryan,How Designers Think,Architectural Press,buy,看,設計思考過程,外型怎麼收斂方案
+25,02,外型,Cross Nigel,Design Thinking,Berg,buy,看,設計認知,草圖為什麼有效
+26,02,外型,Pallasmaa Juhani,The Eyes of the Skin,Wiley,buy,手與木,觸覺空間,家具是給身體的，不是給相機的
+27,02,外型,Tanizaki Junichiro,In Praise of Shadows,Leete's Island,buy,看,陰影與材料,木器要留陰影，不要一片亮
+28,02,外型,Nakashima George,The Soul of a Tree,Kodansha,buy,手與木,木之魂,板向、節疤、順紋的倫理
+29,02,外型,Krenov James,A Cabinetmaker's Notebook,Linden,buy,手與木,櫃匠筆記,細節決定氣質
+30,02,外型,Sudjic Deyan,The Language of Things,Penguin,buy,看,物件語言,品牌與符號，BjM 字標為什麼要克制
+31,02,外型,Forty Adrian,Objects of Desire,Thames & Hudson,buy,看,慾望與設計史,避免為新而新
+32,02,外型,Papanek Victor,Design for the Real World,Thames & Hudson,buy,人,真實世界,兒童衣帽架傾倒是倫理問題
+33,02,外型,Alexander Christopher,A Pattern Language,Oxford,buy,看,模式語言,客廳角落、玄關掛衣是模式不是風格
+34,02,外型,Thompson Rob,Manufacturing Processes for Design Professionals,Thames & Hudson,buy,手與木,設計者看製程,外型選形前先知道做不做得動

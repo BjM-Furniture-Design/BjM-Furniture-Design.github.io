@@ -1,0 +1,37 @@
+【03 結構／材料｜基礎從哪裡來】
+
+結構不是「加厚就好」。底只有三層。
+
+第一層　木材是活過的材料
+  細胞、年輪、紋理、含水、乾縮，決定它會不會裂、會不會走。
+  根基：
+    Hoadley　　Understanding Wood
+    FPL　　　　Wood Handbook（美國林產實驗室，可合法下載）
+    Dinwoodie　Timber: Its Nature and Behaviour
+  白橡導管、橡膠木均質、松木20 mm層板，全部要對回這一層。
+  含水 8–12% 不是口頭禪，是平衡含水與產地氣候。
+
+第二層　力
+  彎、剪、壓、劈、疲勞。家具最常死在節點，不是跨中。
+  根基：
+    Hibbeler　　Mechanics of Materials
+    Gordon　　　Structures / The New Science of Strong Materials
+    Roark　　　　Formulas for Stress and Strain
+    Ashby　　　　Materials Selection
+  波浪椅：前舌不單獨扛懸臂。衣帽架：Ø180 對 1280 是傾覆。
+  繪圖櫃：旋轉＋抽板是偏載。這些都是力，不是造型。
+
+第三層　家具自己的試驗
+  椅子、櫃、掛衣，有專用試驗，不是拿大樓規範硬套。
+  根基：
+    Eckelman　　Strength Design of Furniture
+    Smardzewski　Furniture Design and Engineering
+    EN 1728 / EN 12520　家用椅強度與耐久
+    BIFMA X5.1　　辦公椅
+    ISO 7170　　儲物家具
+  BOM 上的榫、銷、軸承、牆扣，要能對到「怎麼試、試幾次」。
+
+結構職位每天問自己
+  1. 力從哪進、從哪出、哪裡最窄？
+  2. 這塊木，紋怎麼走？濕了會往哪裡動？
+  3. 這件家具，對應哪一條試驗？還沒寫就先別量產。

@@ -1,0 +1,101 @@
+id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
+1,02,外型,Postell Jim,Furniture Design,Wiley,buy,手與木,家具設計全本,把類型、人體、結構、製程寫在同一本書裡，外型職位的入門教科書
+2,02,外型,Cranz Galen,The Chair: Rethinking Culture Body and Design,Norton,buy,人,椅子與身體,告訴你椅子失敗常常是文化假設錯了，不是線條不夠美
+3,02,外型,Tilley Alvin R. / Henry Dreyfuss Associates,The Measure of Man and Woman,Wiley,buy,人,人體尺度圖,工業設計人體尺度的根源圖冊，座高扶手伸手從這裡來
+4,02,外型,Panero Julius / Zelnik Martin,Human Dimension and Interior Space,Whitney,buy,人,室內與家具淨空,空間裡的人：通道、桌下、櫃前，場景圖用這本核
+5,02,外型,Pheasant Stephen / Haslegrave Christine,Bodyspace,CRC,buy,人,工作與座椅人因,人體測量學寫得最清楚的一本，百分位怎麼用
+6,02,外型,Norman Don,The Design of Everyday Things,Basic Books,buy,看,可用性,好看但用錯，是外型失職。對應複查助理
+7,02,外型,Lidwell William et al.,Universal Principles of Design,Rockport,buy,看,125條設計原則,接近、對齊、預設、回饋，審圖用
+8,02,外型,Ching Francis D.K.,Architecture: Form Space and Order,Wiley,buy,看,形體與空間秩序,控制線、軸線、虛實，浪形椅三條線的來源
+9,02,外型,Ching Francis D.K.,Interior Design Illustrated,Wiley,buy,看,室內尺度作圖,場景透視與家具佔地
+10,02,外型,Itten Johannes,The Art of Color,Wiley,buy,看,色彩對比,木色與布色怎麼配，不要只靠感覺
+11,02,外型,Albers Josef,Interaction of Color,Yale,buy,看,顏色互動,同一橡木在冷暖光下為什麼不像
+12,02,外型,Wong Wucius,Principles of Form and Design,Van Nostrand,buy,看,平面構成,重複、節奏、平衡，花座與掛鉤陣列
+13,02,外型,Habegger Jerryll / Osman Joseph H.,Sourcebook of Modern Furniture,Norton,buy,看,現代家具譜系,知道 Wegner / Aalto / Eames 差在哪，才不會亂抄
+14,02,外型,Fiell Charlotte & Peter,1000 Chairs,Taschen,buy,看,椅型圖鑑,類型學眼睛體操
+15,02,外型,Olivares Jonathan,A Taxonomy of Office Chairs,Phaidon,buy,看,辦公椅分類,機構與外殼怎麼分類
+16,02,外型,Fiell Charlotte & Peter,Industrial Design A-Z,Taschen,buy,看,工業設計年表,風格定位用
+17,02,外型,Sparke Penny,Furniture,Oxford,buy,看,家具簡史,給客戶講故事時有據
+18,02,外型,Pile John,A History of Interior Design,Wiley,buy,看,室內史,場景要像哪個時代
+19,02,外型,Heskett John,Industrial Design,Thames & Hudson,buy,看,工設是什麼,外型職位的職業史
+20,02,外型,Pye David,The Nature and Art of Workmanship,Cambridge / Bloomsbury,buy,手與木,工藝品質,自由工藝 vs 規定工藝，解釋為什麼手砂不能省
+21,02,外型,Pye David,The Nature and Aesthetics of Design,Bloomsbury,buy,手與木,設計美學,功能美不是裝飾
+22,02,外型,Rams Dieter / Klemp Klaus,Less but Better,Gestalten,buy,看,十項原則,誠實、長壽、不搶戲
+23,02,外型,Munari Bruno,Design as Art,Penguin,buy,看,觀察,把日常看成設計問題
+24,02,外型,Lawson Bryan,How Designers Think,Architectural Press,buy,看,設計思考過程,外型怎麼收斂方案
+25,02,外型,Cross Nigel,Design Thinking,Berg,buy,看,設計認知,草圖為什麼有效
+26,02,外型,Pallasmaa Juhani,The Eyes of the Skin,Wiley,buy,手與木,觸覺空間,家具是給身體的，不是給相機的
+27,02,外型,Tanizaki Junichiro,In Praise of Shadows,Leete's Island,buy,看,陰影與材料,木器要留陰影，不要一片亮
+28,02,外型,Nakashima George,The Soul of a Tree,Kodansha,buy,手與木,木之魂,板向、節疤、順紋的倫理
+29,02,外型,Krenov James,A Cabinetmaker's Notebook,Linden,buy,手與木,櫃匠筆記,細節決定氣質
+30,02,外型,Sudjic Deyan,The Language of Things,Penguin,buy,看,物件語言,品牌與符號，BjM 字標為什麼要克制
+31,02,外型,Forty Adrian,Objects of Desire,Thames & Hudson,buy,看,慾望與設計史,避免為新而新
+32,02,外型,Papanek Victor,Design for the Real World,Thames & Hudson,buy,人,真實世界,兒童衣帽架傾倒是倫理問題
+33,02,外型,Alexander Christopher,A Pattern Language,Oxford,buy,看,模式語言,客廳角落、玄關掛衣是模式不是風格
+34,02,外型,Thompson Rob,Manufacturing Processes for Design Professionals,Thames & Hudson,buy,手與木,設計者看製程,外型選形前先知道做不做得動
+35,03,結構材料,Hoadley R. Bruce,Understanding Wood,Taunton,buy,木材,木材入門聖經,紋理、含水、乾縮、強度，結構職位第一本
+36,03,結構材料,Hoadley R. Bruce,Identifying Wood,Taunton,buy,木材,認木材,顯微與巨觀認種，進料驗收
+37,03,結構材料,Forest Products Laboratory,Wood Handbook Wood as an Engineering Material FPL-GTR-282,USDA,PUBLIC,木材,工程木材手冊,可合法下載。強度表、含水、耐久的根
+38,03,結構材料,Dinwoodie J.M.,Timber: Its Nature and Behaviour,Spon,buy,木材,木材行為,學術上把濕度與力學連在一起
+39,03,結構材料,Bodig Jozsef / Jayne Benjamin A.,Mechanics of Wood and Wood Composites,Krieger,buy,力,木材力學,各向異性怎麼算
+40,03,結構材料,Kollmann Franz / Cote Wilfred,Principles of Wood Science and Technology,Springer,buy,木材,木材科學經典,細胞到板材
+41,03,結構材料,Tsoumis George,Science and Technology of Wood,Van Nostrand,buy,木材,木材科技,結構與加工性質
+42,03,結構材料,Desch H.E. / Dinwoodie J.M.,Timber Structure Properties Conversion and Use,Macmillan,buy,木材,製材與用途,從原木到家具料
+43,03,結構材料,Rowell Roger M.,Handbook of Wood Chemistry and Wood Composites,CRC,buy,木材,木材化學與複合,膠合、改質、甲醛
+44,03,結構材料,Eckelman Carl A.,Textbook of Product Engineering and Strength Design of Furniture,Purdue,buy,家具試驗,家具強度設計,椅子櫃體節點怎麼算，本職位核心
+45,03,結構材料,Smardzewski Jerzy,Furniture Design and Engineering,Springer,buy,家具試驗,家具工程,歐洲體系的家具結構
+46,03,結構材料,American Wood Council,NDS National Design Specification for Wood Construction,AWC,buy,力,木結構設計規範,容許應力與調整係數
+47,03,結構材料,CEN,EN 1995-1-1 Eurocode 5 Design of timber structures,CEN,buy,力,歐規木結構,出口歐盟時的語言
+48,03,結構材料,CEN,EN 1728 / EN 12520 Furniture seating strength and durability,CEN,buy,家具試驗,家用椅試驗,坐椅怎麼測，不是用感覺
+49,03,結構材料,BIFMA,BIFMA X5.1 Office Seating,BIFMA,buy,家具試驗,辦公椅試驗,若做辦公系列必備
+50,03,結構材料,ISO,ISO 7170 Furniture storage units test methods,ISO,buy,家具試驗,儲物試驗,繪圖櫃、層板用這個家族
+51,03,結構材料,Ashby Michael F.,Materials Selection in Mechanical Design,Butterworth-Heinemann,buy,力,選材圖,楊氏模量—密度圖，為什麼用木不用鋁
+52,03,結構材料,Ashby Michael / Johnson Kara,Materials and Design,Butterworth-Heinemann,buy,力,材料與感官,強度之外的觸感與視覺
+53,03,結構材料,Callister William / Rethwisch David,Materials Science and Engineering,Wiley,buy,力,材料科學通論,結晶、缺陷、疲勞的共同語言
+54,03,結構材料,Hibbeler Russell C.,Mechanics of Materials,Pearson,buy,力,材料力學課本,彎矩剪力撓度，力流怎麼畫
+55,03,結構材料,Budynas Richard / Nisbett Keith,Shigley's Mechanical Engineering Design,McGraw-Hill,buy,力,機械設計,銷、軸、疲勞安全係數
+56,03,結構材料,Young Warren / Budynas Richard,Roark's Formulas for Stress and Strain,McGraw-Hill,buy,力,應力公式手冊,薄板、環、懸臂查表
+57,03,結構材料,Gordon J.E.,Structures: Or Why Things Don't Fall Down,Da Capo,buy,力,結構直覺,用白話建立「為什麼會斷」
+58,03,結構材料,Gordon J.E.,The New Science of Strong Materials,Princeton,buy,力,材料強度科學,裂紋與韌性
+59,03,結構材料,Allen Edward / Zalewski Waclaw,Form and Forces,Wiley,buy,力,形與力,形狀本身就是結構
+60,03,結構材料,Engel Heino,Structure Systems,Hatje Cantz,buy,力,結構系統圖解,傳力路徑的眼睛
+61,03,結構材料,Lincoln William A.,World Woods in Color,Stobart Davies,buy,木材,世界木材色冊,對色與認種
+62,03,結構材料,Wagenfuehr Rudi,Holzatlas / Wood Atlas,Fachbuchverlag,buy,木材,木材圖鑑,解剖圖
+63,03,結構材料,Bootle Keith R.,Wood in Australia,McGraw-Hill,buy,木材,澳材與熱帶材,接近越南常見闊葉材思路
+64,03,結構材料,Farmer R.H.,Handbook of Hardwoods,HMSO,buy,木材,闊葉材手冊,傳統硬木性質表
+65,03,結構材料,ASTM,ASTM D143 Small Clear Specimens of Timber,ASTM,buy,家具試驗,小試片標準,認清實驗室強度 ≠ 家具強度
+66,03,結構材料,ASTM,ASTM D198 Static Tests of Lumber in Structural Sizes,ASTM,buy,家具試驗,實尺寸木材試驗,層積材驗證
+67,03,結構材料,SAC,GB/T 10357 Furniture mechanical property test,China GB,buy,家具試驗,中國家具力學試驗,越南 OEM 常按這套出貨
+68,04,生產CNC,Kalpakjian Serope / Schmid Steven,Manufacturing Engineering and Technology,Pearson,buy,製造原理,製造工程聖經,所有製程家族的地圖
+69,04,生產CNC,Groover Mikell P.,Fundamentals of Modern Manufacturing,Wiley,buy,製造原理,現代製造,材料＋製程＋系統
+70,04,生產CNC,Boothroyd Geoffrey et al.,Product Design for Manufacture and Assembly,CRC,buy,製造原理,為製造組裝而設計,分件為什麼這樣切
+71,04,生產CNC,Ulrich Karl / Eppinger Steven,Product Design and Development,McGraw-Hill,buy,製造原理,產品開發,從概念到量產的門
+72,04,生產CNC,Pahl Gerhard / Beitz Wolfgang,Engineering Design,Springer,buy,製造原理,工程設計方法,功能結構到原理解
+73,04,生產CNC,Oberg Erik et al.,Machinery's Handbook,Industrial Press,buy,刀路幾何,機械手冊,公差配合螺紋刀具速查
+74,04,生產CNC,Smid Peter,CNC Programming Handbook,Industrial Press,buy,刀路幾何,CNC程式,G代碼與刀補的根
+75,04,生產CNC,Altintas Yusuf,Manufacturing Automation,Cambridge,buy,刀路幾何,切削力學與CNC,顫振、轉速、五軸運動
+76,04,生產CNC,Choi Byoung K. / Jerard Robert B.,Sculptured Surface Machining,Springer,buy,刀路幾何,曲面加工,浪形椅外皮為什麼用sweep
+77,04,生產CNC,Piegl Les / Tiller Wayne,The NURBS Book,Springer,buy,刀路幾何,NURBS,CAM曲線的數學
+78,04,生產CNC,ASME,ASME Y14.5 Dimensioning and Tolerancing,ASME,buy,刀路幾何,GD&T,圖面上的公差語言
+79,04,生產CNC,Flexner Bob,Understanding Wood Finishing,Fox Chapel,buy,木工廠,塗裝,油、漆、導管、失敗模式
+80,04,生產CNC,USDA FPL / Simpson William T.,Dry Kiln Operator's Manual FPL Agric. Handbook 188,USDA,PUBLIC,木工廠,乾燥窯,可合法下載。含水是生產第一關
+81,04,生產CNC,Joyce Ernest / Capotosto Rosario,Encyclopedia of Furniture Making,Sterling,buy,木工廠,家具木工百科,傳統接合與工序
+82,04,生產CNC,Jackson Albert / Day David,The Complete Manual of Woodworking,Knopf,buy,木工廠,木工全手冊,工具與基本操作
+83,04,生產CNC,Rogowski Gary,The Complete Illustrated Guide to Joinery,Taunton,buy,木工廠,接合圖解,榫的畫法與做法
+84,04,生產CNC,Frid Tage,Tage Frid Teaches Woodworking,Taunton,buy,木工廠,木工教學三部,手感與基準
+85,04,生產CNC,Womack James / Jones Daniel,Lean Thinking,Free Press,buy,木工廠,精實,浪費在砂光與等待
+86,04,生產CNC,Ohno Taiichi,Toyota Production System,Productivity Press,buy,木工廠,豐田生產,後拉與節拍
+87,04,生產CNC,Shingo Shigeo,A Revolution in Manufacturing: The SMED System,Productivity,buy,木工廠,快速換模,五軸換治具為什麼貴
+88,04,生產CNC,Montgomery Douglas C.,Introduction to Statistical Quality Control,Wiley,buy,木工廠,統計製程管制,公差與抽檢
+89,04,生產CNC,Juran Joseph / De Feo Joseph,Juran's Quality Handbook,McGraw-Hill,buy,木工廠,品質手冊,客訴從系統來
+90,04,生產CNC,ISO,ISO 12100 Safety of machinery,ISO,buy,木工廠,機械安全,CNC圍籬與連鎖
+91,04,生產CNC,NFPA,NFPA 664 Wood Processing Fires and Explosions,NFPA,buy,木工廠,木粉塵防爆,砂光房不是小事情
+92,04,生產CNC,ISTA,ISTA 3A Packaged-Products for Parcel Delivery,ISTA,buy,木工廠,小包裹運輸試驗,拆裝出貨要過的考
+93,04,生產CNC,ASTM,ASTM D4169 Shipping Containers and Systems,ASTM,buy,木工廠,運輸容器試驗,外箱設計依據
+94,04,生產CNC,Lesko Jim,Industrial Design: Materials and Manufacturing Guide,Wiley,buy,製造原理,工設材料製造指南,設計者能讀的製程
+95,04,生產CNC,Ostwald Phillip F. / McLaren Timothy,Cost Estimating,Prentice Hall,buy,木工廠,成本估算,出廠價怎麼攤
+96,04,生產CNC,Hopp Wallace / Spearman Mark,Factory Physics,Waveland,buy,木工廠,工廠物理,在製品與週期時間
+97,04,生產CNC,Chang Tien-Chien / Wysk Richard / Wang Hsu-Pin,Computer-Aided Manufacturing,Pearson,buy,刀路幾何,CAM概論,從CAD到刀路
+98,04,生產CNC,Zeid Ibrahim,Mastering CAD/CAM,McGraw-Hill,buy,刀路幾何,CAD/CAM,曲面與特徵加工
+99,04,生產CNC,ISO,ISO 13849-1 Safety-related parts of control systems,ISO,buy,木工廠,安全控制,雙手起動與光幕
+100,04,生產CNC,Lefteri Chris,Making It: Manufacturing Techniques for Product Design,Laurence King,buy,製造原理,給設計師的製造技法,快速對照「這形能怎麼做」

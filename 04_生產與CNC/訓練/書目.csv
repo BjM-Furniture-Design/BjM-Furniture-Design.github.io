@@ -1,0 +1,34 @@
+id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
+68,04,生產CNC,Kalpakjian Serope / Schmid Steven,Manufacturing Engineering and Technology,Pearson,buy,製造原理,製造工程聖經,所有製程家族的地圖
+69,04,生產CNC,Groover Mikell P.,Fundamentals of Modern Manufacturing,Wiley,buy,製造原理,現代製造,材料＋製程＋系統
+70,04,生產CNC,Boothroyd Geoffrey et al.,Product Design for Manufacture and Assembly,CRC,buy,製造原理,為製造組裝而設計,分件為什麼這樣切
+71,04,生產CNC,Ulrich Karl / Eppinger Steven,Product Design and Development,McGraw-Hill,buy,製造原理,產品開發,從概念到量產的門
+72,04,生產CNC,Pahl Gerhard / Beitz Wolfgang,Engineering Design,Springer,buy,製造原理,工程設計方法,功能結構到原理解
+73,04,生產CNC,Oberg Erik et al.,Machinery's Handbook,Industrial Press,buy,刀路幾何,機械手冊,公差配合螺紋刀具速查
+74,04,生產CNC,Smid Peter,CNC Programming Handbook,Industrial Press,buy,刀路幾何,CNC程式,G代碼與刀補的根
+75,04,生產CNC,Altintas Yusuf,Manufacturing Automation,Cambridge,buy,刀路幾何,切削力學與CNC,顫振、轉速、五軸運動
+76,04,生產CNC,Choi Byoung K. / Jerard Robert B.,Sculptured Surface Machining,Springer,buy,刀路幾何,曲面加工,浪形椅外皮為什麼用sweep
+77,04,生產CNC,Piegl Les / Tiller Wayne,The NURBS Book,Springer,buy,刀路幾何,NURBS,CAM曲線的數學
+78,04,生產CNC,ASME,ASME Y14.5 Dimensioning and Tolerancing,ASME,buy,刀路幾何,GD&T,圖面上的公差語言
+79,04,生產CNC,Flexner Bob,Understanding Wood Finishing,Fox Chapel,buy,木工廠,塗裝,油、漆、導管、失敗模式
+80,04,生產CNC,USDA FPL / Simpson William T.,Dry Kiln Operator's Manual FPL Agric. Handbook 188,USDA,PUBLIC,木工廠,乾燥窯,可合法下載。含水是生產第一關
+81,04,生產CNC,Joyce Ernest / Capotosto Rosario,Encyclopedia of Furniture Making,Sterling,buy,木工廠,家具木工百科,傳統接合與工序
+82,04,生產CNC,Jackson Albert / Day David,The Complete Manual of Woodworking,Knopf,buy,木工廠,木工全手冊,工具與基本操作
+83,04,生產CNC,Rogowski Gary,The Complete Illustrated Guide to Joinery,Taunton,buy,木工廠,接合圖解,榫的畫法與做法
+84,04,生產CNC,Frid Tage,Tage Frid Teaches Woodworking,Taunton,buy,木工廠,木工教學三部,手感與基準
+85,04,生產CNC,Womack James / Jones Daniel,Lean Thinking,Free Press,buy,木工廠,精實,浪費在砂光與等待
+86,04,生產CNC,Ohno Taiichi,Toyota Production System,Productivity Press,buy,木工廠,豐田生產,後拉與節拍
+87,04,生產CNC,Shingo Shigeo,A Revolution in Manufacturing: The SMED System,Productivity,buy,木工廠,快速換模,五軸換治具為什麼貴
+88,04,生產CNC,Montgomery Douglas C.,Introduction to Statistical Quality Control,Wiley,buy,木工廠,統計製程管制,公差與抽檢
+89,04,生產CNC,Juran Joseph / De Feo Joseph,Juran's Quality Handbook,McGraw-Hill,buy,木工廠,品質手冊,客訴從系統來
+90,04,生產CNC,ISO,ISO 12100 Safety of machinery,ISO,buy,木工廠,機械安全,CNC圍籬與連鎖
+91,04,生產CNC,NFPA,NFPA 664 Wood Processing Fires and Explosions,NFPA,buy,木工廠,木粉塵防爆,砂光房不是小事情
+92,04,生產CNC,ISTA,ISTA 3A Packaged-Products for Parcel Delivery,ISTA,buy,木工廠,小包裹運輸試驗,拆裝出貨要過的考
+93,04,生產CNC,ASTM,ASTM D4169 Shipping Containers and Systems,ASTM,buy,木工廠,運輸容器試驗,外箱設計依據
+94,04,生產CNC,Lesko Jim,Industrial Design: Materials and Manufacturing Guide,Wiley,buy,製造原理,工設材料製造指南,設計者能讀的製程
+95,04,生產CNC,Ostwald Phillip F. / McLaren Timothy,Cost Estimating,Prentice Hall,buy,木工廠,成本估算,出廠價怎麼攤
+96,04,生產CNC,Hopp Wallace / Spearman Mark,Factory Physics,Waveland,buy,木工廠,工廠物理,在製品與週期時間
+97,04,生產CNC,Chang Tien-Chien / Wysk Richard / Wang Hsu-Pin,Computer-Aided Manufacturing,Pearson,buy,刀路幾何,CAM概論,從CAD到刀路
+98,04,生產CNC,Zeid Ibrahim,Mastering CAD/CAM,McGraw-Hill,buy,刀路幾何,CAD/CAM,曲面與特徵加工
+99,04,生產CNC,ISO,ISO 13849-1 Safety-related parts of control systems,ISO,buy,木工廠,安全控制,雙手起動與光幕
+100,04,生產CNC,Lefteri Chris,Making It: Manufacturing Techniques for Product Design,Laurence King,buy,製造原理,給設計師的製造技法,快速對照「這形能怎麼做」

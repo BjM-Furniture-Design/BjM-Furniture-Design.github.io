@@ -1,3 +1,5 @@
 *.stl
 Thumbs.db
 .DS_Store
+訓練/**/圖庫/
+**/訓練/圖庫/

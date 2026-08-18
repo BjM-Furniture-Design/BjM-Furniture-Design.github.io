@@ -1,0 +1,34 @@
+id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
+35,03,結構材料,Hoadley R. Bruce,Understanding Wood,Taunton,buy,木材,木材入門聖經,紋理、含水、乾縮、強度，結構職位第一本
+36,03,結構材料,Hoadley R. Bruce,Identifying Wood,Taunton,buy,木材,認木材,顯微與巨觀認種，進料驗收
+37,03,結構材料,Forest Products Laboratory,Wood Handbook Wood as an Engineering Material FPL-GTR-282,USDA,PUBLIC,木材,工程木材手冊,可合法下載。強度表、含水、耐久的根
+38,03,結構材料,Dinwoodie J.M.,Timber: Its Nature and Behaviour,Spon,buy,木材,木材行為,學術上把濕度與力學連在一起
+39,03,結構材料,Bodig Jozsef / Jayne Benjamin A.,Mechanics of Wood and Wood Composites,Krieger,buy,力,木材力學,各向異性怎麼算
+40,03,結構材料,Kollmann Franz / Cote Wilfred,Principles of Wood Science and Technology,Springer,buy,木材,木材科學經典,細胞到板材
+41,03,結構材料,Tsoumis George,Science and Technology of Wood,Van Nostrand,buy,木材,木材科技,結構與加工性質
+42,03,結構材料,Desch H.E. / Dinwoodie J.M.,Timber Structure Properties Conversion and Use,Macmillan,buy,木材,製材與用途,從原木到家具料
+43,03,結構材料,Rowell Roger M.,Handbook of Wood Chemistry and Wood Composites,CRC,buy,木材,木材化學與複合,膠合、改質、甲醛
+44,03,結構材料,Eckelman Carl A.,Textbook of Product Engineering and Strength Design of Furniture,Purdue,buy,家具試驗,家具強度設計,椅子櫃體節點怎麼算，本職位核心
+45,03,結構材料,Smardzewski Jerzy,Furniture Design and Engineering,Springer,buy,家具試驗,家具工程,歐洲體系的家具結構
+46,03,結構材料,American Wood Council,NDS National Design Specification for Wood Construction,AWC,buy,力,木結構設計規範,容許應力與調整係數
+47,03,結構材料,CEN,EN 1995-1-1 Eurocode 5 Design of timber structures,CEN,buy,力,歐規木結構,出口歐盟時的語言
+48,03,結構材料,CEN,EN 1728 / EN 12520 Furniture seating strength and durability,CEN,buy,家具試驗,家用椅試驗,坐椅怎麼測，不是用感覺
+49,03,結構材料,BIFMA,BIFMA X5.1 Office Seating,BIFMA,buy,家具試驗,辦公椅試驗,若做辦公系列必備
+50,03,結構材料,ISO,ISO 7170 Furniture storage units test methods,ISO,buy,家具試驗,儲物試驗,繪圖櫃、層板用這個家族
+51,03,結構材料,Ashby Michael F.,Materials Selection in Mechanical Design,Butterworth-Heinemann,buy,力,選材圖,楊氏模量—密度圖，為什麼用木不用鋁
+52,03,結構材料,Ashby Michael / Johnson Kara,Materials and Design,Butterworth-Heinemann,buy,力,材料與感官,強度之外的觸感與視覺
+53,03,結構材料,Callister William / Rethwisch David,Materials Science and Engineering,Wiley,buy,力,材料科學通論,結晶、缺陷、疲勞的共同語言
+54,03,結構材料,Hibbeler Russell C.,Mechanics of Materials,Pearson,buy,力,材料力學課本,彎矩剪力撓度，力流怎麼畫
+55,03,結構材料,Budynas Richard / Nisbett Keith,Shigley's Mechanical Engineering Design,McGraw-Hill,buy,力,機械設計,銷、軸、疲勞安全係數
+56,03,結構材料,Young Warren / Budynas Richard,Roark's Formulas for Stress and Strain,McGraw-Hill,buy,力,應力公式手冊,薄板、環、懸臂查表
+57,03,結構材料,Gordon J.E.,Structures: Or Why Things Don't Fall Down,Da Capo,buy,力,結構直覺,用白話建立「為什麼會斷」
+58,03,結構材料,Gordon J.E.,The New Science of Strong Materials,Princeton,buy,力,材料強度科學,裂紋與韌性
+59,03,結構材料,Allen Edward / Zalewski Waclaw,Form and Forces,Wiley,buy,力,形與力,形狀本身就是結構
+60,03,結構材料,Engel Heino,Structure Systems,Hatje Cantz,buy,力,結構系統圖解,傳力路徑的眼睛
+61,03,結構材料,Lincoln William A.,World Woods in Color,Stobart Davies,buy,木材,世界木材色冊,對色與認種
+62,03,結構材料,Wagenfuehr Rudi,Holzatlas / Wood Atlas,Fachbuchverlag,buy,木材,木材圖鑑,解剖圖
+63,03,結構材料,Bootle Keith R.,Wood in Australia,McGraw-Hill,buy,木材,澳材與熱帶材,接近越南常見闊葉材思路
+64,03,結構材料,Farmer R.H.,Handbook of Hardwoods,HMSO,buy,木材,闊葉材手冊,傳統硬木性質表
+65,03,結構材料,ASTM,ASTM D143 Small Clear Specimens of Timber,ASTM,buy,家具試驗,小試片標準,認清實驗室強度 ≠ 家具強度
+66,03,結構材料,ASTM,ASTM D198 Static Tests of Lumber in Structural Sizes,ASTM,buy,家具試驗,實尺寸木材試驗,層積材驗證
+67,03,結構材料,SAC,GB/T 10357 Furniture mechanical property test,China GB,buy,家具試驗,中國家具力學試驗,越南 OEM 常按這套出貨
