@@ -49,8 +49,16 @@
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);
   }
-  .brand { display: flex; align-items: center; cursor: pointer; flex: 0 0 auto; }
-  .brand img { height: 56px; width: auto; display: block; }
+  .brand {
+    display: flex; flex-direction: column; align-items: center;
+    cursor: pointer; flex: 0 0 auto; gap: 5px;
+  }
+  .brand img { height: 44px; width: auto; display: block; }
+  .brand small {
+    font-size: 13px; letter-spacing: .32em; color: #1c1915;
+    font-weight: 600; line-height: 1; white-space: nowrap;
+    text-transform: uppercase;
+  }
   .langs {
     margin-left: auto; display: flex; gap: 4px;
     padding: 3px; background: #efe8dc; border-radius: 999px;
@@ -214,7 +222,8 @@
 <div class="app">
   <header>
     <div class="brand" onclick="go('home')" title="BjM Furniture Design">
-      <img src="logo/logo.png?v=5" alt="BjM Furniture Design" />
+      <img src="logo/logo-mark.png?v=6" alt="BjM" />
+      <small>Furniture Design</small>
     </div>
     <div class="langs" id="langs">
       <button type="button" data-lang="zh" class="on">中文</button>
