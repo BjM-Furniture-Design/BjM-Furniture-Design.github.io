@@ -1,4 +1,4 @@
-書目是給你買、借、合法下載的清單，不是盜版 PDF。
-圖庫 330 張是訓練圖卡，每張標 Hoadley / FPL / Eckelman / EN 等來源。
-Wood Handbook（FPL-GTR-282）為美國政府出版，可合法下載。
-試驗標準（EN、BIFMA、ISO、GB）要買正版條文才能當出貨依據。
+本夾「書籍」是 BjM 原創講義，供廠內訓練。
+Wood Handbook 等標 PUBLIC 的原典可從 USDA 官網合法下載。
+試驗標準請向發佈機構買正版條文。
+舊訓練圖卡已刪除。

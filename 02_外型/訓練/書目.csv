@@ -6,11 +6,11 @@ id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
 5,02,外型,Pheasant Stephen / Haslegrave Christine,Bodyspace,CRC,buy,人,工作與座椅人因,人體測量學寫得最清楚的一本，百分位怎麼用
 6,02,外型,Norman Don,The Design of Everyday Things,Basic Books,buy,看,可用性,好看但用錯，是外型失職。對應複查助理
 7,02,外型,Lidwell William et al.,Universal Principles of Design,Rockport,buy,看,125條設計原則,接近、對齊、預設、回饋，審圖用
-8,02,外型,Ching Francis D.K.,Architecture: Form Space and Order,Wiley,buy,看,形體與空間秩序,控制線、軸線、虛實，浪形椅三條線的來源
+8,02,外型,Ching Francis D.K.,Architecture: Form Space and Order,Wiley,buy,看,形體與空間秩序,控制線、軸線、虛實，外形分析的根
 9,02,外型,Ching Francis D.K.,Interior Design Illustrated,Wiley,buy,看,室內尺度作圖,場景透視與家具佔地
 10,02,外型,Itten Johannes,The Art of Color,Wiley,buy,看,色彩對比,木色與布色怎麼配，不要只靠感覺
 11,02,外型,Albers Josef,Interaction of Color,Yale,buy,看,顏色互動,同一橡木在冷暖光下為什麼不像
-12,02,外型,Wong Wucius,Principles of Form and Design,Van Nostrand,buy,看,平面構成,重複、節奏、平衡，花座與掛鉤陣列
+12,02,外型,Wong Wucius,Principles of Form and Design,Van Nostrand,buy,看,平面構成,重複、節奏、平衡，陣列與模數
 13,02,外型,Habegger Jerryll / Osman Joseph H.,Sourcebook of Modern Furniture,Norton,buy,看,現代家具譜系,知道 Wegner / Aalto / Eames 差在哪，才不會亂抄
 14,02,外型,Fiell Charlotte & Peter,1000 Chairs,Taschen,buy,看,椅型圖鑑,類型學眼睛體操
 15,02,外型,Olivares Jonathan,A Taxonomy of Office Chairs,Phaidon,buy,看,辦公椅分類,機構與外殼怎麼分類
@@ -30,6 +30,6 @@ id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
 29,02,外型,Krenov James,A Cabinetmaker's Notebook,Linden,buy,手與木,櫃匠筆記,細節決定氣質
 30,02,外型,Sudjic Deyan,The Language of Things,Penguin,buy,看,物件語言,品牌與符號，BjM 字標為什麼要克制
 31,02,外型,Forty Adrian,Objects of Desire,Thames & Hudson,buy,看,慾望與設計史,避免為新而新
-32,02,外型,Papanek Victor,Design for the Real World,Thames & Hudson,buy,人,真實世界,兒童衣帽架傾倒是倫理問題
+32,02,外型,Papanek Victor,Design for the Real World,Thames & Hudson,buy,人,真實世界,傾倒、夾手、兒童安全是倫理不是配件
 33,02,外型,Alexander Christopher,A Pattern Language,Oxford,buy,看,模式語言,客廳角落、玄關掛衣是模式不是風格
 34,02,外型,Thompson Rob,Manufacturing Processes for Design Professionals,Thames & Hudson,buy,手與木,設計者看製程,外型選形前先知道做不做得動

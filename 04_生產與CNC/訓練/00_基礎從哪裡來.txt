@@ -9,8 +9,7 @@
     Groover　　Fundamentals of Modern Manufacturing
     Boothroyd　　DFMA（為組裝而設計）
     Ulrich / Eppinger　　產品開發
-  波浪椅禁止整塊掏空，是這一層：利用率 12% 的製程不是設計。
-  衣帽架用車床＋3軸、繪圖櫃用板式，也是這一層。
+  利用率過低的製程不是設計。先選製程家族，再定外形。
 
 第二層　刀路與幾何
   CNC 只是把幾何變成刀具能走的路。五軸不是比較威，是少翻面。
@@ -20,7 +19,7 @@
     Choi / Jerard　　Sculptured Surface Machining
     ASME Y14.5　　公差
     BACCI / CMS / Homag 應用（廠內，不是書）
-  精修留砂 0.25–0.35、刀軸 ±40°、55° 鑽模，全部要對回這一層。
+  留砂、刀軸極限、鑽模角度，全部要對回這一層。
 
 第三層　木工廠怎麼活
   乾燥、白身、塗裝、包材、節拍、粉塵、VOC、客訴。

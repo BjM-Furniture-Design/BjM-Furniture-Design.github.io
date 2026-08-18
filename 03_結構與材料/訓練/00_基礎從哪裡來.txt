@@ -8,7 +8,7 @@
     Hoadley　　Understanding Wood
     FPL　　　　Wood Handbook（美國林產實驗室，可合法下載）
     Dinwoodie　Timber: Its Nature and Behaviour
-  白橡導管、橡膠木均質、松木20 mm層板，全部要對回這一層。
+  樹種、紋向、板厚，全部要對回這一層。
   含水 8–12% 不是口頭禪，是平衡含水與產地氣候。
 
 第二層　力
@@ -18,8 +18,7 @@
     Gordon　　　Structures / The New Science of Strong Materials
     Roark　　　　Formulas for Stress and Strain
     Ashby　　　　Materials Selection
-  波浪椅：前舌不單獨扛懸臂。衣帽架：Ø180 對 1280 是傾覆。
-  繪圖櫃：旋轉＋抽板是偏載。這些都是力，不是造型。
+  懸臂、傾覆、偏載、節點剪力，都是力，不是造型。
 
 第三層　家具自己的試驗
   椅子、櫃、掛衣，有專用試驗，不是拿大樓規範硬套。

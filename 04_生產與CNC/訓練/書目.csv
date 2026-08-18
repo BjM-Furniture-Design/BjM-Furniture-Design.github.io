@@ -7,7 +7,7 @@ id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
 73,04,生產CNC,Oberg Erik et al.,Machinery's Handbook,Industrial Press,buy,刀路幾何,機械手冊,公差配合螺紋刀具速查
 74,04,生產CNC,Smid Peter,CNC Programming Handbook,Industrial Press,buy,刀路幾何,CNC程式,G代碼與刀補的根
 75,04,生產CNC,Altintas Yusuf,Manufacturing Automation,Cambridge,buy,刀路幾何,切削力學與CNC,顫振、轉速、五軸運動
-76,04,生產CNC,Choi Byoung K. / Jerard Robert B.,Sculptured Surface Machining,Springer,buy,刀路幾何,曲面加工,浪形椅外皮為什麼用sweep
+76,04,生產CNC,Choi Byoung K. / Jerard Robert B.,Sculptured Surface Machining,Springer,buy,刀路幾何,曲面加工,雕塑面為什麼沿形走刀而不是層切
 77,04,生產CNC,Piegl Les / Tiller Wayne,The NURBS Book,Springer,buy,刀路幾何,NURBS,CAM曲線的數學
 78,04,生產CNC,ASME,ASME Y14.5 Dimensioning and Tolerancing,ASME,buy,刀路幾何,GD&T,圖面上的公差語言
 79,04,生產CNC,Flexner Bob,Understanding Wood Finishing,Fox Chapel,buy,木工廠,塗裝,油、漆、導管、失敗模式

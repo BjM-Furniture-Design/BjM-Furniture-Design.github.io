@@ -1,0 +1,101 @@
+id,role,file,title
+1,02,B02_01_Furniture_Design.txt,Furniture Design
+2,02,B02_02_The_Chair_Rethinking_Culture_Body_and_Design.txt,The Chair: Rethinking Culture Body and Design
+3,02,B02_03_The_Measure_of_Man_and_Woman.txt,The Measure of Man and Woman
+4,02,B02_04_Human_Dimension_and_Interior_Space.txt,Human Dimension and Interior Space
+5,02,B02_05_Bodyspace.txt,Bodyspace
+6,02,B02_06_The_Design_of_Everyday_Things.txt,The Design of Everyday Things
+7,02,B02_07_Universal_Principles_of_Design.txt,Universal Principles of Design
+8,02,B02_08_Architecture_Form_Space_and_Order.txt,Architecture: Form Space and Order
+9,02,B02_09_Interior_Design_Illustrated.txt,Interior Design Illustrated
+10,02,B02_10_The_Art_of_Color.txt,The Art of Color
+11,02,B02_11_Interaction_of_Color.txt,Interaction of Color
+12,02,B02_12_Principles_of_Form_and_Design.txt,Principles of Form and Design
+13,02,B02_13_Sourcebook_of_Modern_Furniture.txt,Sourcebook of Modern Furniture
+14,02,B02_14_1000_Chairs.txt,1000 Chairs
+15,02,B02_15_A_Taxonomy_of_Office_Chairs.txt,A Taxonomy of Office Chairs
+16,02,B02_16_Industrial_Design_A-Z.txt,Industrial Design A-Z
+17,02,B02_17_Furniture.txt,Furniture
+18,02,B02_18_A_History_of_Interior_Design.txt,A History of Interior Design
+19,02,B02_19_Industrial_Design.txt,Industrial Design
+20,02,B02_20_The_Nature_and_Art_of_Workmanship.txt,The Nature and Art of Workmanship
+21,02,B02_21_The_Nature_and_Aesthetics_of_Design.txt,The Nature and Aesthetics of Design
+22,02,B02_22_Less_but_Better.txt,Less but Better
+23,02,B02_23_Design_as_Art.txt,Design as Art
+24,02,B02_24_How_Designers_Think.txt,How Designers Think
+25,02,B02_25_Design_Thinking.txt,Design Thinking
+26,02,B02_26_The_Eyes_of_the_Skin.txt,The Eyes of the Skin
+27,02,B02_27_In_Praise_of_Shadows.txt,In Praise of Shadows
+28,02,B02_28_The_Soul_of_a_Tree.txt,The Soul of a Tree
+29,02,B02_29_A_Cabinetmakers_Notebook.txt,A Cabinetmaker's Notebook
+30,02,B02_30_The_Language_of_Things.txt,The Language of Things
+31,02,B02_31_Objects_of_Desire.txt,Objects of Desire
+32,02,B02_32_Design_for_the_Real_World.txt,Design for the Real World
+33,02,B02_33_A_Pattern_Language.txt,A Pattern Language
+34,02,B02_34_Manufacturing_Processes_for_Design_Professionals.txt,Manufacturing Processes for Design Professionals
+35,03,B03_35_Understanding_Wood.txt,Understanding Wood
+36,03,B03_36_Identifying_Wood.txt,Identifying Wood
+37,03,B03_37_Wood_Handbook_Wood_as_an_Engineering_Material_FP.txt,Wood Handbook Wood as an Engineering Material FPL-GTR-282
+38,03,B03_38_Timber_Its_Nature_and_Behaviour.txt,Timber: Its Nature and Behaviour
+39,03,B03_39_Mechanics_of_Wood_and_Wood_Composites.txt,Mechanics of Wood and Wood Composites
+40,03,B03_40_Principles_of_Wood_Science_and_Technology.txt,Principles of Wood Science and Technology
+41,03,B03_41_Science_and_Technology_of_Wood.txt,Science and Technology of Wood
+42,03,B03_42_Timber_Structure_Properties_Conversion_and_Use.txt,Timber Structure Properties Conversion and Use
+43,03,B03_43_Handbook_of_Wood_Chemistry_and_Wood_Composites.txt,Handbook of Wood Chemistry and Wood Composites
+44,03,B03_44_Textbook_of_Product_Engineering_and_Strength_Des.txt,Textbook of Product Engineering and Strength Design of Furniture
+45,03,B03_45_Furniture_Design_and_Engineering.txt,Furniture Design and Engineering
+46,03,B03_46_NDS_National_Design_Specification_for_Wood_Const.txt,NDS National Design Specification for Wood Construction
+47,03,B03_47_EN_1995-1-1_Eurocode_5_Design_of_timber_structur.txt,EN 1995-1-1 Eurocode 5 Design of timber structures
+48,03,B03_48_EN_1728.txt,EN 1728 / EN 12520 Furniture seating strength and durability
+49,03,B03_49_BIFMA_X51_Office_Seating.txt,BIFMA X5.1 Office Seating
+50,03,B03_50_ISO_7170_Furniture_storage_units_test_methods.txt,ISO 7170 Furniture storage units test methods
+51,03,B03_51_Materials_Selection_in_Mechanical_Design.txt,Materials Selection in Mechanical Design
+52,03,B03_52_Materials_and_Design.txt,Materials and Design
+53,03,B03_53_Materials_Science_and_Engineering.txt,Materials Science and Engineering
+54,03,B03_54_Mechanics_of_Materials.txt,Mechanics of Materials
+55,03,B03_55_Shigleys_Mechanical_Engineering_Design.txt,Shigley's Mechanical Engineering Design
+56,03,B03_56_Roarks_Formulas_for_Stress_and_Strain.txt,Roark's Formulas for Stress and Strain
+57,03,B03_57_Structures_Or_Why_Things_Dont_Fall_Down.txt,Structures: Or Why Things Don't Fall Down
+58,03,B03_58_The_New_Science_of_Strong_Materials.txt,The New Science of Strong Materials
+59,03,B03_59_Form_and_Forces.txt,Form and Forces
+60,03,B03_60_Structure_Systems.txt,Structure Systems
+61,03,B03_61_World_Woods_in_Color.txt,World Woods in Color
+62,03,B03_62_Holzatlas.txt,Holzatlas / Wood Atlas
+63,03,B03_63_Wood_in_Australia.txt,Wood in Australia
+64,03,B03_64_Handbook_of_Hardwoods.txt,Handbook of Hardwoods
+65,03,B03_65_ASTM_D143_Small_Clear_Specimens_of_Timber.txt,ASTM D143 Small Clear Specimens of Timber
+66,03,B03_66_ASTM_D198_Static_Tests_of_Lumber_in_Structural_S.txt,ASTM D198 Static Tests of Lumber in Structural Sizes
+67,03,B03_67_GB.txt,GB/T 10357 Furniture mechanical property test
+68,04,B04_68_Manufacturing_Engineering_and_Technology.txt,Manufacturing Engineering and Technology
+69,04,B04_69_Fundamentals_of_Modern_Manufacturing.txt,Fundamentals of Modern Manufacturing
+70,04,B04_70_Product_Design_for_Manufacture_and_Assembly.txt,Product Design for Manufacture and Assembly
+71,04,B04_71_Product_Design_and_Development.txt,Product Design and Development
+72,04,B04_72_Engineering_Design.txt,Engineering Design
+73,04,B04_73_Machinerys_Handbook.txt,Machinery's Handbook
+74,04,B04_74_CNC_Programming_Handbook.txt,CNC Programming Handbook
+75,04,B04_75_Manufacturing_Automation.txt,Manufacturing Automation
+76,04,B04_76_Sculptured_Surface_Machining.txt,Sculptured Surface Machining
+77,04,B04_77_The_NURBS_Book.txt,The NURBS Book
+78,04,B04_78_ASME_Y145_Dimensioning_and_Tolerancing.txt,ASME Y14.5 Dimensioning and Tolerancing
+79,04,B04_79_Understanding_Wood_Finishing.txt,Understanding Wood Finishing
+80,04,B04_80_Dry_Kiln_Operators_Manual_FPL_Agric_Handbook_188.txt,Dry Kiln Operator's Manual FPL Agric. Handbook 188
+81,04,B04_81_Encyclopedia_of_Furniture_Making.txt,Encyclopedia of Furniture Making
+82,04,B04_82_The_Complete_Manual_of_Woodworking.txt,The Complete Manual of Woodworking
+83,04,B04_83_The_Complete_Illustrated_Guide_to_Joinery.txt,The Complete Illustrated Guide to Joinery
+84,04,B04_84_Tage_Frid_Teaches_Woodworking.txt,Tage Frid Teaches Woodworking
+85,04,B04_85_Lean_Thinking.txt,Lean Thinking
+86,04,B04_86_Toyota_Production_System.txt,Toyota Production System
+87,04,B04_87_A_Revolution_in_Manufacturing_The_SMED_System.txt,A Revolution in Manufacturing: The SMED System
+88,04,B04_88_Introduction_to_Statistical_Quality_Control.txt,Introduction to Statistical Quality Control
+89,04,B04_89_Jurans_Quality_Handbook.txt,Juran's Quality Handbook
+90,04,B04_90_ISO_12100_Safety_of_machinery.txt,ISO 12100 Safety of machinery
+91,04,B04_91_NFPA_664_Wood_Processing_Fires_and_Explosions.txt,NFPA 664 Wood Processing Fires and Explosions
+92,04,B04_92_ISTA_3A_Packaged-Products_for_Parcel_Delivery.txt,ISTA 3A Packaged-Products for Parcel Delivery
+93,04,B04_93_ASTM_D4169_Shipping_Containers_and_Systems.txt,ASTM D4169 Shipping Containers and Systems
+94,04,B04_94_Industrial_Design_Materials_and_Manufacturing_Gu.txt,Industrial Design: Materials and Manufacturing Guide
+95,04,B04_95_Cost_Estimating.txt,Cost Estimating
+96,04,B04_96_Factory_Physics.txt,Factory Physics
+97,04,B04_97_Computer-Aided_Manufacturing.txt,Computer-Aided Manufacturing
+98,04,B04_98_Mastering_CAD.txt,Mastering CAD/CAM
+99,04,B04_99_ISO_13849-1_Safety-related_parts_of_control_syst.txt,ISO 13849-1 Safety-related parts of control systems
+100,04,B04_100_Making_It_Manufacturing_Techniques_for_Product_D.txt,Making It: Manufacturing Techniques for Product Design

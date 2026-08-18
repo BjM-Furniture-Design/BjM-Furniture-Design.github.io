@@ -14,7 +14,7 @@ id,role,role_zh,author,title,year_note,legal,foundation_layer,trains,why_zh
 47,03,結構材料,CEN,EN 1995-1-1 Eurocode 5 Design of timber structures,CEN,buy,力,歐規木結構,出口歐盟時的語言
 48,03,結構材料,CEN,EN 1728 / EN 12520 Furniture seating strength and durability,CEN,buy,家具試驗,家用椅試驗,坐椅怎麼測，不是用感覺
 49,03,結構材料,BIFMA,BIFMA X5.1 Office Seating,BIFMA,buy,家具試驗,辦公椅試驗,若做辦公系列必備
-50,03,結構材料,ISO,ISO 7170 Furniture storage units test methods,ISO,buy,家具試驗,儲物試驗,繪圖櫃、層板用這個家族
+50,03,結構材料,ISO,ISO 7170 Furniture storage units test methods,ISO,buy,家具試驗,儲物試驗,櫃、層板、掛衣桿用這個家族
 51,03,結構材料,Ashby Michael F.,Materials Selection in Mechanical Design,Butterworth-Heinemann,buy,力,選材圖,楊氏模量—密度圖，為什麼用木不用鋁
 52,03,結構材料,Ashby Michael / Johnson Kara,Materials and Design,Butterworth-Heinemann,buy,力,材料與感官,強度之外的觸感與視覺
 53,03,結構材料,Callister William / Rethwisch David,Materials Science and Engineering,Wiley,buy,力,材料科學通論,結晶、缺陷、疲勞的共同語言
