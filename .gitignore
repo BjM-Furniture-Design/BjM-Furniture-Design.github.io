@@ -6,3 +6,4 @@ Thumbs.db
 .env
 .env.*
 **/secrets/
+ar/_convert/node_modules/

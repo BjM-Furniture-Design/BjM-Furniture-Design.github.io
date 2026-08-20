@@ -10,15 +10,11 @@
 <style>
   html, body { height: 100%; margin: 0; background: #1c1915; color: #f7f3ec;
     font-family: "Microsoft JhengHei UI", "PingFang TC", sans-serif; }
-  model-viewer {
-    width: 100%; height: 100%;
-    --poster-color: #1c1915;
-  }
+  model-viewer { width: 100%; height: 100%; --poster-color: #1c1915; }
   .bar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 5;
     display: flex; align-items: center; gap: 12px;
-    padding: 10px 14px calc(10px + env(safe-area-inset-top));
-    padding-top: calc(10px + env(safe-area-inset-top));
+    padding: 10px 14px; padding-top: calc(10px + env(safe-area-inset-top));
     background: linear-gradient(to bottom, rgba(28,25,21,.85), transparent);
     font-size: 13px; letter-spacing: .08em;
   }
@@ -32,23 +28,47 @@
   }
   .ar-btn {
     position: absolute; left: 50%; transform: translateX(-50%);
-    bottom: 88px;
-    border: 0; background: #f7f3ec; color: #1c1915;
+    bottom: 88px; border: 0; background: #f7f3ec; color: #1c1915;
     padding: 12px 22px; border-radius: 999px; font: inherit;
     letter-spacing: .14em; font-size: 13px; cursor: pointer;
   }
+  #ios-ar { position: absolute; left: -9999px; }
 </style>
+<script>
+(function () {
+  var origin = location.origin;
+  var glb = origin + "/ar/models/WAVE-LC-001.glb";
+  var usdz = origin + "/ar/models/WAVE-LC-001.usdz";
+  var view = /[?&]view=1/.test(location.search);
+  var ua = navigator.userAgent || "";
+  var iOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  if (view) return;
+  if (iOS) {
+    location.replace(usdz);
+    return;
+  }
+  if (android) {
+    var file = encodeURIComponent(glb);
+    var fallback = encodeURIComponent(origin + "/ar/WAVE-LC-001.html?view=1");
+    location.replace(
+      "intent://arvr.google.com/scene-viewer/1.0?file=" + file +
+      "&mode=ar_preferred&resizable=true&title=WAVE-LC-001" +
+      "#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=" + fallback + ";end"
+    );
+  }
+})();
+</script>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
+  <a id="ios-ar" rel="ar" href="models/WAVE-LC-001.usdz">AR</a>
   <div class="bar">
     <a href="../">← BjM</a>
     <b>WAVE-LC-001</b>
     <span>波浪椅</span>
   </div>
-
   <model-viewer
-    id="mv"
     src="models/WAVE-LC-001.glb"
     ios-src="models/WAVE-LC-001.usdz"
     poster="models/WAVE-LC-001.jpg"
@@ -60,8 +80,6 @@
     camera-controls
     touch-action="pan-y"
     auto-rotate
-    auto-rotate-delay="1500"
-    rotation-per-second="16deg"
     shadow-intensity="1"
     exposure="1.05"
     environment-image="neutral"
@@ -69,7 +87,6 @@
   >
     <button class="ar-btn" slot="ar-button" type="button">放到真實空間</button>
   </model-viewer>
-
-  <p class="hint">Android：Scene Viewer／WebXR　iPhone：需 USDZ（Quick Look）。先轉一圈確認模型，再按放到真實空間。</p>
+  <p class="hint">電腦：可旋轉預覽。手機掃 QR 會直接開 AR。</p>
 </body>
 </html>

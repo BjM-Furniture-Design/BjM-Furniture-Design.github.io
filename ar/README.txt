@@ -11,14 +11,13 @@
   ar/產品編號.html           AR 頁
   例：WAVE-LC-001.glb / WAVE-LC-001.usdz
 
-USDZ 怎麼來（免費、給 iPhone）
-  目前最推：Paus AR Studio（專為 Quick Look）
-  https://converter.pausarstudio.de/
-  上傳 WAVE-LC-001.glb → 下載 USDZ → 改名成 WAVE-LC-001.usdz
-  放到 ar/models/ 與 GLB 同層。
-  有 Mac 也可用 Apple Reality Converter。
+掃 QR
+  安卓：直接開 Google Scene Viewer AR（GLB）
+  iPhone：直接開 Quick Look AR（USDZ）
+  電腦：打開 3D 預覽頁
 
-還沒放 USDZ 時：Android 與桌面仍可看 3D；iPhone 的「放到空間」會不穩。
+USDZ 已由本機從 GLB 轉出：ar/models/WAVE-LC-001.usdz
+AR 用的 GLB 已減面，方便手機。
 
 注意
   GLB 約 15MB，手機吃流量。不要把 99MB 的原始 STL 放到這裡。
