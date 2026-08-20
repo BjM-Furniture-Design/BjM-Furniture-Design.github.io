@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>WAVE-LC-001 · AR · BjM Furniture Design</title>
+<link rel="icon" href="../favicon.ico?v=7" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#2a241c" />
+<style>
+  html, body { height: 100%; margin: 0; background: #1c1915; color: #f7f3ec;
+    font-family: "Microsoft JhengHei UI", "PingFang TC", sans-serif; }
+  model-viewer {
+    width: 100%; height: 100%;
+    --poster-color: #1c1915;
+  }
+  .bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 5;
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-top));
+    padding-top: calc(10px + env(safe-area-inset-top));
+    background: linear-gradient(to bottom, rgba(28,25,21,.85), transparent);
+    font-size: 13px; letter-spacing: .08em;
+  }
+  .bar a { color: #f7f3ec; text-decoration: none; opacity: .8; }
+  .bar b { font-weight: 600; letter-spacing: .16em; }
+  .hint {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+    padding: 14px 16px calc(18px + env(safe-area-inset-bottom));
+    text-align: center; font-size: 12px; color: #c4b8a8;
+    background: linear-gradient(to top, rgba(28,25,21,.9), transparent);
+  }
+  .ar-btn {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    bottom: 88px;
+    border: 0; background: #f7f3ec; color: #1c1915;
+    padding: 12px 22px; border-radius: 999px; font: inherit;
+    letter-spacing: .14em; font-size: 13px; cursor: pointer;
+  }
+</style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="bar">
+    <a href="../">← BjM</a>
+    <b>WAVE-LC-001</b>
+    <span>波浪椅</span>
+  </div>
+
+  <model-viewer
+    id="mv"
+    src="models/WAVE-LC-001.glb"
+    ios-src="models/WAVE-LC-001.usdz"
+    poster="models/WAVE-LC-001.jpg"
+    alt="WAVE-LC-001 波浪椅"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    ar-placement="floor"
+    ar-scale="auto"
+    camera-controls
+    touch-action="pan-y"
+    auto-rotate
+    auto-rotate-delay="1500"
+    rotation-per-second="16deg"
+    shadow-intensity="1"
+    exposure="1.05"
+    environment-image="neutral"
+    loading="eager"
+  >
+    <button class="ar-btn" slot="ar-button" type="button">放到真實空間</button>
+  </model-viewer>
+
+  <p class="hint">Android：Scene Viewer／WebXR　iPhone：需 USDZ（Quick Look）。先轉一圈確認模型，再按放到真實空間。</p>
+</body>
+</html>
