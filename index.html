@@ -115,6 +115,34 @@
   .pick h3 { font-size: 16px; margin: 4px 0 2px; }
   .pick p { font-size: 12px; color: var(--muted); }
 
+  .sku-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 0 0 22px;
+  }
+  .sku-strip[hidden] { display: none !important; }
+  .sku-strip button {
+    display: flex; align-items: center; gap: 10px;
+    padding: 6px 10px 6px 6px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; cursor: pointer; text-align: left; width: 100%;
+    transition: transform .2s, box-shadow .2s, border-color .2s;
+  }
+  .sku-strip button:hover { transform: translateY(-1px); box-shadow: var(--shadow); border-color: #d5c7b2; }
+  .sku-strip button.on { outline: 2px solid var(--oak-deep); border-color: #d5c7b2; }
+  .sku-strip img {
+    width: 64px; height: 44px; object-fit: cover;
+    border-radius: 9px; flex-shrink: 0;
+  }
+  .sku-strip em {
+    display: block; font-style: normal;
+    font-size: 9px; letter-spacing: .16em; color: var(--oak-deep);
+  }
+  .sku-strip strong {
+    display: block; font-size: 13px; font-weight: 700; line-height: 1.25;
+  }
+
   .hero {
     display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px;
     align-items: stretch; margin-bottom: 28px;
@@ -253,6 +281,11 @@
     main { padding: 18px 16px 48px; }
     h1 { font-size: 26px; }
     .hero-photo { min-height: 260px; }
+    .sku-strip { gap: 6px; margin-bottom: 16px; }
+    .sku-strip button { flex-direction: column; align-items: stretch; gap: 6px; padding: 6px; }
+    .sku-strip img { width: 100%; height: 56px; }
+    .sku-strip strong { font-size: 11px; }
+    .sku-strip em { font-size: 8px; }
   }
 </style>
 </head>
@@ -286,6 +319,29 @@
   </header>
 
   <main>
+    <div class="sku-strip" id="sku-strip" hidden>
+      <button type="button" data-sku="wave">
+        <img src="02_外型/WAVE-LC-R01_hero_34.jpg" alt="">
+        <span>
+          <em>WAVE-LC-001</em>
+          <strong data-i18n="cat.wave">波浪椅</strong>
+        </span>
+      </button>
+      <button type="button" data-sku="koala">
+        <img src="01_主設計師/無尾熊-衣帽架/hero.png" alt="">
+        <span>
+          <em>KOALA-CR-001</em>
+          <strong data-i18n="cat.koala">無尾熊衣帽架</strong>
+        </span>
+      </button>
+      <button type="button" data-sku="f180">
+        <img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="">
+        <span>
+          <em>F180-RC-001</em>
+          <strong data-i18n="cat.f180">旋轉繪圖櫃</strong>
+        </span>
+      </button>
+    </div>
     <section id="home" class="page on">
       <div class="catalog">
         <button class="pick on" data-pick="wave" type="button" onclick="setSku('wave')">
@@ -1320,7 +1376,7 @@ function setSku(sku) {
   localStorage.setItem(SKU_KEY, currentSku);
   document.body.classList.remove("sku-wave", "sku-koala", "sku-f180");
   document.body.classList.add("sku-" + currentSku);
-  document.querySelectorAll("#skus button").forEach(b => b.classList.toggle("on", b.dataset.sku === currentSku));
+  document.querySelectorAll("#skus button, #sku-strip button").forEach(b => b.classList.toggle("on", b.dataset.sku === currentSku));
   document.querySelectorAll(".pick").forEach(b => b.classList.toggle("on", b.dataset.pick === currentSku));
   renderDecisions();
   runReview();
@@ -1442,6 +1498,8 @@ function go(id) {
   if (id === "r1" || id === "cloud") id = "home";
   document.querySelectorAll(".page").forEach(p => p.classList.toggle("on", p.id === id));
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.go === id));
+  const strip = document.getElementById("sku-strip");
+  if (strip) strip.hidden = !(id === "r2" || id === "r3" || id === "r4");
   location.hash = id === "home" ? "" : id;
   window.scrollTo({ top: 0, behavior: "smooth" });
   runReview();
@@ -1455,7 +1513,7 @@ function zoom(el) {
 }
 
 document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => go(b.dataset.go)));
-document.querySelectorAll("#skus button").forEach(b => b.addEventListener("click", () => setSku(b.dataset.sku)));
+document.querySelectorAll("#skus button, #sku-strip button").forEach(b => b.addEventListener("click", () => setSku(b.dataset.sku)));
 window.addEventListener("keydown", e => {
   if (e.key === "Escape") {
     document.getElementById("lightbox").classList.remove("on");
