@@ -311,11 +311,17 @@
               <div class="stat"><b>A / B / C</b><s data-i18n="home.abc">Left · Right · Basin</s></div>
             </div>
             <div class="files" style="margin-top:14px;align-items:center">
-              <a href="ar/WAVE-LC-001.html">AR</a>
+              <a href="ar/WAVE-LC-001.html?view=1">AR</a>
             </div>
-            <div style="margin-top:16px;display:flex;align-items:center;gap:14px">
-              <img src="ar/WAVE-LC-001-qr.png" alt="AR QR" width="148" height="148" style="width:148px;height:148px;background:#fff;border-radius:12px;padding:6px;border:1px solid var(--line)">
-              <p style="font-size:12px;color:var(--muted);max-width:14em;margin:0" data-i18n="ar.scan">手機鏡頭掃這個碼，直接進 AR，不用再點。</p>
+            <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div style="text-align:center">
+                <img src="ar/WAVE-LC-001-qr-android.png" alt="Android AR QR" width="140" height="140" style="width:140px;height:140px;margin:0 auto;background:#fff;border-radius:12px;padding:6px;border:1px solid var(--line)">
+                <p style="font-size:11px;letter-spacing:.12em;margin:8px 0 0" data-i18n="ar.android">Android · GLB</p>
+              </div>
+              <div style="text-align:center">
+                <img src="ar/WAVE-LC-001-qr-apple.png" alt="iPhone AR QR" width="140" height="140" style="width:140px;height:140px;margin:0 auto;background:#fff;border-radius:12px;padding:6px;border:1px solid var(--line)">
+                <p style="font-size:11px;letter-spacing:.12em;margin:8px 0 0" data-i18n="ar.apple">iPhone · USDZ</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1032,6 +1038,8 @@ const I18N = {
     "home.c4":"刀路、治具、工時、出廠成本、量產門檻。",
     "home.go":"進入 →",
     "ar.scan":"手機鏡頭掃這個碼，直接進 AR，不用再點。",
+    "ar.android":"Android · GLB",
+    "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"寬 × 深 mm","home.ht":"總高 mm","home.abc":"左殼 · 右殼 · 座盆",
     "k.home.title":"無尾熊實木衣帽架<br><em>花座 · 九枝 · 熊牌</em>",
     "k.home.lede":"以主設子夾「無尾熊-衣帽架」為準。兒童房／玄關短掛，不是大廳大衣架。",
@@ -1155,6 +1163,8 @@ const I18N = {
     "home.c4":"Toolpaths, jigs, hours, factory cost, volume.",
     "home.go":"Open →",
     "ar.scan":"Scan with the phone camera to open AR. No extra tap.",
+    "ar.android":"Android · GLB",
+    "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"W × D mm","home.ht":"Overall H mm","home.abc":"Left · Right · Basin",
     "k.home.title":"Koala solid-wood coat rack<br><em>Flower · pegs · plaque</em>",
     "k.home.lede":"Source is the Koala coat-rack folder in Design. Kids room / entry. Not a hall coat tree.",
@@ -1278,6 +1288,8 @@ const I18N = {
     "home.c4":"Đường dao, đồ gá, giờ công, giá xưởng, sản lượng.",
     "home.go":"Vào →",
     "ar.scan":"Quét mã bằng camera điện thoại để vào AR, không cần bấm thêm.",
+    "ar.android":"Android · GLB",
+    "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"Rộng × sâu mm","home.ht":"Cao mm","home.abc":"Trái · Phải · Đáy",
     "k.home.title":"Giá treo gỗ Koala<br><em>Đế hoa · móc · bảng</em>",
     "k.home.lede":"Theo thư mục Koala trong Design. Phòng trẻ / sảnh nhỏ. Không phải cây treo áo sảnh lớn.",
