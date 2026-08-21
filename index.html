@@ -262,7 +262,6 @@
     </div>
     <nav>
       <button data-go="home" class="active" data-i18n="nav.home">總覽</button>
-      <button data-go="r1" data-i18n="nav.design">主設</button>
       <button data-go="r2" data-i18n="nav.form">外型</button>
       <button data-go="r3" data-i18n="nav.struct">結構／材料</button>
       <button data-go="r4" data-i18n="nav.prod">生產／CNC</button>
@@ -304,7 +303,7 @@
           <div class="hero-copy">
             <div class="kicker">BJM FURNITURE DESIGN</div>
             <h1 data-i18n="home.title">浪形實木休閒椅<br><em>點選職位即可操作</em></h1>
-            <p class="lede" data-i18n="home.lede">主設是你的資料夾。外型在結構之前。快捷鍵 1–4，Esc 回總覽。</p>
+            <p class="lede" data-i18n="home.lede">選產品、再看外型／結構／生產。快捷鍵 1–3，Esc 回總覽。</p>
             <div class="stats">
               <div class="stat"><b>900×960</b><s data-i18n="home.wh">W × D mm</s></div>
               <div class="stat"><b>820</b><s data-i18n="home.ht">H mm</s></div>
@@ -333,7 +332,7 @@
           <div class="hero-copy">
             <div class="kicker">BJM FURNITURE DESIGN</div>
             <h1 data-i18n="k.home.title">無尾熊實木衣帽架<br><em>花座 · 九枝 · 熊牌</em></h1>
-            <p class="lede" data-i18n="k.home.lede">主設子夾「無尾熊-衣帽架」為準。兒童房／玄關短掛，不是大廳大衣架。</p>
+            <p class="lede" data-i18n="k.home.lede">兒童房／玄關短掛，不是大廳大衣架。</p>
             <div class="stats">
               <div class="stat"><b>Ø180</b><s data-i18n="k.home.base">base mm</s></div>
               <div class="stat"><b>~1280</b><s data-i18n="k.home.ht">H mm</s></div>
@@ -349,7 +348,7 @@
           <div class="hero-copy">
             <div class="kicker">BJM FURNITURE DESIGN</div>
             <h1 data-i18n="f.home.title">旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em></h1>
-            <p class="lede" data-i18n="f.home.lede">以主設子夾為準。同一骨架可換成收納箱、繪圖板、書擋。</p>
+            <p class="lede" data-i18n="f.home.lede">同一骨架可換成收納箱、繪圖板、書擋。</p>
             <div class="stats">
               <div class="stat"><b>560×560</b><s data-i18n="home.wh">W × D mm</s></div>
               <div class="stat"><b>1150</b><s data-i18n="home.ht">H mm</s></div>
@@ -360,138 +359,9 @@
       </div>
 
       <div class="roles">
-        <button class="role" onclick="go('r1')"><div class="num">01</div><h3 data-i18n="nav.design">主設</h3><p data-i18n="home.c1">你的資料夾。想法、照片、尺寸直接丟進來。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-        <button class="role" onclick="go('r2')"><div class="num">02</div><h3 data-i18n="nav.form">外型</h3><p data-i18n="home.c2">渲染、人體工學示意、客廳／酒店場景。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-        <button class="role" onclick="go('r3')"><div class="num">03</div><h3 data-i18n="nav.struct">結構／材料</h3><p data-i18n="home.c3">分件接合、載重公差、樹種、BOM、行情。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-        <button class="role" onclick="go('r4')"><div class="num">04</div><h3 data-i18n="nav.prod">生產／CNC</h3><p data-i18n="home.c4">五軸刀路、治具、工時、出廠成本、量產門檻。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-      </div>
-    </section>
-
-    <section id="r1" class="page">
-      <div class="kicker" data-i18n="des.kicker">01 · Design · your folder</div>
-      <h2 data-i18n="des.title">把東西放這裡</h2>
-      <p class="sub" data-i18n="des.sub">這頁對應主設資料夾。每個子夾是一個產品。</p>
-
-      <div class="sku wave">
-        <div class="grid-2">
-          <div>
-            <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/00_客戶參考圖.png" alt="ref"></div>
-            <div class="caption" data-i18n="des.ref">客戶參考圖</div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="des.how">這夾怎麼用</h3>
-            <ul>
-              <li data-i18n="des.h1">檔案直接丟進主設資料夾</li>
-              <li data-i18n="des.h2">檔名寫清楚，例如座高想改420</li>
-              <li data-i18n="des.h3">參考圖、任務書仍留在這裡方便對照</li>
-            </ul>
-            <div class="files">
-              <a href="01_主設計師/888更新規則.txt">888</a>
-              <a href="01_主設計師/01_設計任務書.txt" data-i18n="des.brief">原任務書</a>
-              <a href="01_主設計師/WAVE-LC-001_3view.pdf">PDF</a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="des.ask">待確認</h3>
-            <div class="choices" id="decisions-wave"></div>
-            <p class="ok" id="saved-wave"></p>
-          </div>
-          <div class="card">
-            <h3 data-i18n="des.dim">鎖定尺寸</h3>
-            <table>
-              <tr><th data-i18n="des.item">項目</th><th class="n">mm</th></tr>
-              <tr><td data-i18n="des.d1">總寬 / 總深 / 總高</td><td class="n">900 / 960 / 820</td></tr>
-              <tr><td data-i18n="des.d2">座高含墊 / 木盆 / 扶手</td><td class="n">400 / 325 / 580</td></tr>
-              <tr><td data-i18n="des.d3">座寬內淨 / 有效座深</td><td class="n">540 / 520</td></tr>
-              <tr><td data-i18n="des.d4">靠背傾 / 座面後傾</td><td class="n">18–22° / 4–6°</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="sku koala">
-        <div class="grid-2">
-          <div>
-            <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/無尾熊-衣帽架/hero.png" alt="koala"></div>
-            <div class="caption">KOALA-CR-001</div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="k.des.how">主設讀到的檔</h3>
-            <ul>
-              <li data-i18n="k.des.h1">渲染 4 張、製圖 PDF／DWG、無尾熊零件圖</li>
-              <li data-i18n="k.des.h2">花座 Ø180、兩節立柱各 615、掛鉤 9×Φ18×100 於 55°</li>
-              <li data-i18n="k.des.h3">三層 × 3 支 120°，層內錯 15 mm，第 2 層交錯</li>
-            </ul>
-            <div class="files">
-              <a href="01_主設計師/無尾熊-衣帽架/Administrator_衣帽架3-製圖.pdf">PDF</a>
-              <a href="01_主設計師/888更新規則.txt">888</a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="des.ask">待確認</h3>
-            <div class="choices" id="decisions-koala"></div>
-            <p class="ok" id="saved-koala"></p>
-          </div>
-          <div class="card">
-            <h3 data-i18n="des.dim">鎖定尺寸</h3>
-            <table>
-              <tr><th data-i18n="des.item">Item</th><th class="n">mm</th></tr>
-              <tr><td data-i18n="k.des.d1">花座外接圓 / 上層厚</td><td class="n">Ø180 / 30</td></tr>
-              <tr><td data-i18n="k.des.d2">立柱 ×2 / 總高約</td><td class="n">Φ41×615 / ~1280</td></tr>
-              <tr><td data-i18n="k.des.d3">掛鉤 / 仰角 / 數量</td><td class="n">Φ18×100 / 55° / 9</td></tr>
-              <tr><td data-i18n="k.des.d4">層距（上柱底起）</td><td class="n">105 · 195 · 205</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="sku f180">
-        <div class="grid-2">
-          <div>
-            <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="f180"></div>
-            <div class="caption">F180-RC-001</div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="f.des.how">主設讀到的檔</h3>
-            <ul>
-              <li data-i18n="f.des.h1">空塔／裝箱渲染、客廳場景、尺寸 PDF、NX .prt</li>
-              <li data-i18n="f.des.h2">560×560×1150，四角 R180，層高 220／405／405</li>
-              <li data-i18n="f.des.h3">模組：塑膠箱、繪圖板、書擋、木掛盒</li>
-            </ul>
-            <div class="files">
-              <a href="01_主設計師/旋轉繪圖櫃/F180-尺寸圖.pdf">PDF</a>
-              <a href="01_主設計師/888更新規則.txt">888</a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="des.ask">待確認</h3>
-            <div class="choices" id="decisions-f180"></div>
-            <p class="ok" id="saved-f180"></p>
-          </div>
-          <div class="card">
-            <h3 data-i18n="des.dim">鎖定尺寸</h3>
-            <table>
-              <tr><th data-i18n="des.item">Item</th><th class="n">mm</th></tr>
-              <tr><td data-i18n="f.des.d1">寬 / 深 / 高</td><td class="n">560 / 560 / 1150</td></tr>
-              <tr><td data-i18n="f.des.d2">層高 上／中／下</td><td class="n">220 / 405 / 405</td></tr>
-              <tr><td data-i18n="f.des.d3">內淨寬 / 側袋</td><td class="n">284 / 260</td></tr>
-              <tr><td data-i18n="f.des.d4">繪圖板寬 / 抽出</td><td class="n">260 / 297</td></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="card review">
-        <h3 data-i18n="rev.title">複查助理</h3>
-        <p class="sub" data-i18n="rev.sub">用人類使用角度檢查姿勢、尺寸矛盾，並在每次切換語文／生成後掃英文頁是否殘留中文。</p>
-        <button type="button" id="rev-run" class="role" style="width:auto;padding:10px 16px;margin:8px 0 12px" data-i18n="rev.run">立刻複查</button>
-        <ul class="review-list" id="rev-list"></ul>
+        <button class="role" onclick="go('r2')"><div class="num">01</div><h3 data-i18n="nav.form">外型</h3><p data-i18n="home.c2">渲染、人體工學示意、客廳／酒店場景。</p><div class="go" data-i18n="home.go">進入 →</div></button>
+        <button class="role" onclick="go('r3')"><div class="num">02</div><h3 data-i18n="nav.struct">結構／材料</h3><p data-i18n="home.c3">分件接合、載重公差、樹種、BOM、行情。</p><div class="go" data-i18n="home.go">進入 →</div></button>
+        <button class="role" onclick="go('r4')"><div class="num">03</div><h3 data-i18n="nav.prod">生產／CNC</h3><p data-i18n="home.c4">五軸刀路、治具、工時、出廠成本、量產門檻。</p><div class="go" data-i18n="home.go">進入 →</div></button>
       </div>
     </section>
 
@@ -997,7 +867,7 @@ const I18N = {
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
     "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
     "f.home.title":"旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em>",
-    "f.home.lede":"以主設子夾「旋轉繪圖櫃」為準。同一骨架可換成收納箱、繪圖板、書擋。",
+    "f.home.lede":"同一骨架可換成收納箱、繪圖板、書擋。",
     "f.home.r":"圓角",
     "f.des.how":"主設讀到的檔","f.des.h1":"空塔／裝箱渲染、客廳場景、尺寸 PDF（NX 只留雲端）",
     "f.des.h2":"560×560×1150，四角 R180，層高 220／405／405",
@@ -1031,7 +901,7 @@ const I18N = {
     "f.rev.e4":"層縫夾手：間隙收到 ≤5 或 ≥12。童房加牆扣。",
     "f.rev.e5":"塑膠箱是外購件，口寬必須對 284。",
     "home.title":"浪形實木休閒椅<br><em>點選職位即可操作</em>",
-    "home.lede":"主設是你的資料夾。每個子夾是一個產品。快捷鍵 1–4，Esc 回總覽。",
+    "home.lede":"選產品、再看外型／結構／生產。快捷鍵 1–3，Esc 回總覽。",
     "home.c1":"你的資料夾。想法、照片、尺寸直接丟進來。子夾 = 產品。",
     "home.c2":"渲染、人體工學示意、場景使用。",
     "home.c3":"分件接合、載重公差、樹種、BOM、行情。",
@@ -1042,7 +912,7 @@ const I18N = {
     "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"寬 × 深 mm","home.ht":"總高 mm","home.abc":"左殼 · 右殼 · 座盆",
     "k.home.title":"無尾熊實木衣帽架<br><em>花座 · 九枝 · 熊牌</em>",
-    "k.home.lede":"以主設子夾「無尾熊-衣帽架」為準。兒童房／玄關短掛，不是大廳大衣架。",
+    "k.home.lede":"兒童房／玄關短掛，不是大廳大衣架。",
     "k.home.base":"花座 mm","k.home.ht":"總高 mm","k.home.hooks":"掛鉤 55°",
     "form.kicker":"02 · 外型","form.title":"外型、坐姿、使用場景",
     "form.sub":"渲染、人體工學示意、客廳／酒店場景。輪廓以控制尺寸為準。",
@@ -1156,7 +1026,7 @@ const I18N = {
     "f.rev.e4":"Shelf gaps pinch fingers: close to ≤5 or open to ≥12. Kids room: wall tether.",
     "f.rev.e5":"Bins are bought-in. Opening width must stay 284.",
     "home.title":"Wave solid-wood lounge<br><em>Open a section to work</em>",
-    "home.lede":"Design is your drop folder. Each subfolder is a product. Keys 1–4, Esc home.",
+    "home.lede":"Pick a product, then Form / Structure / Production. Keys 1–3, Esc home.",
     "home.c1":"Your folder. Drop ideas, photos, dimensions. Subfolder = product.",
     "home.c2":"Renders, ergonomic diagram, in-situ scenes.",
     "home.c3":"Joinery, loads, species, BOM, market prices.",
@@ -1281,7 +1151,7 @@ const I18N = {
     "f.rev.e4":"Khe tầng kẹp tay: ≤5 hoặc ≥12. Phòng trẻ: dây tường.",
     "f.rev.e5":"Hộp mua ngoài. Miệng phải giữ 284.",
     "home.title":"Ghế lounge gỗ đặc hình sóng<br><em>Chọn mục để làm việc</em>",
-    "home.lede":"Thiết kế là thư mục của bạn. Mỗi thư mục con là một sản phẩm. Phím 1–4, Esc về trang chủ.",
+    "home.lede":"Chọn sản phẩm, rồi Ngoại hình / Kết cấu / Sản xuất. Phím 1–3, Esc về trang chủ.",
     "home.c1":"Thư mục của bạn. Thả ý tưởng, ảnh, kích thước. Thư mục con = sản phẩm.",
     "home.c2":"Render, sơ đồ ergonomic, cảnh sử dụng.",
     "home.c3":"Liên kết, tải trọng, loài gỗ, BOM, giá thị trường.",
@@ -1552,6 +1422,7 @@ function renderVn() {
 }
 
 function go(id) {
+  if (id === "r1" || id === "cloud") id = "home";
   document.querySelectorAll(".page").forEach(p => p.classList.toggle("on", p.id === id));
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.go === id));
   location.hash = id === "home" ? "" : id;
@@ -1574,7 +1445,9 @@ window.addEventListener("keydown", e => {
     go("home");
   }
   if (e.target.matches("input, textarea, select")) return;
-  if (e.key >= "1" && e.key <= "4") go("r" + e.key);
+  if (e.key === "1") go("r2");
+  if (e.key === "2") go("r3");
+  if (e.key === "3") go("r4");
   if (e.key === "0") go("home");
 });
 
