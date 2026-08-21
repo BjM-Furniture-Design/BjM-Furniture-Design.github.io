@@ -43,17 +43,29 @@
 
   header {
     position: sticky; top: 0; z-index: 20;
+    isolation: isolate;
     display: flex; align-items: center; gap: 20px;
     padding: 14px 28px;
-    background: rgba(247,243,236,.88);
-    backdrop-filter: blur(14px);
+    background: rgba(247,243,236,.94);
     border-bottom: 1px solid var(--line);
+  }
+  header::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -1;
+    pointer-events: none;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
   .brand {
     display: flex; flex-direction: column; align-items: center;
     cursor: pointer; flex: 0 0 auto; gap: 3px;
   }
-  .brand img { height: 46px; width: auto; display: block; }
+  .brand img {
+    height: 46px; width: auto; max-width: none;
+    display: block; flex-shrink: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
   .brand small {
     font-size: 9px; letter-spacing: .24em; color: #1c1915;
     font-weight: 600; line-height: 1; white-space: nowrap;
@@ -210,7 +222,8 @@
 
   @media (max-width: 900px) {
     .hero, .roles, .grid-2, .grid-3, .flow { grid-template-columns: 1fr; }
-    header { flex-wrap: wrap; }
+    header { flex-wrap: wrap; background: #f7f3ec; }
+    header::before { display: none; }
     nav { margin-left: 0; }
     main { padding: 18px 16px 48px; }
     h1 { font-size: 26px; }
@@ -222,7 +235,11 @@
 <div class="app">
   <header>
     <div class="brand" onclick="go('home')" title="BjM Furniture Design">
-      <img src="logo/logo-mark.png?v=6" alt="BjM" />
+      <img
+        src="logo/header-mark.png?v=8"
+        srcset="logo/header-mark.png?v=8 1x, logo/header-mark@2x.png?v=8 2x, logo/header-mark@3x.png?v=8 3x"
+        width="71" height="46" alt="BjM"
+      />
       <small>Furniture Design</small>
     </div>
     <div class="langs" id="langs">
