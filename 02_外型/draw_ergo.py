@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.patches import Arc, Circle, Ellipse, FancyArrowPatch, Polygon, Rectangle
 from matplotlib.font_manager import FontProperties
+from PIL import Image
 import numpy as np
 
 from draw_cad_3view import (
@@ -24,6 +25,49 @@ GRAY = "#5A5A5A"
 FILL = "#3C3C3C"
 PAPER = "#FFFEFB"
 DPI = 170
+PIMP_DIR = OUT / "_pimp"
+# Free PNG scale figures from pimpmydrawing.com (do not redistribute SVG).
+PIMP = {
+    "sit_lounge": "young-man-sitting-chilling-and-looking-at-the-side-as-a-cad-block-2d-people-109-pimpmydrawing.png",
+    "stand_side": "man-standing-dwg-cad-132-pimpmydrawing.png",
+    "stand_walk": "man-walking-dwg-cad-130-pimpmydrawing.png",
+    "stand_woman": "woman-standing-dwg-cad-134-pimpmydrawing.png",
+    "child": "a-boy-standing-looking-in-the-camera-cad-people-77-pimpmydrawing.png",
+    "girl": "girl-with-shorts-standing-looking-in-the-camera-people-dwg-52-pimpmydrawing.png",
+    "sit_chair": "man-sitting-people-dwg-185-pimpmydrawing.png",
+    "top": "person-standing-top-view-vector-persons-pimpmydrawing-6359.png",
+}
+_FIG_CACHE = {}
+
+
+def load_pimp(key):
+    if key in _FIG_CACHE:
+        return _FIG_CACHE[key]
+    path = PIMP_DIR / PIMP[key]
+    im = Image.open(path).convert("RGBA")
+    a = np.array(im)
+    rgb, al = a[:, :, :3].astype(np.float32), a[:, :, 3]
+    mask = al > 12
+    if mask.any() and rgb[mask].mean() > 160:
+        rgb = 255 - rgb
+        a[:, :, :3] = rgb.astype(np.uint8)
+    ys, xs = np.where(al > 12)
+    a = a[ys.min(): ys.max() + 1, xs.min(): xs.max() + 1]
+    _FIG_CACHE[key] = a
+    return a
+
+
+def place_pimp(ax, key, x, y, h_plate, flip=False, center=False, z=8):
+    """Place a pimpmydrawing figure. (x,y) = left-bottom, or center-bottom if center."""
+    arr = load_pimp(key)
+    if flip:
+        arr = arr[:, ::-1].copy()
+    ph, pw = arr.shape[:2]
+    w_plate = pw / ph * h_plate
+    x0 = x - w_plate / 2 if center else x
+    ax.imshow(arr, extent=[x0, x0 + w_plate, y, y + h_plate],
+              origin="upper", interpolation="bilinear", zorder=z, aspect="auto")
+    return w_plate
 
 
 def save(fig, path):
@@ -231,7 +275,7 @@ def draw_wave():
     S = 0.078
     ox, oy = 58, 155
     chair_side(ox, oy, S, 1.1)
-    stroke_sit(ax, ox + 520 * S, oy + 400 * S, S, face=-1, lounge=True)
+    place_pimp(ax, "sit_lounge", ox + 175 * S, oy + 6 * S, 700 * S, flip=False)
     eye_y = oy + 705 * S
     ax.plot([ox + 180 * S, ox + 980 * S], [eye_y, eye_y],
             color=INK, lw=0.45, ls=(0, (3, 2)), zorder=9)
@@ -249,8 +293,8 @@ def draw_wave():
     S2 = 0.062
     bx, by = 52, 28
     chair_side(bx, by, S2, 0.95)
-    stroke_sit(ax, bx + 520 * S2, by + 400 * S2, S2, face=-1, lounge=True)
-    fill_stand_front(ax, bx + D * S2 + 70, by, S2, h=1750)
+    place_pimp(ax, "sit_lounge", bx + 150 * S2, by + 5 * S2, 680 * S2)
+    place_pimp(ax, "stand_walk", bx + D * S2 + 38, by, 1750 * S2)
     dim_h(ax, bx + D * S2, bx + D * S2 + 70, by + 80 * S2, "600~800", dy=16)
     label(ax, bx + D * S2 + 35, by + 200 * S2, "通行區", fs=7, ha="center")
     dim_v(ax, by, by + 400 * S2, bx + 420 * S2, "400", dx=11, left=False, fs=7)
@@ -272,8 +316,8 @@ def draw_wave():
     fx0, fy = 318, 28
     ax.plot(fx0 + fo[:, 0] * sf, fy + fo[:, 1] * sf, color=INK, lw=1.0, zorder=5)
     gl(ax, fx0 - 78, fx0 + 95, fy)
-    fill_stand_front(ax, fx0 - 72, fy, sf, h=1750)
-    fill_stand_front(ax, fx0 + 82, fy, sf, h=1750)
+    place_pimp(ax, "stand_woman", fx0 - 95, fy, 1650 * sf)
+    place_pimp(ax, "stand_walk", fx0 + 58, fy, 1750 * sf)
     dim_h(ax, fx0 - 450 * sf, fx0 + 450 * sf, fy + 830 * sf, "900", dy=10)
     dim_h_below(ax, fx0 - 62, fx0 - 450 * sf, fy, "450~610", dy=12)
     label(ax, fx0 - 62, fy + 90 * sf, "通行", fs=7, ha="center")
@@ -281,7 +325,7 @@ def draw_wave():
 
     ax.plot([8, 422], [11, 11], color=INK, lw=0.3)
     label(ax, 10, 5,
-          "座高含墊 400    有效座深 520    座盆內寬 540    扶手 580    總高 820    總深 960    靠背 20°    座面 5°    腰椎做在軟包",
+          "座高含墊 400    有效座深 520    座盆內寬 540    扶手 580    總高 820    總深 960    靠背 20°    座面 5°    人物 pimpmydrawing.com",
           fs=7, va="center", color=GRAY)
 
     ax.set_xlim(-2, 432)
@@ -332,8 +376,8 @@ def draw_koala():
 
     # ---- B. adult + child ----
     ax2x, ay = 175, 28
-    fill_stand_front(ax, ax2x, ay, S, h=1750)
-    fill_stand_front(ax, ax2x + 70, ay, S, h=1200)
+    place_pimp(ax, "stand_woman", ax2x, ay, 1650 * S)
+    place_pimp(ax, "child", ax2x + 55, ay, 1200 * S)
     gl(ax, ax2x - 15, ax2x + 90, ay)
     dim_v(ax, ay, ay + 1750 * S, ax2x - 8, "1750", dx=12)
     dim_v(ax, ay, ay + 1200 * S, ax2x + 78, "1200", dx=12, left=False)
@@ -356,7 +400,7 @@ def draw_koala():
     caption(ax, px, py - 400 * sp - 28, "平面：花座 Ø180，偏小須配重或牆扣")
 
     ax.plot([8, 412], [10, 10], color=INK, lw=0.3)
-    label(ax, 10, 5, "兒童房／玄關短掛　·　不是大廳大衣架　·　花座 Ø180 對 1280 立柱須加鋼配重或牆扣",
+    label(ax, 10, 5, "兒童房／玄關短掛　·　不是大廳大衣架　·　人物 pimpmydrawing.com",
           fs=7, va="center", color=GRAY)
 
     ax.set_xlim(-2, 422)
@@ -396,8 +440,8 @@ def draw_f180():
     ax.plot([ox + w * S, ox + w * S + 14], [oy + 610 * S, oy + 610 * S], color=INK, lw=0.35)
     ax.plot([ox + w * S, ox + w * S + 14], [oy + 200 * S, oy + 200 * S], color=INK, lw=0.35)
 
-    fill_stand_front(ax, ox + w * S + 45, oy, S, h=1750)
-    fill_stand_front(ax, ox + w * S + 115, oy, S, h=1200)
+    place_pimp(ax, "stand_side", ox + w * S + 18, oy, 1750 * S)
+    place_pimp(ax, "child", ox + w * S + 72, oy, 1200 * S)
     dim_v(ax, oy, oy + 1750 * S, ox + w * S + 118, "1750", dx=12, left=False)
     caption(ax, ox + w * S / 2, oy - 28, "立面：站著擺物，不是書桌")
 
@@ -432,7 +476,7 @@ def draw_f180():
     caption(ax, tx + 40, ty - 14, "層高與使用")
 
     ax.plot([8, 412], [10, 10], color=INK, lw=0.3)
-    label(ax, 10, 5, "總高 1150 適合作畫／擺物　·　軸承必須能鎖　·　童房加牆扣　·　不是成人書桌",
+    label(ax, 10, 5, "總高 1150 適合作畫／擺物　·　軸承必須能鎖　·　不是成人書桌　·　人物 pimpmydrawing.com",
           fs=7, va="center", color=GRAY)
 
     ax.set_xlim(-2, 422)

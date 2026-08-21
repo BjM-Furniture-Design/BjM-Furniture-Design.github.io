@@ -1,9 +1,5 @@
-*.stl
-Thumbs.db
-.DS_Store
-訓練/**/圖庫/
-**/訓練/圖庫/
-.env
-.env.*
-**/secrets/
+02_外型/_pimp/
+02_外型/__pycache__/
+ar/_convert/unpacked/
 ar/_convert/node_modules/
+logo/logo-mark-hi.png
