@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>BjM Furniture Design</title>
+<title>包俊銘 · Furniture Design Engineer</title>
 <link rel="icon" href="favicon.ico?v=7" sizes="any" />
 <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png?v=7" />
 <link rel="icon" type="image/png" sizes="48x48" href="logo/favicon-48.png?v=7" />
 <link rel="apple-touch-icon" href="logo/apple-touch-icon.png?v=7" />
 <link rel="manifest" href="site.webmanifest" />
-<meta name="application-name" content="BjM Furniture Design" />
-<meta property="og:title" content="BjM Furniture Design" />
+<meta name="application-name" content="包俊銘 · Furniture Design Engineer" />
+<meta property="og:title" content="包俊銘 · Furniture Design Engineer · NX / CNC / 5-Axis" />
 <meta property="og:image" content="logo/logo.png?v=5" />
-<meta name="apple-mobile-web-app-title" content="BjM Furniture Design" />
+<meta name="apple-mobile-web-app-title" content="Bao Jun-Ming" />
 <style>
   :root {
     --ink: #1c1915;
@@ -269,8 +269,36 @@
   footer {
     padding: 16px 28px 22px; color: var(--muted); font-size: 11px;
     letter-spacing: .14em; border-top: 1px solid var(--line);
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
   }
+  .identity { margin-bottom: 28px; max-width: 720px; }
+  .identity h1 { font-size: 38px; letter-spacing: .04em; line-height: 1.15; margin: 6px 0 10px; }
+  .identity h1 em { font-style: normal; color: var(--oak-deep); font-size: 18px; letter-spacing: .12em; display: block; margin-top: 8px; font-weight: 600; }
+  .identity .lede { font-size: 16px; color: var(--ink); margin-bottom: 8px; }
+  .identity .where { font-size: 13px; color: var(--muted); }
+  .cta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .cta button {
+    border: 0; background: var(--dark); color: #f7f3ec;
+    padding: 10px 16px; border-radius: 999px; cursor: pointer;
+    font-size: 12px; letter-spacing: .1em;
+  }
+  .cta button.ghost { background: #efe8dc; color: var(--ink); }
+  .pipe {
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+    margin: 0 0 22px; font-size: 11px; letter-spacing: .08em; color: var(--muted);
+  }
+  .pipe b { color: var(--ink); font-weight: 700; }
+  .pipe i { font-style: normal; color: var(--oak-deep); }
+  .wait {
+    border: 1px dashed #c9bba6; background: #f3eee4; border-radius: 14px;
+    padding: 18px 16px; color: var(--muted); font-size: 13px;
+  }
+  .wait b { color: var(--ink); display: block; margin-bottom: 6px; letter-spacing: .08em; font-size: 12px; }
+  .tree { font-family: Consolas, "Courier New", monospace; font-size: 12.5px; line-height: 1.55; color: #3d382f; }
+  .skill { display: grid; grid-template-columns: 160px 1fr; gap: 8px 18px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .skill b { letter-spacing: .04em; }
+  .skill span { color: var(--muted); font-size: 13px; }
+  .nx { font-size: 11px; letter-spacing: .16em; color: var(--oak-deep); margin: 6px 0 0; }
 
   @media (max-width: 900px) {
     .hero, .roles, .grid-2, .grid-3, .flow, .catalog { grid-template-columns: 1fr; }
@@ -281,6 +309,7 @@
     .langs { margin-left: 0; }
     main { padding: 18px 16px 48px; }
     h1 { font-size: 26px; }
+    .identity h1 { font-size: 28px; }
     .hero-photo { min-height: 260px; }
     .sku-strip { gap: 6px; margin-bottom: 16px; }
     .sku-strip button { flex-direction: column; align-items: stretch; gap: 6px; padding: 6px; }
@@ -299,7 +328,7 @@
         srcset="logo/header-mark.png?v=8 1x, logo/header-mark@2x.png?v=8 2x, logo/header-mark@3x.png?v=8 3x"
         width="71" height="46" alt="BjM"
       />
-      <small>Furniture Design</small>
+      <small>NX · CNC</small>
     </div>
     <div class="skus" id="skus">
       <button type="button" data-sku="wave" class="on">WAVE</button>
@@ -312,10 +341,12 @@
       <button type="button" data-lang="vi">VI</button>
     </div>
     <nav>
-      <button data-go="home" class="active" data-i18n="nav.home">總覽</button>
+      <button data-go="home" class="active" data-i18n="nav.home">作品</button>
       <button data-go="r2" data-i18n="nav.form">外型</button>
-      <button data-go="r3" data-i18n="nav.struct">結構／材料</button>
-      <button data-go="r4" data-i18n="nav.prod">生產／CNC</button>
+      <button data-go="r3" data-i18n="nav.struct">工程／NX</button>
+      <button data-go="r4" data-i18n="nav.prod">CNC</button>
+      <button data-go="skills" data-i18n="nav.skills">技能</button>
+      <button data-go="cv" data-i18n="nav.cv">履歷</button>
     </nav>
   </header>
 
@@ -344,6 +375,25 @@
       </button>
     </div>
     <section id="home" class="page on">
+      <div class="identity">
+        <div class="kicker">PORTFOLIO</div>
+        <h1 data-i18n="id.name">包俊銘<br><em>Furniture Design Engineer</em></h1>
+        <p class="lede" data-i18n="id.lede">Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing</p>
+        <p class="where" data-i18n="id.where">Vietnam furniture manufacturing · 2016–Present · 中文 / Tiếng Việt</p>
+        <div class="cta">
+          <button type="button" onclick="go('r2')" data-i18n="id.view">查看作品</button>
+          <button type="button" class="ghost" onclick="go('cv')" data-i18n="id.cv">履歷</button>
+        </div>
+      </div>
+      <div class="pipe">
+        <b data-i18n="id.pipe">2D</b><i>→</i>
+        <b>NX 3D</b><i>→</i>
+        <b data-i18n="id.asm">裝配</b><i>→</i>
+        <b data-i18n="id.dwg">工程圖</b><i>→</i>
+        <b>NX CAM</b><i>→</i>
+        <b data-i18n="id.5ax">五軸</b><i>→</i>
+        <b data-i18n="id.fin">成品</b>
+      </div>
       <div class="catalog">
         <button class="pick on" data-pick="wave" type="button" onclick="setSku('wave')">
           <img src="02_外型/WAVE-LC-R01_hero_34.jpg" alt="WAVE">
@@ -375,9 +425,9 @@
         <div class="hero">
           <div class="hero-photo wave" onclick="zoom(this)"><i>WAVE-LC-001</i></div>
           <div class="hero-copy">
-            <div class="kicker">BJM FURNITURE DESIGN</div>
-            <h1 data-i18n="home.title">浪形實木休閒椅<br><em>點選職位即可操作</em></h1>
-            <p class="lede" data-i18n="home.lede">選產品、再看外型／結構／生產。快捷鍵 1–3，Esc 回總覽。</p>
+            <div class="kicker">WAVE · NX / 5-AXIS</div>
+            <h1 data-i18n="home.title">浪形實木休閒椅<br><em>選擇作品查看詳細內容</em></h1>
+            <p class="lede" data-i18n="home.lede">從外型、工程圖到五軸白身。Designed in Siemens NX。</p>
             <div class="stats">
               <div class="stat"><b>900×960</b><s data-i18n="home.wh">W × D mm</s></div>
               <div class="stat"><b>820</b><s data-i18n="home.ht">H mm</s></div>
@@ -404,8 +454,8 @@
         <div class="hero">
           <div class="hero-photo koala" onclick="zoom(this)"><i>KOALA-CR-001</i></div>
           <div class="hero-copy">
-            <div class="kicker">BJM FURNITURE DESIGN</div>
-            <h1 data-i18n="k.home.title">無尾熊實木衣帽架<br><em>花座 · 九枝 · 熊牌</em></h1>
+            <div class="kicker">KOALA · CNC / PRODUCTION</div>
+            <h1 data-i18n="k.home.title">無尾熊實木衣帽架<br><em>兒童房／玄關短掛</em></h1>
             <p class="lede" data-i18n="k.home.lede">兒童房／玄關短掛，不是大廳大衣架。</p>
             <div class="stats">
               <div class="stat"><b>Ø180</b><s data-i18n="k.home.base">base mm</s></div>
@@ -420,8 +470,8 @@
         <div class="hero">
           <div class="hero-photo f180" onclick="zoom(this)"><i>F180-RC-001</i></div>
           <div class="hero-copy">
-            <div class="kicker">BJM FURNITURE DESIGN</div>
-            <h1 data-i18n="f.home.title">旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em></h1>
+            <div class="kicker">F180 · ASSEMBLY / CNC</div>
+            <h1 data-i18n="f.home.title">旋轉繪圖櫃<br><em>可轉塔 · 可換模組</em></h1>
             <p class="lede" data-i18n="f.home.lede">同一骨架可換成收納箱、繪圖板、書擋。</p>
             <div class="stats">
               <div class="stat"><b>560×560</b><s data-i18n="home.wh">W × D mm</s></div>
@@ -433,9 +483,9 @@
       </div>
 
       <div class="roles">
-        <button class="role" onclick="go('r2')"><div class="num">01</div><h3 data-i18n="nav.form">外型</h3><p data-i18n="home.c2">渲染、人體工學示意、客廳／酒店場景。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-        <button class="role" onclick="go('r3')"><div class="num">02</div><h3 data-i18n="nav.struct">結構／材料</h3><p data-i18n="home.c3">分件接合、載重公差、樹種、BOM、行情。</p><div class="go" data-i18n="home.go">進入 →</div></button>
-        <button class="role" onclick="go('r4')"><div class="num">03</div><h3 data-i18n="nav.prod">生產／CNC</h3><p data-i18n="home.c4">五軸刀路、治具、工時、出廠成本、量產門檻。</p><div class="go" data-i18n="home.go">進入 →</div></button>
+        <button class="role" onclick="go('r2')"><div class="num">01</div><h3 data-i18n="nav.form">外型</h3><p data-i18n="home.c2">產品概念、人體尺度、場景。</p><div class="go" data-i18n="home.go">進入 →</div></button>
+        <button class="role" onclick="go('r3')"><div class="num">02</div><h3 data-i18n="nav.struct">工程／NX</h3><p data-i18n="home.c3">分件、BOM、三視圖、待補 NX 裝配截圖。</p><div class="go" data-i18n="home.go">進入 →</div></button>
+        <button class="role" onclick="go('r4')"><div class="num">03</div><h3 data-i18n="nav.prod">CNC</h3><p data-i18n="home.c4">工序、治具、五軸規劃。刀路截圖待補。</p><div class="go" data-i18n="home.go">進入 →</div></button>
       </div>
     </section>
 
@@ -557,13 +607,30 @@
 
     <section id="r3" class="page">
       <div class="sku wave">
-        <div class="kicker" data-i18n="st.kicker">03 · Structure / Material</div>
+        <div class="kicker" data-i18n="st.kicker">03 · Engineering / NX</div>
         <h2 data-i18n="st.title">怎麼做才坐得住，用什麼木</h2>
         <p class="sub" data-i18n="st.sub">禁止整塊掏空。主材層積白橡。</p>
+        <p class="nx">DESIGNED IN SIEMENS NX</p>
+        <div class="grid-2" style="margin:14px 0 18px">
+          <div class="card">
+            <h3 data-i18n="nx.asm">Master assembly</h3>
+            <pre class="tree">WAVE-LC-001
+├── A  Left shell
+├── B  Right shell
+├── C  Seat basin
+├── Cushion
+└── Base / pads</pre>
+            <p class="note" data-i18n="nx.note">爆炸圖／NX 螢幕截圖待補。下面三視圖與 BOM 是現有工程證據。</p>
+          </div>
+          <div class="wait">
+            <b data-i18n="nx.wait">待補 · NX 3D / 爆炸圖截圖</b>
+            <span data-i18n="nx.waitd">請把 NX 裝配、爆炸、零件畫面丟進此頁。沒有真圖之前不放假圖。</span>
+          </div>
+        </div>
         <div class="grid-2">
           <div>
             <div class="photo" onclick="zoom(this.querySelector('img'))" style="aspect-ratio:auto"><img src="03_結構與材料/WAVE-LC-001_3view.png" alt="3view" style="aspect-ratio:auto"></div>
-            <div class="caption">WAVE-LC-001</div>
+            <div class="caption">WAVE-LC-001 · 3-view · mm</div>
           </div>
           <div class="card">
             <h3 data-i18n="st.principles">結構原則</h3>
@@ -728,27 +795,22 @@
             </div>
           </div>
         </div>
-        <div class="grid-3" style="margin-top:18px">
-          <div class="card"><h3 data-i18n="pr.h1">Prototype hours</h3><div class="stat"><b>32–48 h</b><s data-i18n="pr.h1s">direct / chair</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h2">Small-lot hours</h3><div class="stat"><b>21–29 h</b><s data-i18n="pr.h2s">after piece 5</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h3">Yield</h3><div class="stat"><b>25–40%</b><s data-i18n="pr.h3s">laminated parts</s></div></div>
-        </div>
         <div class="grid-2" style="margin-top:18px">
           <div class="card">
-            <h3 data-i18n="pr.price">Factory (oak, mid)</h3>
-            <table>
-              <tr><th></th><th class="n" data-i18n="pr.proto">Proto</th><th class="n" data-i18n="pr.lot">Lot / pc</th></tr>
-              <tr><td data-i18n="pr.cost">Make cost</td><td class="n">NT$ 60–110k</td><td class="n">NT$ 35–65k</td></tr>
-              <tr><td data-i18n="pr.exw">EXW</td><td class="n">NT$ 120–200k</td><td class="n">NT$ 70–130k</td></tr>
-            </table>
-          </div>
-          <div class="card">
-            <h3 data-i18n="pr.vol">Volume gate</h3>
+            <h3>NX CAM · WAVE</h3>
+            <p class="nx">5-AXIS WHITE BODY · XYZCB · TCP</p>
             <ul>
-              <li data-i18n="pr.v1">5–20: jigs + work instructions</li>
-              <li data-i18n="pr.v2">50+: sanding standard or robot</li>
-              <li data-i18n="pr.v3">200+: bent lamination + 5-axis trim</li>
+              <li><b>T01</b> Ø12 R2 · rough</li>
+              <li><b>T02</b> Ø16 ball · semi / finish</li>
+              <li><b>T03</b> Ø8 · rebate / pins</li>
+              <li><b>Ops</b> rough → semi → finish → 5-axis contour</li>
+              <li><b>Axis</b> B/C · lead / tilt · smoothing · G43.4</li>
             </ul>
+            <p class="note" data-i18n="cam.note">以上是加工規劃。刀路、模擬、G-code 截圖待補，不放推估工時與出廠價。</p>
+          </div>
+          <div class="wait">
+            <b data-i18n="cam.wait">待補 · NX CAM 刀路 / 模擬 / G-code</b>
+            <span data-i18n="cam.waitd">有 NX 畫面再放。沒有真圖就不做假刀路。</span>
           </div>
         </div>
       </div>
@@ -763,19 +825,10 @@
           <div class="card"><div class="num">03</div><h3 data-i18n="pr.m3">Finish</h3><p data-i18n="k.pr.m3d"></p></div>
           <div class="card"><div class="num">04</div><h3 data-i18n="pr.m4">Pack</h3><p data-i18n="k.pr.m4d"></p></div>
         </div>
-        <div class="grid-3" style="margin-top:18px">
-          <div class="card"><h3 data-i18n="pr.h1">Prototype hours</h3><div class="stat"><b>6–10 h</b><s data-i18n="k.pr.h1s">incl. drill jig</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h2">Small-lot hours</h3><div class="stat"><b>1.2–1.8 h</b><s data-i18n="k.pr.h2s">after piece 10</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h3">Net wood</h3><div class="stat"><b>~0.01 m³</b><s data-i18n="k.pr.h3s">with waste</s></div></div>
-        </div>
         <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="pr.price">Factory (rubberwood, VN)</h3>
-            <table>
-              <tr><th></th><th class="n" data-i18n="pr.proto">Proto</th><th class="n" data-i18n="pr.lot">Lot / pc</th></tr>
-              <tr><td data-i18n="pr.exw">EXW</td><td class="n">NT$ 2.4–4.2k</td><td class="n">NT$ 0.68–1.35k</td></tr>
-            </table>
-            <p class="note" data-i18n="k.pr.note">Add NT$ 80–150 for steel weight + wall tether. Kids finish: EN 71-3.</p>
+          <div class="wait">
+            <b data-i18n="cam.wait">待補 · 刀路 / 治具實拍</b>
+            <span data-i18n="k.cam.waitd">3 軸＋車床＋雷射。不放推估出廠價。</span>
           </div>
           <div class="card">
             <h3 data-i18n="pr.ops">Shop notes</h3>
@@ -802,19 +855,10 @@
           <div class="card"><div class="num">03</div><h3 data-i18n="pr.m3">Finish</h3><p data-i18n="f.pr.m3d"></p></div>
           <div class="card"><div class="num">04</div><h3 data-i18n="pr.m4">Pack</h3><p data-i18n="f.pr.m4d"></p></div>
         </div>
-        <div class="grid-3" style="margin-top:18px">
-          <div class="card"><h3 data-i18n="pr.h1">Prototype hours</h3><div class="stat"><b>8–14 h</b><s data-i18n="f.pr.h1s">incl. bearing jig</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h2">Small-lot hours</h3><div class="stat"><b>2.0–3.5 h</b><s data-i18n="k.pr.h2s">after piece 10</s></div></div>
-          <div class="card"><h3 data-i18n="pr.h3">Yield</h3><div class="stat"><b>panel</b><s data-i18n="f.pr.h3s">3-axis nest</s></div></div>
-        </div>
         <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="pr.price">Factory (VN)</h3>
-            <table>
-              <tr><th></th><th class="n" data-i18n="pr.proto">Proto</th><th class="n" data-i18n="pr.lot">Lot / pc</th></tr>
-              <tr><td data-i18n="pr.exw">EXW</td><td class="n">NT$ 4.0–7.2k</td><td class="n">NT$ 1.8–3.2k</td></tr>
-            </table>
-            <p class="note" data-i18n="f.pr.note">Base tower + bins. Extra modules quoted separately. Kids finish EN 71-3.</p>
+          <div class="wait">
+            <b data-i18n="cam.wait">待補 · 套裁 / 軸承治具實拍</b>
+            <span data-i18n="f.cam.waitd">板式 3 軸。不放推估出廠價。</span>
           </div>
           <div class="card">
             <h3 data-i18n="pr.ops">Shop notes</h3>
@@ -832,16 +876,56 @@
       </div>
     </section>
 
-    <section id="cloud" class="page">
-      <div class="kicker">PRIVATE</div>
-      <h2>This page is not public</h2>
-      <p class="sub">Cloud paths stay on your own Drive, not on this site.</p>
+    <section id="skills" class="page">
+      <div class="kicker" data-i18n="sk.kicker">SKILLS</div>
+      <h2 data-i18n="sk.title">會什麼、做到哪一層</h2>
+      <p class="sub" data-i18n="sk.sub">不用星星。程度用工作內容寫。</p>
+      <div class="card">
+        <div class="skill"><b>Siemens NX</b><span data-i18n="sk.nx">Advanced · 3D Modeling / Assembly / Drafting</span></div>
+        <div class="skill"><b>NX CAM</b><span data-i18n="sk.cam">Advanced · 3 / 3+2 / 5-Axis（刀路圖待補）</span></div>
+        <div class="skill"><b>UG</b><span data-i18n="sk.ug">Advanced · 建模／裝配</span></div>
+        <div class="skill"><b>AutoCAD</b><span data-i18n="sk.acad">2D drawing</span></div>
+        <div class="skill"><b>5-Axis CNC</b><span data-i18n="sk.5ax">Woodworking · white body · contour</span></div>
+        <div class="skill"><b>3-Axis CNC</b><span data-i18n="sk.3ax">Router / nest / jig</span></div>
+        <div class="skill"><b>Furniture</b><span data-i18n="sk.fur">Solid wood construction · production engineering</span></div>
+      </div>
+    </section>
+
+    <section id="cv" class="page">
+      <div class="kicker" data-i18n="cv.kicker">RESUME</div>
+      <h2 data-i18n="cv.title">包俊銘 · Bao Jun-Ming</h2>
+      <p class="sub" data-i18n="cv.sub">Furniture Design / Engineering / CNC</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="cv.exp">Experience</h3>
+          <p><b data-i18n="cv.vn">Vietnam Furniture Manufacturing</b><br>2016–Present</p>
+          <p class="note" data-i18n="cv.expd">工廠端：設計到加工。具體廠名、職稱待補。</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="cv.soft">Software</h3>
+          <ul>
+            <li>Siemens NX · NX CAM</li>
+            <li>UG · AutoCAD</li>
+          </ul>
+          <h3 style="margin-top:14px" data-i18n="cv.mfg">Manufacturing</h3>
+          <ul>
+            <li>3-Axis CNC · 5-Axis CNC</li>
+            <li data-i18n="cv.wood">實木家具 · 組裝</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3 data-i18n="cv.lang">Languages</h3>
+        <p data-i18n="cv.langs">中文 · Tiếng Việt · English</p>
+        <h3 style="margin-top:14px" data-i18n="cv.ct">Contact</h3>
+        <p class="note" data-i18n="cv.ctd">Email / WhatsApp / Zalo / LinkedIn 待補。不在網站上放假聯絡方式。</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <span>BjM Furniture Design</span>
-    <span data-i18n="foot">1–4 · ESC · click image</span>
+    <span>© 2026 · Selected Works · Furniture Design / CNC / NX</span>
+    <span data-i18n="foot">作品 · 工程 · CNC · 技能 · 履歷</span>
   </footer>
 </div>
 
@@ -855,11 +939,32 @@ let currentSku = localStorage.getItem(SKU_KEY) || "wave";
 
 const I18N = {
   zh: {
-    "nav.home":"總覽","nav.design":"主設","nav.form":"外型","nav.struct":"結構／材料","nav.prod":"生產／CNC",
+    "nav.home":"作品","nav.design":"主設","nav.form":"外型","nav.struct":"工程／NX","nav.prod":"CNC","nav.skills":"技能","nav.cv":"履歷",
+    "id.name":"包俊銘<br><em>Furniture Design Engineer</em>",
+    "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
+    "id.where":"Vietnam furniture manufacturing · 2016–Present · 中文 / Tiếng Việt",
+    "id.view":"查看作品","id.cv":"履歷",
+    "id.pipe":"2D","id.asm":"裝配","id.dwg":"工程圖","id.5ax":"五軸","id.fin":"成品",
+    "nx.asm":"主裝配","nx.note":"爆炸圖／NX 螢幕截圖待補。下面三視圖與 BOM 是現有工程證據。",
+    "nx.wait":"待補 · NX 3D / 爆炸圖截圖","nx.waitd":"請把 NX 裝配、爆炸、零件畫面丟進此頁。沒有真圖之前不放假圖。",
+    "cam.note":"以上是加工規劃。刀路、模擬、G-code 截圖待補，不放推估工時與出廠價。",
+    "cam.wait":"待補 · NX CAM 刀路 / 模擬 / G-code","cam.waitd":"有 NX 畫面再放。沒有真圖就不做假刀路。",
+    "k.cam.waitd":"3 軸＋車床＋雷射。不放推估出廠價。","f.cam.waitd":"板式 3 軸。不放推估出廠價。",
+    "sk.kicker":"技能","sk.title":"會什麼、做到哪一層","sk.sub":"不用星星。程度用工作內容寫。",
+    "sk.nx":"Advanced · 3D Modeling / Assembly / Drafting",
+    "sk.cam":"Advanced · 3 / 3+2 / 5-Axis（刀路圖待補）",
+    "sk.ug":"Advanced · 建模／裝配","sk.acad":"2D drawing",
+    "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
+    "sk.fur":"Solid wood construction · production engineering",
+    "cv.kicker":"履歷","cv.title":"包俊銘 · Bao Jun-Ming","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"經歷","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"工廠端：設計到加工。具體廠名、職稱待補。",
+    "cv.soft":"軟體","cv.mfg":"製造","cv.wood":"實木家具 · 組裝",
+    "cv.lang":"語言","cv.langs":"中文 · Tiếng Việt · English",
+    "cv.ct":"聯絡","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn 待補。不在網站上放假聯絡方式。",
     "cat.wave":"波浪椅","cat.waved":"實木休閒椅 · 層積 A/B/C",
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
     "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
-    "f.home.title":"旋轉繪圖櫃<br><em>圓角塔 · 可轉 · 可換模組</em>",
+    "f.home.title":"旋轉繪圖櫃<br><em>可轉塔 · 可換模組</em>",
     "f.home.lede":"同一骨架可換成收納箱、繪圖板、書擋。",
     "f.home.r":"圓角",
     "f.des.how":"主設讀到的檔","f.des.h1":"空塔／裝箱渲染、客廳場景、尺寸 PDF（NX 只留雲端）",
@@ -893,18 +998,18 @@ const I18N = {
     "f.rev.e3":"旋轉＋抽板同時做會偏載，軸承必須能鎖。",
     "f.rev.e4":"層縫夾手：間隙收到 ≤5 或 ≥12。童房加牆扣。",
     "f.rev.e5":"塑膠箱是外購件，口寬必須對 284。",
-    "home.title":"浪形實木休閒椅<br><em>點選職位即可操作</em>",
-    "home.lede":"選產品、再看外型／結構／生產。快捷鍵 1–3，Esc 回總覽。",
+    "home.title":"浪形實木休閒椅<br><em>選擇作品查看詳細內容</em>",
+    "home.lede":"從外型、工程圖到五軸白身。Designed in Siemens NX。",
     "home.c1":"你的資料夾。想法、照片、尺寸直接丟進來。子夾 = 產品。",
-    "home.c2":"渲染、人體工學示意、場景使用。",
-    "home.c3":"分件接合、載重公差、樹種、BOM、行情。",
-    "home.c4":"刀路、治具、工時、出廠成本、量產門檻。",
+    "home.c2":"產品概念、人體尺度、場景。",
+    "home.c3":"分件、BOM、三視圖、待補 NX 裝配截圖。",
+    "home.c4":"工序、治具、五軸規劃。刀路截圖待補。",
     "home.go":"進入 →",
     "ar.scan":"手機鏡頭掃這個碼，直接進 AR，不用再點。",
     "ar.android":"Android · GLB",
     "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"寬 × 深 mm","home.ht":"總高 mm","home.abc":"左殼 · 右殼 · 座盆",
-    "k.home.title":"無尾熊實木衣帽架<br><em>花座 · 九枝 · 熊牌</em>",
+    "k.home.title":"無尾熊實木衣帽架<br><em>兒童房／玄關短掛</em>",
     "k.home.lede":"兒童房／玄關短掛，不是大廳大衣架。",
     "k.home.base":"花座 mm","k.home.ht":"總高 mm","k.home.hooks":"掛鉤 55°",
     "form.kicker":"02 · 外型","form.title":"外型、坐姿、使用場景",
@@ -937,7 +1042,7 @@ const I18N = {
     "k.pr.h1s":"含鑽模","k.pr.h2s":"第 10 件之後","k.pr.h3s":"含損耗",
     "k.pr.note":"配重＋牆扣另加 NT$ 80–150。童用漆要 EN 71-3。",
     "k.pr.o1":"55° 鑽模，第 2 層轉 60°","k.pr.o2":"先 CNC 再雷射熊臉","k.pr.o3":"拆裝出貨：座／柱／鉤／牌",
-    "st.kicker":"03 · 結構／材料","st.title":"怎麼做才坐得住，用什麼木","st.sub":"禁止整塊掏空。主材層積白橡。",
+    "st.kicker":"03 · 工程／NX","st.title":"怎麼做才坐得住，用什麼木","st.sub":"禁止整塊掏空。主材層積白橡。",
     "st.principles":"結構原則","st.p1":"承重：座盆兩側 → 扶手根 → 後踵","st.p2":"前舌不單獨扛前移彎矩","st.p5":"腳墊 Ø20–25，四顆",
     "st.f1":"結構說明","st.f2":"分件接合","st.wood":"樹種","st.sp":"樹種","st.why":"為什麼","st.mat":"材性","st.vn":"越南行情",
     "st.price":"越南倉庫參考價（萬 VND／m³）",
@@ -977,14 +1082,35 @@ const I18N = {
     "k.rev.e5":"掛鉤端 R8 合理；建議再倒 1 mm，避免戳到眼睛。",
     "saved":"已記住這次選擇",
     "vn.unit":"萬",
-    "foot":"1–4 分頁 · ESC 回總覽 · 點圖放大"
+    "foot":"作品 · 工程 · CNC · 技能 · 履歷"
   },
   en: {
-    "nav.home":"Overview","nav.design":"Design","nav.form":"Form","nav.struct":"Structure / Material","nav.prod":"Production / CNC",
+    "nav.home":"Works","nav.design":"Design","nav.form":"Form","nav.struct":"Engineering / NX","nav.prod":"CNC","nav.skills":"Skills","nav.cv":"Resume",
+    "id.name":"Bao Jun-Ming<br><em>Furniture Design Engineer</em>",
+    "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
+    "id.where":"Vietnam furniture manufacturing · 2016–Present · Chinese / Vietnamese",
+    "id.view":"View works","id.cv":"Resume",
+    "id.pipe":"2D","id.asm":"Assembly","id.dwg":"Drawing","id.5ax":"5-axis","id.fin":"Finished",
+    "nx.asm":"Master assembly","nx.note":"Exploded / NX screenshots still to add. The 3-view and BOM below are the drawings on hand.",
+    "nx.wait":"To add · NX 3D / explode screenshots","nx.waitd":"Drop NX assembly, explode and part shots here. No fake CAD pictures.",
+    "cam.note":"Process plan only. Toolpath, sim and G-code still to add. No estimated hours or EXW.",
+    "cam.wait":"To add · NX CAM toolpath / sim / G-code","cam.waitd":"Add when NX shots exist. No fake toolpaths.",
+    "k.cam.waitd":"3-axis + lathe + laser. No estimated EXW.","f.cam.waitd":"Panel 3-axis. No estimated EXW.",
+    "sk.kicker":"Skills","sk.title":"What I actually do","sk.sub":"No star ratings. Level is written as work.",
+    "sk.nx":"Advanced · 3D Modeling / Assembly / Drafting",
+    "sk.cam":"Advanced · 3 / 3+2 / 5-Axis (toolpath still to add)",
+    "sk.ug":"Advanced · model / assembly","sk.acad":"2D drawing",
+    "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
+    "sk.fur":"Solid wood construction · production engineering",
+    "cv.kicker":"Resume","cv.title":"Bao Jun-Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"Experience","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"Factory: design through machining. Company names / titles still to add.",
+    "cv.soft":"Software","cv.mfg":"Manufacturing","cv.wood":"Solid-wood furniture · assembly",
+    "cv.lang":"Languages","cv.langs":"Chinese · Vietnamese · English",
+    "cv.ct":"Contact","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn still to add. No fake contacts.",
     "cat.wave":"Wave lounge","cat.waved":"Solid-wood lounge · laminated A/B/C",
     "cat.koala":"Koala coat rack","cat.koalad":"Flower base · 9 pegs · koala plaque",
     "cat.f180":"Rotate drawing tower","cat.f180d":"Turntable · boards · bins",
-    "f.home.title":"Rotate drawing tower<br><em>Round-square · turn · swap modules</em>",
+    "f.home.title":"Rotate drawing tower<br><em>Turntable · swap modules</em>",
     "f.home.lede":"Source is the F180 folder in Design. One frame, swap bins, boards or bookends.",
     "f.home.r":"corner R",
     "f.des.how":"Files read from Design","f.des.h1":"Empty / loaded renders, living scenes, size PDF (NX stays on Drive)",
@@ -1018,18 +1144,18 @@ const I18N = {
     "f.rev.e3":"Turning while a board is out is offset load. The bearing must lock.",
     "f.rev.e4":"Shelf gaps pinch fingers: close to ≤5 or open to ≥12. Kids room: wall tether.",
     "f.rev.e5":"Bins are bought-in. Opening width must stay 284.",
-    "home.title":"Wave solid-wood lounge<br><em>Open a section to work</em>",
-    "home.lede":"Pick a product, then Form / Structure / Production. Keys 1–3, Esc home.",
+    "home.title":"Wave solid-wood lounge<br><em>Select a work to view details</em>",
+    "home.lede":"Form, manufacturing drawing, 5-axis white body. Designed in Siemens NX.",
     "home.c1":"Your folder. Drop ideas, photos, dimensions. Subfolder = product.",
-    "home.c2":"Renders, ergonomic diagram, in-situ scenes.",
-    "home.c3":"Joinery, loads, species, BOM, market prices.",
-    "home.c4":"Toolpaths, jigs, hours, factory cost, volume.",
+    "home.c2":"Concept, human scale, scenes.",
+    "home.c3":"Parts, BOM, 3-view. NX assembly shots still to add.",
+    "home.c4":"Ops, jigs, 5-axis plan. Toolpath shots still to add.",
     "home.go":"Open →",
     "ar.scan":"Scan with the phone camera to open AR. No extra tap.",
     "ar.android":"Android · GLB",
     "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"W × D mm","home.ht":"Overall H mm","home.abc":"Left · Right · Basin",
-    "k.home.title":"Koala solid-wood coat rack<br><em>Flower · pegs · plaque</em>",
+    "k.home.title":"Koala solid-wood coat rack<br><em>Kids room / entry</em>",
     "k.home.lede":"Source is the Koala coat-rack folder in Design. Kids room / entry. Not a hall coat tree.",
     "k.home.base":"base mm","k.home.ht":"H mm","k.home.hooks":"pegs 55°",
     "form.kicker":"02 · Form","form.title":"Form, posture, scenes",
@@ -1062,7 +1188,7 @@ const I18N = {
     "k.pr.h1s":"incl. drill jig","k.pr.h2s":"after piece 10","k.pr.h3s":"with waste",
     "k.pr.note":"Add NT$ 80–150 for steel weight + wall tether. Kids finish: EN 71-3.",
     "k.pr.o1":"55° jig, layer 2 rotated 60°","k.pr.o2":"CNC then laser the face","k.pr.o3":"Flat pack: base / poles / pegs / plaque",
-    "st.kicker":"03 · Structure / Material","st.title":"How it holds, what wood","st.sub":"No solid-block hollowing. Laminated white oak.",
+    "st.kicker":"03 · Engineering / NX","st.title":"How it holds, what wood","st.sub":"No solid-block hollowing. Laminated white oak.",
     "st.principles":"Structure","st.p1":"Load: basin sides → arm root → heel","st.p2":"Front tongue is not the main cantilever","st.p5":"4 hidden feet Ø20–25",
     "st.f1":"Structure notes","st.f2":"Joinery","st.wood":"Species","st.sp":"Wood","st.why":"Why","st.mat":"Properties","st.vn":"Vietnam prices",
     "st.price":"Vietnam yard prices (million VND / m³)",
@@ -1102,14 +1228,35 @@ const I18N = {
     "k.rev.e5":"Peg end R8 is fine; add 1 mm blunt so it cannot poke an eye.",
     "saved":"Choices stored on this computer",
     "vn.unit":"M",
-    "foot":"1–4 pages · ESC home · click to zoom"
+    "foot":"Works · Engineering · CNC · Skills · Resume"
   },
   vi: {
-    "nav.home":"Tổng quan","nav.design":"Thiết kế","nav.form":"Ngoại hình","nav.struct":"Kết cấu / Vật liệu","nav.prod":"Sản xuất / CNC",
+    "nav.home":"Tác phẩm","nav.design":"Thiết kế","nav.form":"Ngoại hình","nav.struct":"Kỹ thuật / NX","nav.prod":"CNC","nav.skills":"Kỹ năng","nav.cv":"Hồ sơ",
+    "id.name":"Bao Jun-Ming<br><em>Furniture Design Engineer</em>",
+    "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
+    "id.where":"Vietnam furniture manufacturing · 2016–Present · Tiếng Việt / 中文",
+    "id.view":"Xem tác phẩm","id.cv":"Hồ sơ",
+    "id.pipe":"2D","id.asm":"Lắp ráp","id.dwg":"Bản vẽ","id.5ax":"5 trục","id.fin":"Thành phẩm",
+    "nx.asm":"Lắp ráp chính","nx.note":"Ảnh nổ / NX chưa có. 3-view và BOM bên dưới là bằng chứng hiện có.",
+    "nx.wait":"Chờ · NX 3D / ảnh nổ","nx.waitd":"Thả ảnh NX vào đây. Không dùng ảnh giả.",
+    "cam.note":"Mới là kế hoạch gia công. Đường dao, sim, G-code chờ. Không ghi giờ / giá ước.",
+    "cam.wait":"Chờ · NX CAM đường dao / sim / G-code","cam.waitd":"Có ảnh NX mới đưa. Không vẽ dao giả.",
+    "k.cam.waitd":"3 trục + tiện + laser. Không giá EXW ước.","f.cam.waitd":"CNC tấm 3 trục. Không giá EXW ước.",
+    "sk.kicker":"Kỹ năng","sk.title":"Làm được đến đâu","sk.sub":"Không dùng sao. Viết bằng việc thật.",
+    "sk.nx":"Advanced · 3D Modeling / Assembly / Drafting",
+    "sk.cam":"Advanced · 3 / 3+2 / 5-Axis (đường dao chờ)",
+    "sk.ug":"Advanced · mô hình / lắp","sk.acad":"2D drawing",
+    "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
+    "sk.fur":"Solid wood construction · production engineering",
+    "cv.kicker":"Hồ sơ","cv.title":"Bao Jun-Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"Kinh nghiệm","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"Nhà máy: từ thiết kế đến gia công. Tên xưởng / chức danh chờ.",
+    "cv.soft":"Phần mềm","cv.mfg":"Sản xuất","cv.wood":"Nội thất gỗ đặc · lắp",
+    "cv.lang":"Ngôn ngữ","cv.langs":"Tiếng Việt · 中文 · English",
+    "cv.ct":"Liên hệ","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn chờ. Không ghi liên hệ giả.",
     "cat.wave":"Ghế sóng","cat.waved":"Lounge gỗ đặc · ép lớp A/B/C",
     "cat.koala":"Giá treo Koala","cat.koalad":"Đế hoa · 9 móc · bảng koala",
     "cat.f180":"Tủ xoay vẽ","cat.f180d":"Xoay · bảng vẽ · hộp",
-    "f.home.title":"Tủ xoay vẽ<br><em>Tháp góc tròn · xoay · đổi module</em>",
+    "f.home.title":"Tủ xoay vẽ<br><em>Xoay · đổi module</em>",
     "f.home.lede":"Theo thư mục F180 trong Design. Một khung, đổi hộp, bảng vẽ hoặc chặn sách.",
     "f.home.r":"góc R",
     "f.des.how":"Tệp đọc từ Thiết kế","f.des.h1":"Render trống / có hộp, cảnh phòng khách, PDF (NX để trên Drive)",
@@ -1143,18 +1290,18 @@ const I18N = {
     "f.rev.e3":"Xoay khi bảng đang kéo là lệch tải. Bạc đạn phải khóa.",
     "f.rev.e4":"Khe tầng kẹp tay: ≤5 hoặc ≥12. Phòng trẻ: dây tường.",
     "f.rev.e5":"Hộp mua ngoài. Miệng phải giữ 284.",
-    "home.title":"Ghế lounge gỗ đặc hình sóng<br><em>Chọn mục để làm việc</em>",
-    "home.lede":"Chọn sản phẩm, rồi Ngoại hình / Kết cấu / Sản xuất. Phím 1–3, Esc về trang chủ.",
+    "home.title":"Ghế lounge gỗ đặc hình sóng<br><em>Chọn tác phẩm để xem</em>",
+    "home.lede":"Từ ngoại hình, bản vẽ đến thân trắng 5 trục. Designed in Siemens NX.",
     "home.c1":"Thư mục của bạn. Thả ý tưởng, ảnh, kích thước. Thư mục con = sản phẩm.",
-    "home.c2":"Render, sơ đồ ergonomic, cảnh sử dụng.",
-    "home.c3":"Liên kết, tải trọng, loài gỗ, BOM, giá thị trường.",
-    "home.c4":"Đường dao, đồ gá, giờ công, giá xưởng, sản lượng.",
+    "home.c2":"Ý tưởng, thước người, cảnh.",
+    "home.c3":"Chi tiết, BOM, 3-view. Ảnh lắp NX chờ.",
+    "home.c4":"Công đoạn, đồ gá, kế hoạch 5 trục. Ảnh đường dao chờ.",
     "home.go":"Vào →",
     "ar.scan":"Quét mã bằng camera điện thoại để vào AR, không cần bấm thêm.",
     "ar.android":"Android · GLB",
     "ar.apple":"iPhone · USDZ",
     "home.hero":"WAVE-LC-001","home.wh":"Rộng × sâu mm","home.ht":"Cao mm","home.abc":"Trái · Phải · Đáy",
-    "k.home.title":"Giá treo gỗ Koala<br><em>Đế hoa · móc · bảng</em>",
+    "k.home.title":"Giá treo gỗ Koala<br><em>Phòng trẻ / lối vào</em>",
     "k.home.lede":"Theo thư mục Koala trong Design. Phòng trẻ / sảnh nhỏ. Không phải cây treo áo sảnh lớn.",
     "k.home.base":"đế mm","k.home.ht":"Cao mm","k.home.hooks":"móc 55°",
     "form.kicker":"02 · Ngoại hình","form.title":"Ngoại hình, tư thế, bối cảnh",
@@ -1187,7 +1334,7 @@ const I18N = {
     "k.pr.h1s":"gồm jig khoan","k.pr.h2s":"sau chiếc 10","k.pr.h3s":"kèm hao",
     "k.pr.note":"Thêm NT$ 80–150 cho tạ thép + dây tường. Sơn trẻ em: EN 71-3.",
     "k.pr.o1":"Jig 55°, lớp 2 xoay 60°","k.pr.o2":"CNC rồi laser mặt","k.pr.o3":"Đóng phẳng: đế / trụ / móc / bảng",
-    "st.kicker":"03 · Kết cấu / Vật liệu","st.title":"Làm sao chắc, gỗ gì","st.sub":"Không khoét khối đặc. Sồi trắng nhiều lớp.",
+    "st.kicker":"03 · Kỹ thuật / NX","st.title":"Làm sao chắc, gỗ gì","st.sub":"Không khoét khối đặc. Sồi trắng nhiều lớp.",
     "st.principles":"Kết cấu","st.p1":"Tải: hai bên đệm → gốc tay → gót","st.p2":"Lưỡi trước không chịu moment chính","st.p5":"4 chân ẩn Ø20–25",
     "st.f1":"Ghi chú kết cấu","st.f2":"Liên kết","st.wood":"Loài gỗ","st.sp":"Gỗ","st.why":"Lý do","st.mat":"Tính chất","st.vn":"Giá Việt Nam",
     "st.price":"Giá kho Việt Nam (triệu VND / m³)",
@@ -1227,7 +1374,7 @@ const I18N = {
     "k.rev.e5":"Đầu móc R8 ổn; thêm 1 mm tù để không đâm mắt.",
     "saved":"Đã lưu lựa chọn trên máy này",
     "vn.unit":"tr",
-    "foot":"1–4 mục · ESC về trang chủ · bấm ảnh"
+    "foot":"Tác phẩm · Kỹ thuật · CNC · Kỹ năng · Hồ sơ"
   }
 };
 
@@ -1443,6 +1590,8 @@ window.addEventListener("keydown", e => {
   if (e.key === "1") go("r2");
   if (e.key === "2") go("r3");
   if (e.key === "3") go("r4");
+  if (e.key === "4") go("skills");
+  if (e.key === "5") go("cv");
   if (e.key === "0") go("home");
 });
 
