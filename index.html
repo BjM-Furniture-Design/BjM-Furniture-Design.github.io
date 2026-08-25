@@ -389,7 +389,7 @@
         <div class="kicker">PORTFOLIO</div>
         <h1 data-i18n="id.name">包俊銘<br><em>Furniture Design Engineer</em></h1>
         <p class="lede" data-i18n="id.lede">Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing</p>
-        <p class="where" data-i18n="id.where">Vietnam furniture manufacturing · 2016–Present · 中文 / Tiếng Việt</p>
+        <p class="where" data-i18n="id.where">Vietnam furniture manufacturing · since 2014 · 中文 / Tiếng Việt</p>
         <div class="cta">
           <button type="button" onclick="go('r2')" data-i18n="id.view">查看作品</button>
           <button type="button" class="ghost" onclick="go('cv')" data-i18n="id.cv">履歷</button>
@@ -971,13 +971,15 @@
 
     <section id="cv" class="page">
       <div class="kicker" data-i18n="cv.kicker">RESUME</div>
-      <h2 data-i18n="cv.title">包俊銘 · Bao Jun-Ming</h2>
+      <h2 data-i18n="cv.title">包俊銘 · Bao Jyun Ming</h2>
       <p class="sub" data-i18n="cv.sub">Furniture Design / Engineering / CNC</p>
       <div class="grid-2">
         <div class="card">
           <h3 data-i18n="cv.exp">Experience</h3>
-          <p><b data-i18n="cv.vn">Vietnam Furniture Manufacturing</b><br>2016–Present</p>
-          <p class="note" data-i18n="cv.expd">工廠端：設計到加工。具體廠名、職稱待補。</p>
+          <p><b data-i18n="cv.job1co">政豐木業 · 越南平陽（台灣公司）</b><br>
+          <span data-i18n="cv.job1title">廠務</span> · 2014.08–2020.06</p>
+          <p data-i18n="cv.job1do">完成老闆交辦、協助改善流程、協助客戶讓產品更符合生產。</p>
+          <p class="note" data-i18n="cv.expd">2020.06 之後經歷未填，不上網。學歷／語言程度未填。</p>
         </div>
         <div class="card">
           <h3 data-i18n="cv.soft">Software</h3>
@@ -996,7 +998,11 @@
         <h3 data-i18n="cv.lang">Languages</h3>
         <p data-i18n="cv.langs">中文 · Tiếng Việt · English</p>
         <h3 style="margin-top:14px" data-i18n="cv.ct">Contact</h3>
-        <p class="note" data-i18n="cv.ctd">Email / WhatsApp / Zalo / LinkedIn 待補。不在網站上放假聯絡方式。</p>
+        <p>
+          Email <a href="mailto:W2468741@gmail.com">W2468741@gmail.com</a><br>
+          Zalo <a href="https://zalo.me/0976418615">0976418615</a>
+        </p>
+        <p class="note" data-i18n="cv.ctd">WhatsApp / LinkedIn 未填，不上網。</p>
       </div>
     </section>
   </main>
@@ -1020,7 +1026,7 @@ const I18N = {
     "nav.home":"作品","nav.design":"主設","nav.form":"外型","nav.struct":"工程／NX","nav.prod":"CNC","nav.skills":"技能","nav.cv":"履歷",
     "id.name":"包俊銘<br><em>Furniture Design Engineer</em>",
     "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
-    "id.where":"Vietnam furniture manufacturing · 2016–Present · 中文 / Tiếng Việt",
+    "id.where":"Vietnam furniture manufacturing · since 2014 · 中文 / Tiếng Việt",
     "id.view":"查看作品","id.cv":"履歷",
     "id.pipe":"2D","id.asm":"裝配","id.dwg":"工程圖","id.5ax":"五軸","id.fin":"成品",
     "nx.asm":"主裝配","nx.note":"爆炸圖／NX 螢幕截圖待補。下面三視圖與 BOM 是現有工程證據。",
@@ -1034,11 +1040,14 @@ const I18N = {
     "sk.ug":"Advanced · 建模／裝配","sk.acad":"2D drawing",
     "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
     "sk.fur":"Solid wood construction · production engineering",
-    "cv.kicker":"履歷","cv.title":"包俊銘 · Bao Jun-Ming","cv.sub":"Furniture Design / Engineering / CNC",
-    "cv.exp":"經歷","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"工廠端：設計到加工。具體廠名、職稱待補。",
+    "cv.kicker":"履歷","cv.title":"包俊銘 · Bao Jyun Ming","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"經歷","cv.vn":"Vietnam Furniture Manufacturing",
+    "cv.job1co":"政豐木業 · 越南平陽（台灣公司）","cv.job1title":"廠務",
+    "cv.job1do":"完成老闆交辦、協助改善流程、協助客戶讓產品更符合生產。",
+    "cv.expd":"2020.06 之後經歷未填，不上網。學歷／語言程度未填。",
     "cv.soft":"軟體","cv.mfg":"製造","cv.wood":"實木家具 · 組裝",
     "cv.lang":"語言","cv.langs":"中文 · Tiếng Việt · English",
-    "cv.ct":"聯絡","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn 待補。不在網站上放假聯絡方式。",
+    "cv.ct":"聯絡","cv.ctd":"WhatsApp / LinkedIn 未填，不上網。",
     "cat.wave":"波浪椅","cat.waved":"實木休閒椅 · 層積 A/B/C",
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
     "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
@@ -1177,7 +1186,7 @@ const I18N = {
     "nav.home":"Works","nav.design":"Design","nav.form":"Form","nav.struct":"Engineering / NX","nav.prod":"CNC","nav.skills":"Skills","nav.cv":"Resume",
     "id.name":"Bao Jun-Ming<br><em>Furniture Design Engineer</em>",
     "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
-    "id.where":"Vietnam furniture manufacturing · 2016–Present · Chinese / Vietnamese",
+    "id.where":"Vietnam furniture manufacturing · since 2014 · Chinese / Vietnamese",
     "id.view":"View works","id.cv":"Resume",
     "id.pipe":"2D","id.asm":"Assembly","id.dwg":"Drawing","id.5ax":"5-axis","id.fin":"Finished",
     "nx.asm":"Master assembly","nx.note":"Exploded / NX screenshots still to add. The 3-view and BOM below are the drawings on hand.",
@@ -1191,11 +1200,14 @@ const I18N = {
     "sk.ug":"Advanced · model / assembly","sk.acad":"2D drawing",
     "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
     "sk.fur":"Solid wood construction · production engineering",
-    "cv.kicker":"Resume","cv.title":"Bao Jun-Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
-    "cv.exp":"Experience","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"Factory: design through machining. Company names / titles still to add.",
+    "cv.kicker":"Resume","cv.title":"Bao Jyun Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"Experience","cv.vn":"Vietnam Furniture Manufacturing",
+    "cv.job1co":"Cheng Feng Wood · Binh Duong, Vietnam (Taiwanese company)","cv.job1title":"Plant administration",
+    "cv.job1do":"Carried out assigned work, helped improve shop flow, worked with clients so products fit production.",
+    "cv.expd":"Experience after 2020.06 not filled — not published. Education / language levels not filled.",
     "cv.soft":"Software","cv.mfg":"Manufacturing","cv.wood":"Solid-wood furniture · assembly",
     "cv.lang":"Languages","cv.langs":"Chinese · Vietnamese · English",
-    "cv.ct":"Contact","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn still to add. No fake contacts.",
+    "cv.ct":"Contact","cv.ctd":"WhatsApp / LinkedIn not filled — not published.",
     "cat.wave":"Wave lounge","cat.waved":"Solid-wood lounge · laminated A/B/C",
     "cat.koala":"Koala coat rack","cat.koalad":"Flower base · 9 pegs · koala plaque",
     "cat.f180":"Rotate drawing tower","cat.f180d":"Turntable · boards · bins",
@@ -1334,7 +1346,7 @@ const I18N = {
     "nav.home":"Tác phẩm","nav.design":"Thiết kế","nav.form":"Ngoại hình","nav.struct":"Kỹ thuật / NX","nav.prod":"CNC","nav.skills":"Kỹ năng","nav.cv":"Hồ sơ",
     "id.name":"Bao Jun-Ming<br><em>Furniture Design Engineer</em>",
     "id.lede":"Furniture Design · Siemens NX · CNC · 5-Axis Manufacturing",
-    "id.where":"Vietnam furniture manufacturing · 2016–Present · Tiếng Việt / 中文",
+    "id.where":"Vietnam furniture manufacturing · since 2014 · Tiếng Việt / 中文",
     "id.view":"Xem tác phẩm","id.cv":"Hồ sơ",
     "id.pipe":"2D","id.asm":"Lắp ráp","id.dwg":"Bản vẽ","id.5ax":"5 trục","id.fin":"Thành phẩm",
     "nx.asm":"Lắp ráp chính","nx.note":"Ảnh nổ / NX chưa có. 3-view và BOM bên dưới là bằng chứng hiện có.",
@@ -1348,11 +1360,14 @@ const I18N = {
     "sk.ug":"Advanced · mô hình / lắp","sk.acad":"2D drawing",
     "sk.5ax":"Woodworking · white body · contour","sk.3ax":"Router / nest / jig",
     "sk.fur":"Solid wood construction · production engineering",
-    "cv.kicker":"Hồ sơ","cv.title":"Bao Jun-Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
-    "cv.exp":"Kinh nghiệm","cv.vn":"Vietnam Furniture Manufacturing","cv.expd":"Nhà máy: từ thiết kế đến gia công. Tên xưởng / chức danh chờ.",
+    "cv.kicker":"Hồ sơ","cv.title":"Bao Jyun Ming · 包俊銘","cv.sub":"Furniture Design / Engineering / CNC",
+    "cv.exp":"Kinh nghiệm","cv.vn":"Vietnam Furniture Manufacturing",
+    "cv.job1co":"Chính Phong Wood · Bình Dương, Việt Nam (công ty Đài Loan)","cv.job1title":"Quản lý xưởng",
+    "cv.job1do":"Làm việc chủ giao, hỗ trợ cải tiến quy trình, hỗ trợ khách để sản phẩm phù hợp sản xuất.",
+    "cv.expd":"Kinh nghiệm sau 2020.06 chưa điền — không đăng. Học vấn / trình độ ngôn ngữ chưa điền.",
     "cv.soft":"Phần mềm","cv.mfg":"Sản xuất","cv.wood":"Nội thất gỗ đặc · lắp",
     "cv.lang":"Ngôn ngữ","cv.langs":"Tiếng Việt · 中文 · English",
-    "cv.ct":"Liên hệ","cv.ctd":"Email / WhatsApp / Zalo / LinkedIn chờ. Không ghi liên hệ giả.",
+    "cv.ct":"Liên hệ","cv.ctd":"WhatsApp / LinkedIn chưa điền — không đăng.",
     "cat.wave":"Ghế sóng","cat.waved":"Lounge gỗ đặc · ép lớp A/B/C",
     "cat.koala":"Giá treo Koala","cat.koalad":"Đế hoa · 9 móc · bảng koala",
     "cat.f180":"Tủ xoay vẽ","cat.f180d":"Xoay · bảng vẽ · hộp",
