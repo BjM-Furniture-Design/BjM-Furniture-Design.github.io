@@ -100,8 +100,9 @@
   body.sku-wave .sku.wave { display: block; }
   body.sku-koala .sku.koala { display: block; }
   body.sku-f180 .sku.f180 { display: block; }
+  body.sku-desk .sku.desk { display: block; }
 
-  .catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 22px; }
+  .catalog { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 22px; }
   .pick {
     display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: center;
     background: var(--card); border: 1px solid var(--line); border-radius: 18px;
@@ -155,6 +156,7 @@
   .hero-photo.wave { background-image: url("02_外型/WAVE-LC-R01_hero_34.jpg"); }
   .hero-photo.koala { background-image: url("01_主設計師/無尾熊-衣帽架/hero.png"); }
   .hero-photo.f180 { background-image: url("01_主設計師/旋轉繪圖櫃/hero.jpg"); }
+  .hero-photo.desk { background-image: url("01_主設計師/繪圖桌/nx-preview.jpg"); }
   .hero-photo i {
     position: absolute; left: 22px; bottom: 20px;
     color: #fff; font-style: normal; font-size: 12px;
@@ -334,6 +336,7 @@
       <button type="button" data-sku="wave" class="on">WAVE</button>
       <button type="button" data-sku="koala">KOALA</button>
       <button type="button" data-sku="f180">F180</button>
+      <button type="button" data-sku="desk">DESK</button>
     </div>
     <div class="langs" id="langs">
       <button type="button" data-lang="zh" class="on">中文</button>
@@ -371,6 +374,13 @@
         <span>
           <em>F180-RC-001</em>
           <strong data-i18n="cat.f180">旋轉繪圖櫃</strong>
+        </span>
+      </button>
+      <button type="button" data-sku="desk">
+        <img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="">
+        <span>
+          <em>NX .prt</em>
+          <strong data-i18n="cat.desk">繪圖桌</strong>
         </span>
       </button>
     </div>
@@ -417,6 +427,14 @@
             <div class="num">03 · F180-RC-001</div>
             <h3 data-i18n="cat.f180">旋轉繪圖櫃</h3>
             <p data-i18n="cat.f180d">Turntable tower · boards · bins</p>
+          </div>
+        </button>
+        <button class="pick" data-pick="desk" type="button" onclick="setSku('desk')">
+          <img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="DESK">
+          <div>
+            <div class="num">04 · NX .prt</div>
+            <h3 data-i18n="cat.desk">繪圖桌</h3>
+            <p data-i18n="cat.deskd">Siemens NX part received · sizes UNKNOWN</p>
           </div>
         </button>
       </div>
@@ -478,6 +496,23 @@
               <div class="stat"><b>1150</b><s data-i18n="home.ht">H mm</s></div>
               <div class="stat"><b>R180</b><s data-i18n="f.home.r">corner</s></div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sku desk">
+        <div class="hero">
+          <div class="hero-photo desk" onclick="zoom(this)"><i>繪圖桌</i></div>
+          <div class="hero-copy">
+            <div class="kicker">DESK · NX PART</div>
+            <h1 data-i18n="d.home.title">繪圖桌<br><em>Siemens NX .prt 已收到</em></h1>
+            <p class="lede" data-i18n="d.home.lede">主設只有一份 NX 零件檔。沒有 2D 標註、沒有量測紀錄。寬深高 = UNKNOWN，不猜毫米。</p>
+            <div class="stats">
+              <div class="stat"><b>UNKNOWN</b><s data-i18n="home.wh">W × D mm</s></div>
+              <div class="stat"><b>UNKNOWN</b><s data-i18n="home.ht">H mm</s></div>
+              <div class="stat"><b>NX .prt</b><s data-i18n="d.home.file">source file</s></div>
+            </div>
+            <p class="note" data-i18n="d.home.stop">STOP — NEED HUMAN DECISION：請在 NX 量測後提供三視圖或尺寸表，才能進工程圖／CAM。</p>
           </div>
         </div>
       </div>
@@ -600,6 +635,28 @@
               <a href="02_外型/旋轉繪圖櫃/01_造型說明.txt" data-i18n="k.form.f1">Form notes</a>
               <a href="02_外型/旋轉繪圖櫃/02_人體工學.txt" data-i18n="k.form.f2">Ergo notes</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sku desk">
+        <div class="kicker" data-i18n="form.kicker">02 · Form</div>
+        <h2 data-i18n="d.form.title">繪圖桌 · 外型</h2>
+        <p class="sub" data-i18n="d.form.sub">來源：主設「繪圖桌／繪圖桌.prt」。預覽圖從 NX 檔抽出，僅供辨識外形，不是製造尺寸。</p>
+        <div class="grid-2">
+          <div>
+            <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="NX preview"></div>
+            <div class="caption">NX preview · ASSUMED visual only</div>
+          </div>
+          <div class="card">
+            <h3 data-i18n="d.reg">DIMENSION REGISTER</h3>
+            <table>
+              <tr><th>Name</th><th>Value</th><th>Status</th></tr>
+              <tr><td>W / D / H</td><td>—</td><td>UNKNOWN</td></tr>
+              <tr><td>Thickness / R</td><td>—</td><td>UNKNOWN</td></tr>
+              <tr><td>Hole Ø / pitch</td><td>—</td><td>UNKNOWN</td></tr>
+            </table>
+            <p class="note" data-i18n="d.form.stop">不得依像素或常見書桌尺寸當真值。需要：NX 量測截圖或 2D 工程圖。</p>
           </div>
         </div>
       </div>
@@ -766,6 +823,17 @@
           </div>
         </div>
       </div>
+
+      <div class="sku desk">
+        <div class="kicker" data-i18n="st.kicker">03 · Engineering / NX</div>
+        <h2 data-i18n="d.st.title">繪圖桌 · 工程</h2>
+        <p class="nx">SIEMENS NX IS CAD SOURCE — FILE ON DRIVE, NOT ON GITHUB</p>
+        <p class="sub" data-i18n="d.st.sub">40 MB .prt 留在雲端主設。沒有量測結果前，不做 BOM、不做工程圖尺寸。</p>
+        <div class="wait">
+          <b>STOP — NEED HUMAN DECISION</b>
+          <span data-i18n="d.st.stop">請在 NX 開 繪圖桌.prt，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。</span>
+        </div>
+      </div>
     </section>
 
     <section id="r4" class="page">
@@ -874,6 +942,16 @@
           </div>
         </div>
       </div>
+
+      <div class="sku desk">
+        <div class="kicker" data-i18n="pr.kicker">04 · Production / CNC</div>
+        <h2 data-i18n="d.pr.title">繪圖桌 · CNC</h2>
+        <p class="sub" data-i18n="d.pr.sub">NOT READY FOR MANUFACTURING。沒有 VERIFIED 尺寸、沒有工程圖、沒有機台資料。</p>
+        <div class="wait">
+          <b>NOT READY FOR MANUFACTURING</b>
+          <span data-i18n="d.pr.stop">禁止假刀路、假 G-code。尺寸進 NX 量測並通過工程圖後才進 CAM。</span>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="page">
@@ -964,6 +1042,17 @@ const I18N = {
     "cat.wave":"波浪椅","cat.waved":"實木休閒椅 · 層積 A/B/C",
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
     "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
+    "cat.desk":"繪圖桌","cat.deskd":"Siemens NX 零件已收到 · 尺寸 UNKNOWN",
+    "d.home.title":"繪圖桌<br><em>Siemens NX .prt 已收到</em>",
+    "d.home.lede":"主設只有一份 NX 零件檔。沒有 2D 標註、沒有量測紀錄。寬深高 = UNKNOWN，不猜毫米。",
+    "d.home.file":"來源檔","d.home.stop":"STOP — NEED HUMAN DECISION：請在 NX 量測後提供三視圖或尺寸表，才能進工程圖／CAM。",
+    "d.form.title":"繪圖桌 · 外型","d.form.sub":"來源：主設「繪圖桌／繪圖桌.prt」。預覽圖從 NX 檔抽出，僅供辨識外形，不是製造尺寸。",
+    "d.reg":"尺寸登錄","d.form.stop":"不得依像素或常見書桌尺寸當真值。需要：NX 量測截圖或 2D 工程圖。",
+    "d.st.title":"繪圖桌 · 工程","d.st.sub":"40 MB .prt 留在雲端主設。沒有量測結果前，不做 BOM、不做工程圖尺寸。",
+    "d.st.stop":"請在 NX 開 繪圖桌.prt，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。",
+    "d.pr.title":"繪圖桌 · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING。沒有 VERIFIED 尺寸、沒有工程圖、沒有機台資料。",
+    "d.pr.stop":"禁止假刀路、假 G-code。尺寸進 NX 量測並通過工程圖後才進 CAM。",
+    "d.rev":"繪圖桌：關鍵尺寸 UNKNOWN。未量測前不得製造。",
     "f.home.title":"旋轉繪圖櫃<br><em>可轉塔 · 可換模組</em>",
     "f.home.lede":"同一骨架可換成收納箱、繪圖板、書擋。",
     "f.home.r":"圓角",
@@ -1110,6 +1199,17 @@ const I18N = {
     "cat.wave":"Wave lounge","cat.waved":"Solid-wood lounge · laminated A/B/C",
     "cat.koala":"Koala coat rack","cat.koalad":"Flower base · 9 pegs · koala plaque",
     "cat.f180":"Rotate drawing tower","cat.f180d":"Turntable · boards · bins",
+    "cat.desk":"Drawing desk","cat.deskd":"Siemens NX part received · sizes UNKNOWN",
+    "d.home.title":"Drawing desk<br><em>Siemens NX .prt received</em>",
+    "d.home.lede":"Main-design has one NX part only. No 2D dims, no measure log. W/D/H = UNKNOWN. No guessed millimetres.",
+    "d.home.file":"source file","d.home.stop":"STOP — NEED HUMAN DECISION: measure in NX and send a 3-view or dim table before drawings / CAM.",
+    "d.form.title":"Drawing desk · form","d.form.sub":"Source: 繪圖桌/繪圖桌.prt. Preview extracted from NX, visual ID only, not manufacturing size.",
+    "d.reg":"Dimension register","d.form.stop":"Do not treat pixels or typical desk sizes as true. Need NX measure shots or 2D drawing.",
+    "d.st.title":"Drawing desk · engineering","d.st.sub":"40 MB .prt stays on Drive. No BOM or drawing dims until measured.",
+    "d.st.stop":"Open 繪圖桌.prt in NX. Measure W/D/H, thickness, R, holes. AI will not guess millimetres.",
+    "d.pr.title":"Drawing desk · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING. No verified size, drawing, or machine data.",
+    "d.pr.stop":"No fake toolpaths or G-code. CAM only after NX measure and drawings.",
+    "d.rev":"Drawing desk: key sizes UNKNOWN. Do not manufacture yet.",
     "f.home.title":"Rotate drawing tower<br><em>Turntable · swap modules</em>",
     "f.home.lede":"Source is the F180 folder in Design. One frame, swap bins, boards or bookends.",
     "f.home.r":"corner R",
@@ -1256,6 +1356,17 @@ const I18N = {
     "cat.wave":"Ghế sóng","cat.waved":"Lounge gỗ đặc · ép lớp A/B/C",
     "cat.koala":"Giá treo Koala","cat.koalad":"Đế hoa · 9 móc · bảng koala",
     "cat.f180":"Tủ xoay vẽ","cat.f180d":"Xoay · bảng vẽ · hộp",
+    "cat.desk":"Bàn vẽ","cat.deskd":"Đã nhận file NX · kích thước UNKNOWN",
+    "d.home.title":"Bàn vẽ<br><em>Đã nhận Siemens NX .prt</em>",
+    "d.home.lede":"Thư mục thiết kế chỉ có một file NX. Không có 2D, không đo. W/D/H = UNKNOWN. Không đoán mm.",
+    "d.home.file":"file nguồn","d.home.stop":"STOP — NEED HUMAN DECISION: đo trong NX rồi gửi 3-view hoặc bảng kích thước trước khi bản vẽ / CAM.",
+    "d.form.title":"Bàn vẽ · form","d.form.sub":"Nguồn: 繪圖桌/繪圖桌.prt. Ảnh xem trước từ NX, chỉ nhận dạng, không phải kích thước gia công.",
+    "d.reg":"Sổ kích thước","d.form.stop":"Không lấy pixel hay bàn vẽ thông dụng làm số thật. Cần ảnh đo NX hoặc bản 2D.",
+    "d.st.title":"Bàn vẽ · kỹ thuật","d.st.sub":".prt 40 MB để trên Drive. Chưa đo thì không làm BOM hay kích thước bản vẽ.",
+    "d.st.stop":"Mở 繪圖桌.prt trong NX. Đo W/D/H, dày, R, lỗ. AI không đoán mm.",
+    "d.pr.title":"Bàn vẽ · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING. Chưa có kích thước xác nhận, bản vẽ, dữ liệu máy.",
+    "d.pr.stop":"Không bịa đường dao hay G-code. CAM sau khi đo NX và có bản vẽ.",
+    "d.rev":"Bàn vẽ: kích thước then chốt UNKNOWN. Chưa được sản xuất.",
     "f.home.title":"Tủ xoay vẽ<br><em>Xoay · đổi module</em>",
     "f.home.lede":"Theo thư mục F180 trong Design. Một khung, đổi hộp, bảng vẽ hoặc chặn sách.",
     "f.home.r":"góc R",
@@ -1437,11 +1548,11 @@ function applyLang(lang) {
   runReview();
 }
 
-const SKUS = ["wave", "koala", "f180"];
+const SKUS = ["wave", "koala", "f180", "desk"];
 function setSku(sku) {
   currentSku = SKUS.indexOf(sku) >= 0 ? sku : "wave";
   localStorage.setItem(SKU_KEY, currentSku);
-  document.body.classList.remove("sku-wave", "sku-koala", "sku-f180");
+  document.body.classList.remove("sku-wave", "sku-koala", "sku-f180", "sku-desk");
   document.body.classList.add("sku-" + currentSku);
   document.querySelectorAll("#skus button, #sku-strip button").forEach(b => b.classList.toggle("on", b.dataset.sku === currentSku));
   document.querySelectorAll(".pick").forEach(b => b.classList.toggle("on", b.dataset.pick === currentSku));
@@ -1478,7 +1589,9 @@ function runReview() {
   const box = document.getElementById("rev-list");
   if (!box) return;
   const items = [];
-  if (currentSku === "f180") {
+  if (currentSku === "desk") {
+    items.push({ lv: "err", msg: t("d.rev") });
+  } else if (currentSku === "f180") {
     items.push({ lv: "ok", msg: t("f.rev.e1") });
     items.push({ lv: "warn", msg: t("f.rev.e2") });
     items.push({ lv: "err", msg: t("f.rev.e3") });
