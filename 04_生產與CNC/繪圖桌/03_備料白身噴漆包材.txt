@@ -1,0 +1,15 @@
+【04 生產／CNC】繪圖桌
+
+NOT READY FOR MANUFACTURING
+
+沒有 VERIFIED 尺寸、沒有工程圖、沒有機台行程、沒有刀具／刀柄、沒有治具、沒有 postprocessor。
+
+禁止
+  - 假刀路、假 G-code、假五軸角度
+  - 用 Calla 影片像素當備料尺寸
+  - 標 FINAL APPROVED
+
+下一步（要人做）
+  1. NX 開 繪圖桌.prt，量測並出三視圖。
+  2. 確認是否就是 Calla 這張桌子。
+  3. 再談備料 → 白身 → 噴漆 → 包材。

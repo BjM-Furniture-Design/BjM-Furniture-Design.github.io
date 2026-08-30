@@ -1,4 +1,5 @@
-2026-08-18 更新
-主設 3 個產品：波浪椅、無尾熊-衣帽架、旋轉繪圖櫃（F180-RC-001）。
-NX .prt 與 99MB STL 只留 Google 雲端。
+2026-08-30 更新
+主設 4 個產品夾：波浪椅、無尾熊-衣帽架、旋轉繪圖櫃、繪圖桌。
+新檔：根層 Calla Study Desk with Easel 影片（畫面 ASSUMED，不上 GitHub）。
+繪圖桌尺寸仍全部 UNKNOWN。NX .prt 與 99MB STL 只留雲端。
 公開：https://bjm-furniture-design.github.io/

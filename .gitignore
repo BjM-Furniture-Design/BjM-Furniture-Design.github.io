@@ -3,3 +3,7 @@
 ar/_convert/unpacked/
 ar/_convert/node_modules/
 logo/logo-mark-hi.png
+**/*.prt
+**/*.mp4
+**/*.avi
+**/calla_stills/

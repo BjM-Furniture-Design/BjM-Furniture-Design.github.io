@@ -156,7 +156,7 @@
   .hero-photo.wave { background-image: url("02_外型/WAVE-LC-R01_hero_34.jpg"); }
   .hero-photo.koala { background-image: url("01_主設計師/無尾熊-衣帽架/hero.png"); }
   .hero-photo.f180 { background-image: url("01_主設計師/旋轉繪圖櫃/hero.jpg"); }
-  .hero-photo.desk { background-image: url("01_主設計師/繪圖桌/nx-preview.jpg"); }
+  .hero-photo.desk { background-image: url("01_主設計師/繪圖桌/calla-easel.jpg"); }
   .hero-photo i {
     position: absolute; left: 22px; bottom: 20px;
     color: #fff; font-style: normal; font-size: 12px;
@@ -377,9 +377,9 @@
         </span>
       </button>
       <button type="button" data-sku="desk">
-        <img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="">
+        <img src="01_主設計師/繪圖桌/calla-easel.jpg" alt="">
         <span>
-          <em>NX .prt</em>
+          <em>DESK</em>
           <strong data-i18n="cat.desk">繪圖桌</strong>
         </span>
       </button>
@@ -430,11 +430,11 @@
           </div>
         </button>
         <button class="pick" data-pick="desk" type="button" onclick="setSku('desk')">
-          <img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="DESK">
+          <img src="01_主設計師/繪圖桌/calla-easel.jpg" alt="DESK">
           <div>
-            <div class="num">04 · NX .prt</div>
+            <div class="num">04 · DESK</div>
             <h3 data-i18n="cat.desk">繪圖桌</h3>
-            <p data-i18n="cat.deskd">Siemens NX part received · sizes UNKNOWN</p>
+            <p data-i18n="cat.deskd">Tilt easel · two drawers · sizes UNKNOWN</p>
           </div>
         </button>
       </div>
@@ -502,11 +502,11 @@
 
       <div class="sku desk">
         <div class="hero">
-          <div class="hero-photo desk" onclick="zoom(this)"><i>繪圖桌</i></div>
+          <div class="hero-photo desk" onclick="zoom(this)"><i>DESK</i></div>
           <div class="hero-copy">
-            <div class="kicker">DESK · NX PART</div>
-            <h1 data-i18n="d.home.title">繪圖桌<br><em>Siemens NX .prt 已收到</em></h1>
-            <p class="lede" data-i18n="d.home.lede">主設只有一份 NX 零件檔。沒有 2D 標註、沒有量測紀錄。寬深高 = UNKNOWN，不猜毫米。</p>
+            <div class="kicker">DESK · NX / CALLA REF</div>
+            <h1 data-i18n="d.home.title">繪圖桌<br><em>Calla Study Desk with Easel</em></h1>
+            <p class="lede" data-i18n="d.home.lede">主設新增組裝影片（畫面 ASSUMED）。CAD 真源仍是 Siemens NX .prt。寬深高 = UNKNOWN，不猜毫米。</p>
             <div class="stats">
               <div class="stat"><b>UNKNOWN</b><s data-i18n="home.wh">W × D mm</s></div>
               <div class="stat"><b>UNKNOWN</b><s data-i18n="home.ht">H mm</s></div>
@@ -642,11 +642,19 @@
       <div class="sku desk">
         <div class="kicker" data-i18n="form.kicker">02 · Form</div>
         <h2 data-i18n="d.form.title">繪圖桌 · 外型</h2>
-        <p class="sub" data-i18n="d.form.sub">來源：主設「繪圖桌／繪圖桌.prt」。預覽圖從 NX 檔抽出，僅供辨識外形，不是製造尺寸。</p>
+        <p class="sub" data-i18n="d.form.sub">畫面來自主設根層 Calla 影片抽幀，僅供辨識外形。毫米必須從 NX 量，不能從像素推。</p>
         <div class="grid-2">
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/calla-easel.jpg" alt="easel"></div><div class="caption" data-i18n="d.form.v1">畫板掀開 · 雙抽</div></div>
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/calla-iso.jpg" alt="iso"></div><div class="caption" data-i18n="d.form.v2">組裝完成</div></div>
+        </div>
+        <div class="grid-2" style="margin-top:14px">
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/calla-parts.jpg" alt="parts"></div><div class="caption" data-i18n="d.form.v3">分件 A–E · 影片 ASSUMED</div></div>
+          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/calla-latch.jpg" alt="latch"></div><div class="caption" data-i18n="d.form.v4">畫板側鎖</div></div>
+        </div>
+        <div class="grid-2" style="margin-top:18px">
           <div>
             <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="01_主設計師/繪圖桌/nx-preview.jpg" alt="NX preview"></div>
-            <div class="caption">NX preview · ASSUMED visual only</div>
+            <div class="caption" data-i18n="d.form.nx">NX 內嵌預覽 · 低解析 · 不是尺寸</div>
           </div>
           <div class="card">
             <h3 data-i18n="d.reg">DIMENSION REGISTER</h3>
@@ -655,8 +663,25 @@
               <tr><td>W / D / H</td><td>—</td><td>UNKNOWN</td></tr>
               <tr><td>Thickness / R</td><td>—</td><td>UNKNOWN</td></tr>
               <tr><td>Hole Ø / pitch</td><td>—</td><td>UNKNOWN</td></tr>
+              <tr><td>Easel angle</td><td>—</td><td>UNKNOWN</td></tr>
             </table>
             <p class="note" data-i18n="d.form.stop">不得依像素或常見書桌尺寸當真值。需要：NX 量測截圖或 2D 工程圖。</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:18px">
+          <div class="card">
+            <h3 data-i18n="d.form.obs">影片看見的功能（ASSUMED，不是 NX 量測）</h3>
+            <ul>
+              <li data-i18n="d.form.o1">桌面可掀成畫板，前緣擋條</li>
+              <li data-i18n="d.form.o2">雙抽屜</li>
+              <li data-i18n="d.form.o3">桌面兩圓孔（用途 UNKNOWN）</li>
+              <li data-i18n="d.form.o4">白色側架 + 橫檔，KD 螺栓組裝</li>
+              <li data-i18n="d.form.o5">側邊畫板鎖。掀角／孔距 UNKNOWN</li>
+            </ul>
+            <div class="files">
+              <a href="02_外型/繪圖桌/01_造型說明.txt" data-i18n="k.form.f1">Form notes</a>
+              <a href="02_外型/繪圖桌/02_人體工學.txt" data-i18n="k.form.f2">Ergo notes</a>
+            </div>
           </div>
         </div>
       </div>
@@ -828,10 +853,16 @@
         <div class="kicker" data-i18n="st.kicker">03 · Engineering / NX</div>
         <h2 data-i18n="d.st.title">繪圖桌 · 工程</h2>
         <p class="nx">SIEMENS NX IS CAD SOURCE — FILE ON DRIVE, NOT ON GITHUB</p>
-        <p class="sub" data-i18n="d.st.sub">40 MB .prt 留在雲端主設。沒有量測結果前，不做 BOM、不做工程圖尺寸。</p>
+        <p class="sub" data-i18n="d.st.sub">40 MB .prt 留雲端。影片分件只是 ASSUMED。沒量測不做 BOM。</p>
         <div class="wait">
           <b>STOP — NEED HUMAN DECISION</b>
-          <span data-i18n="d.st.stop">請在 NX 開 繪圖桌.prt，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。</span>
+          <span data-i18n="d.st.stop">請在 NX 開繪圖桌零件檔，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。</span>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <h3 data-i18n="d.st.obs">影片分件不是 NX BOM，禁止當製造清單。</h3>
+          <div class="files">
+            <a href="03_結構與材料/繪圖桌/01_結構設計說明.txt">NX / structure</a>
+          </div>
         </div>
       </div>
     </section>
@@ -951,6 +982,9 @@
           <b>NOT READY FOR MANUFACTURING</b>
           <span data-i18n="d.pr.stop">禁止假刀路、假 G-code。尺寸進 NX 量測並通過工程圖後才進 CAM。</span>
         </div>
+        <div class="files" style="margin-top:14px">
+          <a href="04_生產與CNC/繪圖桌/03_備料白身噴漆包材.txt">CNC notes</a>
+        </div>
       </div>
     </section>
 
@@ -1051,17 +1085,27 @@ const I18N = {
     "cat.wave":"波浪椅","cat.waved":"實木休閒椅 · 層積 A/B/C",
     "cat.koala":"無尾熊衣帽架","cat.koalad":"花座 · 九枝 · 熊牌",
     "cat.f180":"旋轉繪圖櫃","cat.f180d":"可轉塔 · 繪圖板 · 收納箱",
-    "cat.desk":"繪圖桌","cat.deskd":"Siemens NX 零件已收到 · 尺寸 UNKNOWN",
-    "d.home.title":"繪圖桌<br><em>Siemens NX .prt 已收到</em>",
-    "d.home.lede":"主設只有一份 NX 零件檔。沒有 2D 標註、沒有量測紀錄。寬深高 = UNKNOWN，不猜毫米。",
+    "cat.desk":"繪圖桌","cat.deskd":"可掀畫板 · 雙抽 · 尺寸 UNKNOWN",
+    "d.home.title":"繪圖桌<br><em>Calla Study Desk with Easel</em>",
+    "d.home.lede":"主設新增組裝影片（畫面 ASSUMED）。CAD 真源仍是 Siemens NX .prt。寬深高 = UNKNOWN，不猜毫米。",
     "d.home.file":"來源檔","d.home.stop":"STOP — NEED HUMAN DECISION：請在 NX 量測後提供三視圖或尺寸表，才能進工程圖／CAM。",
-    "d.form.title":"繪圖桌 · 外型","d.form.sub":"來源：主設「繪圖桌／繪圖桌.prt」。預覽圖從 NX 檔抽出，僅供辨識外形，不是製造尺寸。",
+    "d.form.title":"繪圖桌 · 外型","d.form.sub":"畫面來自主設根層 Calla 影片抽幀，僅供辨識外形。毫米必須從 NX 量，不能從像素推。",
+    "d.form.v1":"畫板掀開 · 雙抽","d.form.v2":"組裝完成","d.form.v3":"分件 A–E · 影片 ASSUMED","d.form.v4":"畫板側鎖",
+    "d.form.nx":"NX 內嵌預覽 · 低解析 · 不是尺寸",
+    "d.form.obs":"影片看見的功能（ASSUMED，不是 NX 量測）",
+    "d.form.o1":"桌面可掀成畫板，前緣擋條","d.form.o2":"雙抽屜",
+    "d.form.o3":"桌面兩圓孔（用途 UNKNOWN）","d.form.o4":"白色側架 + 橫檔，KD 螺栓組裝",
+    "d.form.o5":"側邊畫板鎖。掀角／孔距 UNKNOWN",
     "d.reg":"尺寸登錄","d.form.stop":"不得依像素或常見書桌尺寸當真值。需要：NX 量測截圖或 2D 工程圖。",
-    "d.st.title":"繪圖桌 · 工程","d.st.sub":"40 MB .prt 留在雲端主設。沒有量測結果前，不做 BOM、不做工程圖尺寸。",
-    "d.st.stop":"請在 NX 開 繪圖桌.prt，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。",
+    "d.st.title":"繪圖桌 · 工程","d.st.sub":"40 MB .prt 留雲端。影片分件只是 ASSUMED。沒量測不做 BOM。",
+    "d.st.stop":"請在 NX 開繪圖桌零件檔，量 W/D/H、板厚、R、孔，截圖或匯出三視圖。AI 不猜毫米。",
+    "d.st.obs":"影片分件不是 NX BOM，禁止當製造清單。",
     "d.pr.title":"繪圖桌 · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING。沒有 VERIFIED 尺寸、沒有工程圖、沒有機台資料。",
     "d.pr.stop":"禁止假刀路、假 G-code。尺寸進 NX 量測並通過工程圖後才進 CAM。",
     "d.rev":"繪圖桌：關鍵尺寸 UNKNOWN。未量測前不得製造。",
+    "d.rev2":"Calla 影片不可像素量測當毫米。",
+    "d.rev3":"NX 縮圖與 Calla 渲染是否同一零件 = UNKNOWN。",
+    "d.rev4":"桌高／坐姿未驗證。影片沒有人體。",
     "f.home.title":"旋轉繪圖櫃<br><em>可轉塔 · 可換模組</em>",
     "f.home.lede":"同一骨架可換成收納箱、繪圖板、書擋。",
     "f.home.r":"圓角",
@@ -1211,17 +1255,27 @@ const I18N = {
     "cat.wave":"Wave lounge","cat.waved":"Solid-wood lounge · laminated A/B/C",
     "cat.koala":"Koala coat rack","cat.koalad":"Flower base · 9 pegs · koala plaque",
     "cat.f180":"Rotate drawing tower","cat.f180d":"Turntable · boards · bins",
-    "cat.desk":"Drawing desk","cat.deskd":"Siemens NX part received · sizes UNKNOWN",
-    "d.home.title":"Drawing desk<br><em>Siemens NX .prt received</em>",
-    "d.home.lede":"Main-design has one NX part only. No 2D dims, no measure log. W/D/H = UNKNOWN. No guessed millimetres.",
+    "cat.desk":"Drawing desk","cat.deskd":"Tilt easel · two drawers · sizes UNKNOWN",
+    "d.home.title":"Drawing desk<br><em>Calla Study Desk with Easel</em>",
+    "d.home.lede":"Main-design added an assembly video (visual ASSUMED). CAD source is still the Siemens NX .prt. W/D/H = UNKNOWN. No guessed millimetres.",
     "d.home.file":"source file","d.home.stop":"STOP — NEED HUMAN DECISION: measure in NX and send a 3-view or dim table before drawings / CAM.",
-    "d.form.title":"Drawing desk · form","d.form.sub":"Source: 繪圖桌/繪圖桌.prt. Preview extracted from NX, visual ID only, not manufacturing size.",
+    "d.form.title":"Drawing desk · form","d.form.sub":"Stills from the Calla video at Design root. Visual ID only. Millimetres must come from NX, never from pixels.",
+    "d.form.v1":"Easel up · drawers","d.form.v2":"Assembled","d.form.v3":"Parts A–E · video ASSUMED","d.form.v4":"Easel side latch",
+    "d.form.nx":"NX embedded preview · low-res · not a size",
+    "d.form.obs":"Features seen in the video (ASSUMED, not NX measure)",
+    "d.form.o1":"Top tilts into an easel with a paper stop","d.form.o2":"Two drawers",
+    "d.form.o3":"Two round cut-outs in the top (use UNKNOWN)","d.form.o4":"White side frames + stretcher, KD bolts",
+    "d.form.o5":"Side latch for the easel. Tilt angle / hole pitch UNKNOWN",
     "d.reg":"Dimension register","d.form.stop":"Do not treat pixels or typical desk sizes as true. Need NX measure shots or 2D drawing.",
-    "d.st.title":"Drawing desk · engineering","d.st.sub":"40 MB .prt stays on Drive. No BOM or drawing dims until measured.",
-    "d.st.stop":"Open 繪圖桌.prt in NX. Measure W/D/H, thickness, R, holes. AI will not guess millimetres.",
+    "d.st.title":"Drawing desk · engineering","d.st.sub":"40 MB .prt stays on Drive. Video parts are ASSUMED only. No BOM until measured.",
+    "d.st.stop":"Open the drawing-desk part in NX. Measure W/D/H, thickness, R, holes. AI will not guess millimetres.",
+    "d.st.obs":"Video parts are not an NX BOM. Do not treat as a manufacturing list.",
     "d.pr.title":"Drawing desk · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING. No verified size, drawing, or machine data.",
     "d.pr.stop":"No fake toolpaths or G-code. CAM only after NX measure and drawings.",
     "d.rev":"Drawing desk: key sizes UNKNOWN. Do not manufacture yet.",
+    "d.rev2":"Do not pixel-measure the Calla video as millimetres.",
+    "d.rev3":"Whether the NX thumbnail and Calla render are the same part = UNKNOWN.",
+    "d.rev4":"Desk height / sitting posture not verified. No human figure in the video.",
     "f.home.title":"Rotate drawing tower<br><em>Turntable · swap modules</em>",
     "f.home.lede":"Source is the F180 folder in Design. One frame, swap bins, boards or bookends.",
     "f.home.r":"corner R",
@@ -1371,17 +1425,27 @@ const I18N = {
     "cat.wave":"Ghế sóng","cat.waved":"Lounge gỗ đặc · ép lớp A/B/C",
     "cat.koala":"Giá treo Koala","cat.koalad":"Đế hoa · 9 móc · bảng koala",
     "cat.f180":"Tủ xoay vẽ","cat.f180d":"Xoay · bảng vẽ · hộp",
-    "cat.desk":"Bàn vẽ","cat.deskd":"Đã nhận file NX · kích thước UNKNOWN",
-    "d.home.title":"Bàn vẽ<br><em>Đã nhận Siemens NX .prt</em>",
-    "d.home.lede":"Thư mục thiết kế chỉ có một file NX. Không có 2D, không đo. W/D/H = UNKNOWN. Không đoán mm.",
+    "cat.desk":"Bàn vẽ","cat.deskd":"Giá vẽ lật · hai ngăn · kích thước UNKNOWN",
+    "d.home.title":"Bàn vẽ<br><em>Calla Study Desk with Easel</em>",
+    "d.home.lede":"Thư mục thiết kế thêm video lắp (hình ASSUMED). Nguồn CAD vẫn là Siemens NX .prt. W/D/H = UNKNOWN. Không đoán mm.",
     "d.home.file":"file nguồn","d.home.stop":"STOP — NEED HUMAN DECISION: đo trong NX rồi gửi 3-view hoặc bảng kích thước trước khi bản vẽ / CAM.",
-    "d.form.title":"Bàn vẽ · form","d.form.sub":"Nguồn: 繪圖桌/繪圖桌.prt. Ảnh xem trước từ NX, chỉ nhận dạng, không phải kích thước gia công.",
-    "d.reg":"Sổ kích thước","d.form.stop":"Không lấy pixel hay bàn vẽ thông dụng làm số thật. Cần ảnh đo NX hoặc bản 2D.",
-    "d.st.title":"Bàn vẽ · kỹ thuật","d.st.sub":".prt 40 MB để trên Drive. Chưa đo thì không làm BOM hay kích thước bản vẽ.",
-    "d.st.stop":"Mở 繪圖桌.prt trong NX. Đo W/D/H, dày, R, lỗ. AI không đoán mm.",
+    "d.form.title":"Bàn vẽ · form","d.form.sub":"Ảnh cắt từ video Calla ở thư mục Design. Chỉ nhận dạng. Mm phải đo trong NX, không lấy từ pixel.",
+    "d.form.v1":"Giá vẽ mở · ngăn kéo","d.form.v2":"Đã lắp","d.form.v3":"Chi tiết A–E · video ASSUMED","d.form.v4":"Chốt bên giá vẽ",
+    "d.form.nx":"Ảnh nhúng NX · độ phân giải thấp · không phải kích thước",
+    "d.form.obs":"Chức năng thấy trong video (ASSUMED, chưa đo NX)",
+    "d.form.o1":"Mặt bàn lật thành giá vẽ, thanh chặn giấy","d.form.o2":"Hai ngăn kéo",
+    "d.form.o3":"Hai lỗ tròn trên mặt (công dụng UNKNOWN)","d.form.o4":"Khung bên trắng + thanh giằng, bulông KD",
+    "d.form.o5":"Chốt bên cho giá vẽ. Góc lật / bước lỗ UNKNOWN",
+    "d.reg":"Sổ kích thước","d.form.stop":"Không lấy pixel hay bàn thông dụng làm số thật. Cần ảnh đo NX hoặc bản 2D.",
+    "d.st.title":"Bàn vẽ · kỹ thuật","d.st.sub":".prt 40 MB để trên Drive. Chi tiết video chỉ ASSUMED. Chưa đo thì không làm BOM.",
+    "d.st.stop":"Mở file NX bàn vẽ. Đo W/D/H, dày, R, lỗ. AI không đoán mm.",
+    "d.st.obs":"Chi tiết video không phải BOM NX. Không dùng làm danh sách sản xuất.",
     "d.pr.title":"Bàn vẽ · CNC","d.pr.sub":"NOT READY FOR MANUFACTURING. Chưa có kích thước xác nhận, bản vẽ, dữ liệu máy.",
     "d.pr.stop":"Không bịa đường dao hay G-code. CAM sau khi đo NX và có bản vẽ.",
     "d.rev":"Bàn vẽ: kích thước then chốt UNKNOWN. Chưa được sản xuất.",
+    "d.rev2":"Không đo pixel video Calla thành mm.",
+    "d.rev3":"Ảnh NX và render Calla có cùng chi tiết hay không = UNKNOWN.",
+    "d.rev4":"Chiều cao bàn / tư thế ngồi chưa xác minh. Video không có người.",
     "f.home.title":"Tủ xoay vẽ<br><em>Xoay · đổi module</em>",
     "f.home.lede":"Theo thư mục F180 trong Design. Một khung, đổi hộp, bảng vẽ hoặc chặn sách.",
     "f.home.r":"góc R",
@@ -1606,6 +1670,9 @@ function runReview() {
   const items = [];
   if (currentSku === "desk") {
     items.push({ lv: "err", msg: t("d.rev") });
+    items.push({ lv: "err", msg: t("d.rev2") });
+    items.push({ lv: "warn", msg: t("d.rev3") });
+    items.push({ lv: "warn", msg: t("d.rev4") });
   } else if (currentSku === "f180") {
     items.push({ lv: "ok", msg: t("f.rev.e1") });
     items.push({ lv: "warn", msg: t("f.rev.e2") });
