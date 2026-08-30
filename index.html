@@ -97,7 +97,6 @@
   @keyframes in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
   .sku { display: none; }
-  body.sku-wave .sku.wave { display: block; }
   body.sku-koala .sku.koala { display: block; }
   body.sku-f180 .sku.f180 { display: block; }
   body.sku-desk .sku.desk { display: block; }
@@ -153,7 +152,6 @@
     background: #ddd center/cover no-repeat;
     box-shadow: var(--shadow); position: relative;
   }
-  .hero-photo.wave { background-image: url("02_外型/WAVE-LC-R01_hero_34.jpg"); }
   .hero-photo.koala { background-image: url("01_主設計師/無尾熊-衣帽架/hero.png"); }
   .hero-photo.f180 { background-image: url("01_主設計師/旋轉繪圖櫃/hero.jpg"); }
   .hero-photo.desk { background-image: url("01_主設計師/繪圖桌/calla-easel.jpg"); }
@@ -321,7 +319,7 @@
   }
 </style>
 </head>
-<body class="sku-wave">
+<body class="sku-koala">
 <div class="app">
   <header>
     <div class="brand" onclick="go('home')" title="BjM Furniture Design">
@@ -333,8 +331,7 @@
       <small>Furniture Design</small>
     </div>
     <div class="skus" id="skus">
-      <button type="button" data-sku="wave" class="on">WAVE</button>
-      <button type="button" data-sku="koala">KOALA</button>
+      <button type="button" data-sku="koala" class="on">KOALA</button>
       <button type="button" data-sku="f180">F180</button>
       <button type="button" data-sku="desk">DESK</button>
     </div>
@@ -348,20 +345,12 @@
       <button data-go="r2" data-i18n="nav.form">外型</button>
       <button data-go="r3" data-i18n="nav.struct">工程／NX</button>
       <button data-go="r4" data-i18n="nav.prod">CNC</button>
-      <button data-go="skills" data-i18n="nav.skills">技能</button>
       <button data-go="cv" data-i18n="nav.cv">履歷</button>
     </nav>
   </header>
 
   <main>
     <div class="sku-strip" id="sku-strip" hidden>
-      <button type="button" data-sku="wave">
-        <img src="02_外型/WAVE-LC-R01_hero_34.jpg" alt="">
-        <span>
-          <em>WAVE-LC-001</em>
-          <strong data-i18n="cat.wave">波浪椅</strong>
-        </span>
-      </button>
       <button type="button" data-sku="koala">
         <img src="01_主設計師/無尾熊-衣帽架/hero.png" alt="">
         <span>
@@ -405,18 +394,10 @@
         <b data-i18n="id.fin">成品</b>
       </div>
       <div class="catalog">
-        <button class="pick on" data-pick="wave" type="button" onclick="setSku('wave')">
-          <img src="02_外型/WAVE-LC-R01_hero_34.jpg" alt="WAVE">
-          <div>
-            <div class="num">01 · WAVE-LC-001</div>
-            <h3 data-i18n="cat.wave">波浪椅</h3>
-            <p data-i18n="cat.waved">Solid-wood lounge · laminated A/B/C</p>
-          </div>
-        </button>
-        <button class="pick" data-pick="koala" type="button" onclick="setSku('koala')">
+        <button class="pick on" data-pick="koala" type="button" onclick="setSku('koala')">
           <img src="01_主設計師/無尾熊-衣帽架/hero.png" alt="KOALA">
           <div>
-            <div class="num">02 · KOALA-CR-001</div>
+            <div class="num">01 · KOALA-CR-001</div>
             <h3 data-i18n="cat.koala">無尾熊衣帽架</h3>
             <p data-i18n="cat.koalad">Flower base · 9 pegs · koala plaque</p>
           </div>
@@ -424,7 +405,7 @@
         <button class="pick" data-pick="f180" type="button" onclick="setSku('f180')">
           <img src="01_主設計師/旋轉繪圖櫃/hero.jpg" alt="F180">
           <div>
-            <div class="num">03 · F180-RC-001</div>
+            <div class="num">02 · F180-RC-001</div>
             <h3 data-i18n="cat.f180">旋轉繪圖櫃</h3>
             <p data-i18n="cat.f180d">Turntable tower · boards · bins</p>
           </div>
@@ -432,40 +413,11 @@
         <button class="pick" data-pick="desk" type="button" onclick="setSku('desk')">
           <img src="01_主設計師/繪圖桌/calla-easel.jpg" alt="DESK">
           <div>
-            <div class="num">04 · DESK</div>
+            <div class="num">03 · DESK</div>
             <h3 data-i18n="cat.desk">繪圖桌</h3>
             <p data-i18n="cat.deskd">Tilt easel · two drawers · sizes UNKNOWN</p>
           </div>
         </button>
-      </div>
-
-      <div class="sku wave">
-        <div class="hero">
-          <div class="hero-photo wave" onclick="zoom(this)"><i>WAVE-LC-001</i></div>
-          <div class="hero-copy">
-            <div class="kicker">WAVE · NX / 5-AXIS</div>
-            <h1 data-i18n="home.title">浪形實木休閒椅<br><em>選擇作品查看詳細內容</em></h1>
-            <p class="lede" data-i18n="home.lede">從外型、工程圖到五軸白身。Designed in Siemens NX。</p>
-            <div class="stats">
-              <div class="stat"><b>900×960</b><s data-i18n="home.wh">W × D mm</s></div>
-              <div class="stat"><b>820</b><s data-i18n="home.ht">H mm</s></div>
-              <div class="stat"><b>A / B / C</b><s data-i18n="home.abc">Left · Right · Basin</s></div>
-            </div>
-            <div class="files" style="margin-top:14px;align-items:center">
-              <a href="ar/WAVE-LC-001.html?view=1">AR</a>
-            </div>
-            <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
-              <div style="text-align:center">
-                <img src="ar/WAVE-LC-001-qr-android.png" alt="Android AR QR" width="140" height="140" style="width:140px;height:140px;margin:0 auto;background:#fff;border-radius:12px;padding:6px;border:1px solid var(--line)">
-                <p style="font-size:11px;letter-spacing:.12em;margin:8px 0 0" data-i18n="ar.android">Android · GLB</p>
-              </div>
-              <div style="text-align:center">
-                <img src="ar/WAVE-LC-001-qr-apple.png" alt="iPhone AR QR" width="140" height="140" style="width:140px;height:140px;margin:0 auto;background:#fff;border-radius:12px;padding:6px;border:1px solid var(--line)">
-                <p style="font-size:11px;letter-spacing:.12em;margin:8px 0 0" data-i18n="ar.apple">iPhone · USDZ</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="sku koala">
@@ -525,50 +477,6 @@
     </section>
 
     <section id="r2" class="page">
-      <div class="sku wave">
-        <div class="kicker" data-i18n="form.kicker">02 · 外型</div>
-        <h2 data-i18n="form.title">外型、坐姿、使用場景</h2>
-        <p class="sub" data-i18n="form.sub">渲染、人體工學示意、客廳／酒店場景。輪廓以控制尺寸為準。</p>
-        <div class="grid-3">
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/WAVE-LC-R01_hero_34.jpg" alt="3/4"></div><div class="caption">R01</div></div>
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/WAVE-LC-R02_front.jpg" alt="front"></div><div class="caption">R02</div></div>
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/WAVE-LC-R03_side.jpg" alt="side"></div><div class="caption">R03</div></div>
-        </div>
-        <h3 style="margin:22px 0 10px" data-i18n="form.scenes">場景使用</h3>
-        <div class="grid-3">
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/SCENE_living.jpg" alt="living"></div><div class="caption" data-i18n="form.s1">客廳</div></div>
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/SCENE_lobby.jpg" alt="lobby"></div><div class="caption" data-i18n="form.s2">酒店大堂</div></div>
-          <div><div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/SCENE_suite.jpg" alt="suite"></div><div class="caption" data-i18n="form.s3">套房</div></div>
-        </div>
-        <h3 style="margin:22px 0 10px" data-i18n="form.ergo">人體工學示意</h3>
-        <div class="ergo" style="margin-bottom:14px">
-          <img src="02_外型/WAVE-LC-001_ergo.png?v=3" alt="WAVE ergonomics" onclick="zoom(this)">
-        </div>
-        <div style="max-width:460px">
-          <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="02_外型/ERGO_sit.jpg" alt="sit"></div>
-          <div class="caption" data-i18n="form.sit">使用姿勢（側視）</div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3 data-i18n="form.lines">三條控制線</h3>
-            <ul>
-              <li data-i18n="form.l1">側面：接地 — 負空間 — 靠背峰</li>
-              <li data-i18n="form.l2">正視扶手開口</li>
-              <li data-i18n="form.l3">木／布分模線，退唇 8–12 mm</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 data-i18n="form.body">人體底線</h3>
-            <ul>
-              <li>400 / 520 / 540 / 580</li>
-              <li data-i18n="form.b2">腰椎做在軟包</li>
-              <li data-i18n="form.b3">前舌不高過墊面前緣</li>
-              <li data-i18n="form.b4">手觸倒圓 8–12，接觸帶 R ≥18</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <div class="sku koala">
         <div class="kicker" data-i18n="form.kicker">02 · Form</div>
         <h2 data-i18n="k.form.title">花座、枝、熊</h2>
@@ -688,74 +596,6 @@
     </section>
 
     <section id="r3" class="page">
-      <div class="sku wave">
-        <div class="kicker" data-i18n="st.kicker">03 · Engineering / NX</div>
-        <h2 data-i18n="st.title">怎麼做才坐得住，用什麼木</h2>
-        <p class="sub" data-i18n="st.sub">禁止整塊掏空。主材層積白橡。</p>
-        <p class="nx">DESIGNED IN SIEMENS NX</p>
-        <div class="grid-2" style="margin:14px 0 18px">
-          <div class="card">
-            <h3 data-i18n="nx.asm">Master assembly</h3>
-            <pre class="tree">WAVE-LC-001
-├── A  Left shell
-├── B  Right shell
-├── C  Seat basin
-├── Cushion
-└── Base / pads</pre>
-            <p class="note" data-i18n="nx.note">爆炸圖／NX 螢幕截圖待補。下面三視圖與 BOM 是現有工程證據。</p>
-          </div>
-          <div class="wait">
-            <b data-i18n="nx.wait">待補 · NX 3D / 爆炸圖截圖</b>
-            <span data-i18n="nx.waitd">請把 NX 裝配、爆炸、零件畫面丟進此頁。沒有真圖之前不放假圖。</span>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div>
-            <div class="photo" onclick="zoom(this.querySelector('img'))" style="aspect-ratio:auto"><img src="03_結構與材料/WAVE-LC-001_3view.png" alt="3view" style="aspect-ratio:auto"></div>
-            <div class="caption">WAVE-LC-001 · 3-view · mm</div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="st.principles">結構原則</h3>
-            <ul>
-              <li data-i18n="st.p1">承重：座盆兩側 → 扶手根 → 後踵</li>
-              <li data-i18n="st.p2">前舌不單獨扛前移彎矩</li>
-              <li>洞緣 ≥28 · 盆底 ≥32 · 扶手根 ≥45</li>
-              <li>薄緣 22–35 · 節點 55–80</li>
-              <li data-i18n="st.p5">腳墊 Ø20–25，四顆</li>
-            </ul>
-            <div class="files">
-              <a href="03_結構與材料/01_結構設計說明.txt" data-i18n="st.f1">結構說明</a>
-              <a href="03_結構與材料/02_分件與接合.txt" data-i18n="st.f2">分件接合</a>
-              <a href="03_結構與材料/WAVE-LC-001_3view.pdf">PDF</a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div>
-            <div class="photo" onclick="zoom(this.querySelector('img'))" style="aspect-ratio:auto"><img src="03_結構與材料/WAVE-LC-001_BOM_RevA.png" alt="BOM" style="aspect-ratio:auto"></div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="st.wood">樹種</h3>
-            <table>
-              <tr><th>#</th><th data-i18n="st.sp">樹種</th><th data-i18n="st.why">為什麼</th></tr>
-              <tr><td>1</td><td data-i18n="w.oak">白橡</td><td data-i18n="w.oakd">最接近參考圖</td></tr>
-              <tr><td>2</td><td data-i18n="w.ash">白蠟</td><td data-i18n="w.ashd">好雕、較省</td></tr>
-              <tr><td>3</td><td data-i18n="w.beech">山毛櫸</td><td data-i18n="w.beechd">均質，移動較大</td></tr>
-              <tr><td>4</td><td data-i18n="w.wal">胡桃</td><td data-i18n="w.wald">精品，陰影較重</td></tr>
-            </table>
-            <div class="files">
-              <a href="03_結構與材料/WAVE-LC-001_BOM_RevA.xlsx">BOM</a>
-              <a href="03_結構與材料/01_木材選擇與材性.txt" data-i18n="st.mat">材性</a>
-              <a href="03_結構與材料/02_越南市場木材價格調查.txt" data-i18n="st.vn">越南行情</a>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="margin-top:18px">
-          <h3 data-i18n="st.price">Vietnam yard prices</h3>
-          <div class="grid-2" id="vn-bars"></div>
-        </div>
-      </div>
-
       <div class="sku koala">
         <div class="kicker" data-i18n="st.kicker">03 · Structure / Material</div>
         <h2 data-i18n="k.st.title">花座夾心、斜孔、熊牌</h2>
@@ -868,52 +708,6 @@
     </section>
 
     <section id="r4" class="page">
-      <div class="sku wave">
-        <div class="kicker" data-i18n="pr.kicker">04 · Production / CNC</div>
-        <h2 data-i18n="pr.title">備料 → 白身 → 噴漆 → 包材</h2>
-        <p class="sub" data-i18n="pr.sub">工廠實作順序。5 軸做白身，砂光是工時黑洞。</p>
-        <div class="flow">
-          <div class="card"><div class="num">01</div><h3 data-i18n="pr.m1">備料</h3><p data-i18n="pr.m1d"></p></div>
-          <div class="card"><div class="num">02</div><h3 data-i18n="pr.m2">白身</h3><p data-i18n="pr.m2d"></p></div>
-          <div class="card"><div class="num">03</div><h3 data-i18n="pr.m3">噴漆</h3><p data-i18n="pr.m3d"></p></div>
-          <div class="card"><div class="num">04</div><h3 data-i18n="pr.m4">包材</h3><p data-i18n="pr.m4d"></p></div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="photo" onclick="zoom(this.querySelector('img'))"><img src="04_生產與CNC/WAVE-LC-R03_side.jpg" alt="side"></div>
-          <div class="card">
-            <h3 data-i18n="pr.ops">Four ops</h3>
-            <ul>
-              <li><b>OP1</b> datum + 2×Ø8 H7</li>
-              <li><b>OP2</b> basin, rebate, pins</li>
-              <li><b>OP3</b> outer carve</li>
-              <li><b>OP4</b> void left / right</li>
-            </ul>
-            <div class="files">
-              <a href="04_生產與CNC/03_備料白身噴漆包材.txt" data-i18n="pr.title">Flow</a>
-              <a href="04_生產與CNC/WAVE-LC-001_3view.pdf">PDF</a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-2" style="margin-top:18px">
-          <div class="card">
-            <h3>NX CAM · WAVE</h3>
-            <p class="nx">5-AXIS WHITE BODY · XYZCB · TCP</p>
-            <ul>
-              <li><b>T01</b> Ø12 R2 · rough</li>
-              <li><b>T02</b> Ø16 ball · semi / finish</li>
-              <li><b>T03</b> Ø8 · rebate / pins</li>
-              <li><b>Ops</b> rough → semi → finish → 5-axis contour</li>
-              <li><b>Axis</b> B/C · lead / tilt · smoothing · G43.4</li>
-            </ul>
-            <p class="note" data-i18n="cam.note">以上是加工規劃。刀路、模擬、G-code 截圖待補，不放推估工時與出廠價。</p>
-          </div>
-          <div class="wait">
-            <b data-i18n="cam.wait">待補 · NX CAM 刀路 / 模擬 / G-code</b>
-            <span data-i18n="cam.waitd">有 NX 畫面再放。沒有真圖就不做假刀路。</span>
-          </div>
-        </div>
-      </div>
-
       <div class="sku koala">
         <div class="kicker" data-i18n="pr.kicker">04 · Production / CNC</div>
         <h2 data-i18n="pr.title">Prep → White body → Finish → Pack</h2>
@@ -988,11 +782,13 @@
       </div>
     </section>
 
-    <section id="skills" class="page">
-      <div class="kicker" data-i18n="sk.kicker">SKILLS</div>
-      <h2 data-i18n="sk.title">會什麼、做到哪一層</h2>
-      <p class="sub" data-i18n="sk.sub">不用星星。程度用工作內容寫。</p>
-      <div class="card">
+    <section id="cv" class="page">
+      <div class="kicker" data-i18n="cv.kicker">RESUME</div>
+      <h2 data-i18n="cv.title">包俊銘 · Bao Jyun Ming</h2>
+      <p class="sub" data-i18n="cv.sub">Furniture Design / Engineering / CNC</p>
+      <div class="card" style="margin-bottom:18px">
+        <h3 data-i18n="sk.title">會什麼、做到哪一層</h3>
+        <p class="sub" data-i18n="sk.sub">不用星星。程度用工作內容寫。</p>
         <div class="skill"><b>Siemens NX</b><span data-i18n="sk.nx">Advanced · 3D Modeling / Assembly / Drafting</span></div>
         <div class="skill"><b>NX CAM</b><span data-i18n="sk.cam">Advanced · 3 / 3+2 / 5-Axis（刀路圖待補）</span></div>
         <div class="skill"><b>UG</b><span data-i18n="sk.ug">Advanced · 建模／裝配</span></div>
@@ -1001,12 +797,6 @@
         <div class="skill"><b>3-Axis CNC</b><span data-i18n="sk.3ax">Router / nest / jig</span></div>
         <div class="skill"><b>Furniture</b><span data-i18n="sk.fur">Solid wood construction · production engineering</span></div>
       </div>
-    </section>
-
-    <section id="cv" class="page">
-      <div class="kicker" data-i18n="cv.kicker">RESUME</div>
-      <h2 data-i18n="cv.title">包俊銘 · Bao Jyun Ming</h2>
-      <p class="sub" data-i18n="cv.sub">Furniture Design / Engineering / CNC</p>
       <div class="grid-2">
         <div class="card">
           <h3 data-i18n="cv.exp">Experience</h3>
@@ -1016,34 +806,22 @@
           <p class="note" data-i18n="cv.expd">2020.06 之後經歷未填，不上網。學歷／語言程度未填。</p>
         </div>
         <div class="card">
-          <h3 data-i18n="cv.soft">Software</h3>
-          <ul>
-            <li>Siemens NX · NX CAM</li>
-            <li>UG · AutoCAD</li>
-          </ul>
-          <h3 style="margin-top:14px" data-i18n="cv.mfg">Manufacturing</h3>
-          <ul>
-            <li>3-Axis CNC · 5-Axis CNC</li>
-            <li data-i18n="cv.wood">實木家具 · 組裝</li>
-          </ul>
+          <h3 data-i18n="cv.lang">Languages</h3>
+          <p data-i18n="cv.langs">中文 · Tiếng Việt · English</p>
+          <h3 style="margin-top:14px" data-i18n="cv.ct">Contact</h3>
+          <p>
+            Email <a href="mailto:W2468741@gmail.com">W2468741@gmail.com</a><br>
+            Zalo <a href="https://zalo.me/0976418615">0976418615</a>
+          </p>
+          <p class="note" data-i18n="cv.ctd">WhatsApp / LinkedIn 未填，不上網。</p>
         </div>
-      </div>
-      <div class="card" style="margin-top:18px">
-        <h3 data-i18n="cv.lang">Languages</h3>
-        <p data-i18n="cv.langs">中文 · Tiếng Việt · English</p>
-        <h3 style="margin-top:14px" data-i18n="cv.ct">Contact</h3>
-        <p>
-          Email <a href="mailto:W2468741@gmail.com">W2468741@gmail.com</a><br>
-          Zalo <a href="https://zalo.me/0976418615">0976418615</a>
-        </p>
-        <p class="note" data-i18n="cv.ctd">WhatsApp / LinkedIn 未填，不上網。</p>
       </div>
     </section>
   </main>
 
   <footer>
     <span>© 2026 · Selected Works · Furniture Design / CNC / NX</span>
-    <span data-i18n="foot">作品 · 工程 · CNC · 技能 · 履歷</span>
+    <span data-i18n="foot">作品 · 工程 · CNC · 履歷</span>
   </footer>
 </div>
 
@@ -1053,7 +831,7 @@
 const LANG_KEY = "bjm-lang";
 const SKU_KEY = "bjm-sku";
 let currentLang = localStorage.getItem(LANG_KEY) || "zh";
-let currentSku = localStorage.getItem(SKU_KEY) || "wave";
+let currentSku = localStorage.getItem(SKU_KEY) || "koala";
 
 const I18N = {
   zh: {
@@ -1224,7 +1002,7 @@ const I18N = {
     "k.rev.e5":"掛鉤端 R8 合理；建議再倒 1 mm，避免戳到眼睛。",
     "saved":"已記住這次選擇",
     "vn.unit":"萬",
-    "foot":"作品 · 工程 · CNC · 技能 · 履歷"
+    "foot":"作品 · 工程 · CNC · 履歷"
   },
   en: {
     "nav.home":"Works","nav.design":"Design","nav.form":"Form","nav.struct":"Engineering / NX","nav.prod":"CNC","nav.skills":"Skills","nav.cv":"Resume",
@@ -1394,7 +1172,7 @@ const I18N = {
     "k.rev.e5":"Peg end R8 is fine; add 1 mm blunt so it cannot poke an eye.",
     "saved":"Choices stored on this computer",
     "vn.unit":"M",
-    "foot":"Works · Engineering · CNC · Skills · Resume"
+    "foot":"Works · Engineering · CNC · Resume"
   },
   vi: {
     "nav.home":"Tác phẩm","nav.design":"Thiết kế","nav.form":"Ngoại hình","nav.struct":"Kỹ thuật / NX","nav.prod":"CNC","nav.skills":"Kỹ năng","nav.cv":"Hồ sơ",
@@ -1564,7 +1342,7 @@ const I18N = {
     "k.rev.e5":"Đầu móc R8 ổn; thêm 1 mm tù để không đâm mắt.",
     "saved":"Đã lưu lựa chọn trên máy này",
     "vn.unit":"tr",
-    "foot":"Tác phẩm · Kỹ thuật · CNC · Kỹ năng · Hồ sơ"
+    "foot":"Tác phẩm · Kỹ thuật · CNC · Hồ sơ"
   }
 };
 
@@ -1627,11 +1405,11 @@ function applyLang(lang) {
   runReview();
 }
 
-const SKUS = ["wave", "koala", "f180", "desk"];
+const SKUS = ["koala", "f180", "desk"];
 function setSku(sku) {
-  currentSku = SKUS.indexOf(sku) >= 0 ? sku : "wave";
+  currentSku = SKUS.indexOf(sku) >= 0 ? sku : "koala";
   localStorage.setItem(SKU_KEY, currentSku);
-  document.body.classList.remove("sku-wave", "sku-koala", "sku-f180", "sku-desk");
+  document.body.classList.remove("sku-koala", "sku-f180", "sku-desk");
   document.body.classList.add("sku-" + currentSku);
   document.querySelectorAll("#skus button, #sku-strip button").forEach(b => b.classList.toggle("on", b.dataset.sku === currentSku));
   document.querySelectorAll(".pick").forEach(b => b.classList.toggle("on", b.dataset.pick === currentSku));
@@ -1686,11 +1464,11 @@ function runReview() {
     items.push({ lv: "warn", msg: t("k.rev.e4") });
     items.push({ lv: "ok", msg: t("k.rev.e5") });
   } else {
-    items.push({ lv: "warn", msg: t("rev.e1") });
-    items.push({ lv: "warn", msg: t("rev.e2") });
-    items.push({ lv: "warn", msg: t("rev.e3") });
-    items.push({ lv: "warn", msg: t("rev.e4") });
-    items.push({ lv: "ok", msg: t("rev.e5") });
+    items.push({ lv: "warn", msg: t("k.rev.e1") });
+    items.push({ lv: "err", msg: t("k.rev.e2") });
+    items.push({ lv: "ok", msg: t("k.rev.e3") });
+    items.push({ lv: "warn", msg: t("k.rev.e4") });
+    items.push({ lv: "ok", msg: t("k.rev.e5") });
   }
   if (currentLang === "zh") {
     items.push({ lv: "ok", msg: t("rev.oklang") });
@@ -1706,9 +1484,9 @@ function runReview() {
 }
 
 function storeKey() {
-  if (currentSku === "koala") return "koala-atelier-v1";
   if (currentSku === "f180") return "f180-atelier-v1";
-  return "wave-atelier-v1";
+  if (currentSku === "desk") return "desk-atelier-v1";
+  return "koala-atelier-v1";
 }
 function load() {
   try { return JSON.parse(localStorage.getItem(storeKey()) || "{}"); } catch { return {}; }
@@ -1758,6 +1536,7 @@ function renderVn() {
 
 function go(id) {
   if (id === "r1" || id === "cloud") id = "home";
+  if (id === "skills") id = "cv";
   document.querySelectorAll(".page").forEach(p => p.classList.toggle("on", p.id === id));
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.go === id));
   const strip = document.getElementById("sku-strip");
@@ -1785,7 +1564,7 @@ window.addEventListener("keydown", e => {
   if (e.key === "1") go("r2");
   if (e.key === "2") go("r3");
   if (e.key === "3") go("r4");
-  if (e.key === "4") go("skills");
+  if (e.key === "4") go("cv");
   if (e.key === "5") go("cv");
   if (e.key === "0") go("home");
 });
